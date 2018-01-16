@@ -1,0 +1,12 @@
+body {
+     padding-top: 2rem;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+    color: inherit;
+}
