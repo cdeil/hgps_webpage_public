@@ -48,4 +48,8 @@ figures:
 - number: 1
   hgps_paper: figures/hgps_region_exposure_illustration.pdf
   hgps_analysis: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.pdf
-  script : code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.py
+  script: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.py
+- number: 2
+  hgps_paper: figures/hgps_energy_threshold_profiles.pdf
+  hgps_analysis: code/hgps/figures/energy_threshold/hgps_energy_threshold_profiles.pdf
+  script: code/hgps/figures/energy_threshold/energy_threshold.py

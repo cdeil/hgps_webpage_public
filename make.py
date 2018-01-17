@@ -95,13 +95,16 @@ def build_data():
         copyfile(HGPS_DATA_DIR / 'release' / m['in'], out_path / m['filename'])
 
 
-@build.command('images')
-def build_images():
-    """Make build/images"""
-    print('---> build_images')
-    Path('build/images').mkdir(exist_ok=True)
-    # TODO: copy image files in `build/images`
+@build.command('figures')
+def build_figures():
+    """Make build/figures"""
+    print('---> build_figures')
+    out_path = Path('build/figures')
+    out_path.mkdir(exist_ok=True)
 
+    for figure in CONFIG['figures']:
+        filename = Path(figure['hgps_analysis']).name
+        copyfile(HGPS_ANALYSIS_DIR / figure['hgps_analysis'], out_path / filename)
 
 @cli.command()
 def archive():
