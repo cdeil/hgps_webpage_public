@@ -1,2 +1,25 @@
-cat_filename: hgps_catalog_v1.fits.gz
+version: 1
+
 page_update_date: Jan 16, 2018
+
+maps:
+- in: HGPS_Flux_0.1deg.fits.gz
+  quantity: flux
+  radius: 0.1
+  md5: cad4dc35220e75829d2882a2aa96461e
+- in: HGPS_Flux_0.2deg.fits.gz
+  quantity: flux
+  radius: 0.2
+  md5: 22fa88d4e3cfc36b2b17cd55e2237bcf
+#        dict(name='HGPS_Flux_Err_0.1deg.fits.gz', md5='17981eb64e029d60be67421815d3c549'),
+#        dict(name='HGPS_Flux_Err_0.2deg.fits.gz', md5='f3641d7aa243a24e46e7e4cf68a9ce9b'),
+#        dict(name='HGPS_Flux_UL_0.1deg.fits.gz', md5='a269deaddaf6e50dbbbc8a1bd297738e'),
+#        dict(name='HGPS_Flux_UL_0.2deg.fits.gz', md5='17b843d48608f3ad49b73f88bc3a7f01'),
+#        dict(name='HGPS_Sensitivity_0.1deg.fits.gz', md5='53076dbde0691ae52fe50a8becb5f53c'),
+#        dict(name='HGPS_Sensitivity_0.2deg.fits.gz', md5='d46fe4745b10aa5029b086eebc228188'),
+#        dict(name='HGPS_Significance_0.1deg.fits.gz', md5='2078bad371c14c36302ed0724d185dd9'),
+#        dict(name='HGPS_Significance_0.2deg.fits.gz', md5='92ee6385cb0ccd3d554d0d7f0649afb1'),
+#
+
+figures:
+- todo
