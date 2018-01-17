@@ -45,4 +45,7 @@ maps:
   md5: 92ee6385cb0ccd3d554d0d7f0649afb1
 
 figures:
-- todo
+- number: 1
+  hgps_paper: figures/hgps_region_exposure_illustration.pdf
+  hgps_analysis: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.pdf
+  script : code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.py

@@ -58,8 +58,8 @@
         Described in the paper in Section 7.1.
     </p>
     <ul>
-        {% for map in maps %}
-        <li> {{ map.html }} </li>
+        {% for map in config.maps %}
+        <li> {{ map.info.html }} </li>
         {% endfor %}
     </ul>
 
@@ -75,13 +75,15 @@
 
     <h2>Figures</h2>
     <p>
-        PDF and high-resolution PNG versions of all Figures from the paper:
+        PDF and high-resolution PNG versions of all figures from the paper:
     </p>
     <ul>
-        <li>tbd</li>
+        {% for figure in config.figures %}
+        <li> {{ figure.info.html }} </li>
+        {% endfor %}
     </ul>
     <p>
-        Extra images:
+        Extra figures:
     </p>
     <ul>
         <li>tbd: PNG Survey map without annotations (single panel & 3-panel; significance & flux)</li>

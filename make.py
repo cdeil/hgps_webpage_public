@@ -13,6 +13,7 @@ HGPS_ANALYSIS_DIR = Path(os.environ['HGPS_ANALYSIS'])
 HGPS_DATA_DIR = Path(os.environ['HGPS_DATA'])
 FILENAME_CAT = f'hgps_catalog_v{VERSION}.fits.gz'
 
+
 @click.group()
 def cli():
     """HGPS public webpage CLI.
@@ -37,20 +38,36 @@ def clean():
     run('rm -rf build')
 
 
-@cli.command()
+@cli.group()
 def build():
     """Build webpage"""
+    pass
+
+
+@build.command('all')
+@click.pass_context
+def build_all(ctx):
+    """Make build"""
     print('===> Executing task: build')
-    build_data()
-    build_images()
-    build_html()
+    ctx.invoke(build_data)
+    ctx.invoke(build_images)
+    ctx.invoke(build_html)
 
 
+@build.command('html')
 def build_html():
+    """Make build/index.html"""
     print('---> build_html')
     ctx = {}
     ctx['config'] = CONFIG
     ctx['catalog'] = make_file_info(FILENAME_CAT)
+
+    for m in CONFIG['maps']:
+        filename = f'hgps_map_{m["quantity"]}_{m["radius"]}deg_v{VERSION}.fits.gz'
+        m['info'] = make_file_info(filename)
+
+    for figure in CONFIG['figures']:
+        figure['info'] = make_figure_info(figure)
 
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader('src'),
@@ -65,7 +82,9 @@ def build_html():
     copyfile('src/style.css', 'build/style.css')
 
 
+@build.command('data')
 def build_data():
+    """Make build/data"""
     print('---> build_data')
     out_path = Path('build/data')
     out_path.mkdir(exist_ok=True)
@@ -74,9 +93,11 @@ def build_data():
     for m in CONFIG['maps']:
         m['filename'] = f'hgps_map_{m["quantity"]}_{m["radius"]}deg_v{VERSION}.fits.gz'
         copyfile(HGPS_DATA_DIR / 'release' / m['in'], out_path / m['filename'])
-    exit()
 
+
+@build.command('images')
 def build_images():
+    """Make build/images"""
     print('---> build_images')
     Path('build/images').mkdir(exist_ok=True)
     # TODO: copy image files in `build/images`
@@ -120,7 +141,14 @@ def make_file_info(filename):
     info['filesize'] = f'{mb:.1f} MB'
     md5 = hashlib.md5(path.read_bytes()).hexdigest()
     info['md5'] = md5
-    info['html'] = '<a href="{path}" download>{filename}</a> ({filesize}, MD5: {md5})</li>'.format_map(info)
+    info['html'] = '<a href="{path}" download>{filename}</a> ({filesize}, MD5: {md5})'.format_map(info)
+    return info
+
+
+def make_figure_info(figure):
+    info = dict()
+    info['filename_pdf'] = figure['hgps_paper']
+    info['html'] = '<a href="{filename_pdf}">{filename_pdf}</a>'.format_map(info)
     return info
 
 
