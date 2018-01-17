@@ -117,113 +117,87 @@ figures:
   paper_repo: figures/per-source-plots/HESS_J1119m614.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1119m614.pdf
   script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1119-614'
-#- number:
-#  paper_repo:
-#  analysis_repo:
-#  script:
-
-#    dict(
-#        number=19, paper_filename='figures/per-source-plots/HESS_J1457m593.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1457-593'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1457m593.pdf',
-#    ),
-#    dict(
-#        number=20, paper_filename='figures/per-source-plots/HESS_J1458m608.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1458-608'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1458m608.pdf',
-#    ),
-#    dict(
-#        number=21, paper_filename='figures/per-source-plots/HESS_J1503m582.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1503-582'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1503m582.pdf',
-#    ),
-#    dict(
-#        number=22, paper_filename='figures/per-source-plots/HESS_J1554m550.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1554-550'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1554m550.pdf',
-#    ),
-#    dict(
-#        number=23, paper_filename='figures/per-source-plots/HESS_J1813m126.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1813-126'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1813m126.pdf',
-#    ),
-#    dict(
-#        number=24, paper_filename='figures/per-source-plots/HESS_J1826m130.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1826-130'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1826m130.pdf',
-#    ),
-#    dict(
-#        number=25, paper_filename='figures/per-source-plots/HESS_J1828m099.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1828-099'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1828m099.pdf',
-#    ),
-#    dict(
-#        number=26, paper_filename='figures/per-source-plots/HESS_J1832m085.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1832-085'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1832m085.pdf',
-#    ),
-#    dict(
-#        number=27, paper_filename='figures/per-source-plots/HESS_J1833m105.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1833-105'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1833m105.pdf',
-#    ),
-#    dict(
-#        number=28, paper_filename='figures/per-source-plots/HESS_J1843m033.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1843-033'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1843m033.pdf',
-#    ),
-#    dict(
-#        number=29, paper_filename='figures/per-source-plots/HESS_J1844m030.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1844-030'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1844m030.pdf',
-#    ),
-#    dict(
-#        number=30, paper_filename='figures/per-source-plots/HESS_J1846m029.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1846-029'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1846m029.pdf',
-#    ),
-#    dict(
-#        number=31, paper_filename='figures/per-source-plots/HESS_J1848m018.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1848-018'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1848m018.pdf',
-#    ),
-#    dict(
-#        number=32, paper_filename='figures/per-source-plots/HESS_J1849m000.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1849-000'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1849m000.pdf',
-#    ),
-#    dict(
-#        number=33, paper_filename='figures/per-source-plots/HESS_J1852m000.pdf',
-#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1852-000'",
-#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1852m000.pdf',
-#    ),
-#    dict(
-#        number=34, paper_filename='figures/hgps_survey_flux.pdf',
-#        script="code/hgps/figures/survey_flux/survey_flux.py",
-#        filename='code/hgps/figures/survey_flux/survey_flux.pdf',
-#    ),
-#    dict(
-#        number=35, paper_filename='figures/hgps_survey_mwl_1.pdf',
-#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
-#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_1.pdf',
-#    ),
-#    dict(
-#        number=36, paper_filename='figures/hgps_survey_mwl_2.pdf',
-#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
-#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_2.pdf',
-#    ),
-#    dict(
-#        number=37, paper_filename='figures/hgps_survey_mwl_3.pdf',
-#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
-#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_3.pdf',
-#    ),
-#    dict(
-#        number=38, paper_filename='figures/hgps_survey_mwl_4.pdf',
-#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
-#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_4.pdf',
-#    ),
-#    dict(
-#        number=39, paper_filename='figures/hgps_survey_rois.pdf',
-#        script="code/hgps/figures/survey_rois/survey_rois.py",
-#        filename='code/hgps/figures/survey_rois/hgps_survey_rois.pdf',
-#    ),
+- number: 19
+  paper_repo: figures/per-source-plots/HESS_J1457m593.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1457m593.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1457-593'
+- number: 20
+  paper_repo: figures/per-source-plots/HESS_J1458m608.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1458m608.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1458-608'
+- number: 21
+  paper_repo: figures/per-source-plots/HESS_J1503m582.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1503m582.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1503-582'
+- number: 22
+  paper_repo: figures/per-source-plots/HESS_J1554m550.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1554m550.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1554-550'
+- number: 23
+  paper_repo: figures/per-source-plots/HESS_J1813m126.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1813m126.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1813-126'
+- number: 24
+  paper_repo: figures/per-source-plots/HESS_J1826m130.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1826m130.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1826-130'
+- number: 25
+  paper_repo: figures/per-source-plots/HESS_J1828m099.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1828m099.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1828-099'
+- number: 26
+  paper_repo: figures/per-source-plots/HESS_J1832m085.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1832m085.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1832-085'
+- number: 27
+  paper_repo: figures/per-source-plots/HESS_J1833m105.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1833m105.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1833-105'
+- number: 28
+  paper_repo: figures/per-source-plots/HESS_J1843m033.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1843m033.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1843-033'
+- number: 29
+  paper_repo: figures/per-source-plots/HESS_J1844m030.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1844m030.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1844-030'
+- number: 30
+  paper_repo: figures/per-source-plots/HESS_J1846m029.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1846m029.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1846-029'
+- number: 31
+  paper_repo: figures/per-source-plots/HESS_J1848m018.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1848m018.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1848-018'
+- number: 32
+  paper_repo: figures/per-source-plots/HESS_J1849m000.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1849m000.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1849-000'
+- number: 33
+  paper_repo: figures/per-source-plots/HESS_J1852m000.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1852m000.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1852-000'
+- number: 34
+  paper_repo: figures/hgps_survey_flux.pdf
+  analysis_repo: code/hgps/figures/survey_flux/hgps_survey_flux.pdf
+  script: code/hgps/figures/survey_flux/survey_flux.py
+- number: 35
+  paper_repo: figures/hgps_survey_mwl_1.pdf
+  analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_1.pdf
+  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+- number: 36
+  paper_repo: figures/hgps_survey_mwl_2.pdf
+  analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_2.pdf
+  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+- number: 37
+  paper_repo: figures/hgps_survey_mwl_3.pdf
+  analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_3.pdf
+  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+- number: 38
+  paper_repo: figures/hgps_survey_mwl_4.pdf
+  analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_4.pdf
+  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+- number: 39
+  paper_repo: figures/hgps_survey_rois.pdf
+  analysis_repo: code/hgps/figures/survey_rois/hgps_survey_rois.pdf
+  script: code/hgps/figures/survey_rois/survey_rois.py
