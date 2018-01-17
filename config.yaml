@@ -46,10 +46,184 @@ maps:
 
 figures:
 - number: 1
-  hgps_paper: figures/hgps_region_exposure_illustration.pdf
-  hgps_analysis: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.pdf
+  paper_repo: figures/hgps_region_exposure_illustration.pdf
+  analysis_repo: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.pdf
   script: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.py
 - number: 2
-  hgps_paper: figures/hgps_energy_threshold_profiles.pdf
-  hgps_analysis: code/hgps/figures/energy_threshold/hgps_energy_threshold_profiles.pdf
+  paper_repo: figures/hgps_energy_threshold_profiles.pdf
+  analysis_repo: code/hgps/figures/energy_threshold/hgps_energy_threshold_profiles.pdf
   script: code/hgps/figures/energy_threshold/energy_threshold.py
+- number: 3
+  paper_repo: figures/hgps_map_background_estimation.pdf
+  analysis_repo: code/hgps/figures/exclusion_background_regions/hgps_map_background_estimation.pdf
+  script: code/hgps/figures/exclusion_background_regions/exclusion_background_regions_.py
+- number: 4
+  paper_repo: figures/hgps_sensitivity.pdf
+  analysis_repo: code/hgps/figures/sensitivity/hgps_sensitivity.pdf
+  script: code/hgps/figures/sensitivity/plot_sensitivity.py
+- number: 5
+  paper_repo: figures/hgps_catalog_model.pdf
+  analysis_repo: code/hgps/figures/catalog_model_illustration/hgps_catalog_model.pdf
+  script: code/hgps/figures/catalog_model_illustration/catalog_model_illustration.py
+- number: 6
+  paper_repo: figures/hgps_diffuse_model.pdf
+  analysis_repo: code/hgps/figures/diffuse_band_parameters/hgps_diffuse_model.pdf
+  script: code/hgps/figures/diffuse_band_parameters/diffuse_band_parameters.py
+- number: 7
+  paper_repo: figures/hgps_residual_distribution_ts.pdf
+  analysis_repo: code/hgps/figures/map_pixel_significance_distributions/hgps_residual_significance_distribution_ts.pdf
+  script: code/hgps/figures/map_pixel_significance_distributions/plot_residual_significance_distributions.py
+- number: 8
+  paper_repo: figures/hgps_spectrum_background_estimation.pdf
+  analysis_repo: code/hgps/figures/exclusion_background_regions/hgps_spectrum_background_estimation.pdf
+  script: code/hgps/figures/exclusion_background_regions/exclusion_background_regions_.py
+- number: 9
+  paper_repo: figures/hgps_sources_spectrum_map_flux_comparison.pdf
+  analysis_repo: code/hgps/figures/source_parameter_distributions_spectra/hgps_sources_spectrum_map_flux_comparison.pdf
+  script: code/hgps/figures/source_parameter_distributions_spectra/source_parameter_distributions_spectra.py
+- number: 10
+  paper_repo: figures/hgps_source_id.pdf
+  analysis_repo: code/hgps/figures/source_classes_pie_chart/hgps_source_id.pdf
+  script: code/hgps/figures/source_classes_pie_chart/source_classes_pie_chart_final.py
+- number: 11
+  paper_repo: figures/hgps_sources_glat.pdf
+  analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_glat.pdf
+  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions_glon_glat.py
+- number: 12
+  paper_repo: figures/hgps_sources_glon.pdf
+  analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_glon.pdf
+  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions_glon_glat.py
+- number: 13
+  paper_repo: figures/hgps_sources_flux_extension.pdf
+  analysis_repo: code/hgps/figures/flux_extension_scatter_plot/hgps_sources_flux_extension.pdf
+  script: code/hgps/figures/flux_extension_scatter_plot/flux_extension_scatter_plot.py
+- number: 14
+  paper_repo: figures/hgps_sources_spectral_index.pdf
+  analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_spectral_index.pdf
+  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions.py
+- number: 15
+  paper_repo: figures/hgps_sources_log_n_log_s.pdf
+  analysis_repo: code/hgps/figures/hgps_sources_log_n_log_s/hgps_sources_log_n_log_s.pdf
+  script: code/hgps/figures/hgps_sources_log_n_log_s/hgps_sources_log_n_log_s.py
+- number: 16
+  paper_repo: figures/hgps_face_on_milky_way.pdf
+  analysis_repo: code/hgps/figures/face_on_milky_way/hgps_face_on_milky_way.pdf
+  script: code/hgps/figures/face_on_milky_way/face_on_milky_way_hgps.py
+- number: 17
+  paper_repo: figures/hgps_spectra_new_sources.pdf
+  analysis_repo: code/hgps/figures/spectra/hgps_spectra_new_sources.pdf
+  script: code/hgps/figures/spectra/plot_spectra.py
+- number: 18
+  paper_repo: figures/per-source-plots/HESS_J1119m614.pdf
+  analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1119m614.pdf
+  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1119-614'
+#- number:
+#  paper_repo:
+#  analysis_repo:
+#  script:
+
+#    dict(
+#        number=19, paper_filename='figures/per-source-plots/HESS_J1457m593.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1457-593'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1457m593.pdf',
+#    ),
+#    dict(
+#        number=20, paper_filename='figures/per-source-plots/HESS_J1458m608.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1458-608'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1458m608.pdf',
+#    ),
+#    dict(
+#        number=21, paper_filename='figures/per-source-plots/HESS_J1503m582.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1503-582'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1503m582.pdf',
+#    ),
+#    dict(
+#        number=22, paper_filename='figures/per-source-plots/HESS_J1554m550.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1554-550'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1554m550.pdf',
+#    ),
+#    dict(
+#        number=23, paper_filename='figures/per-source-plots/HESS_J1813m126.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1813-126'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1813m126.pdf',
+#    ),
+#    dict(
+#        number=24, paper_filename='figures/per-source-plots/HESS_J1826m130.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1826-130'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1826m130.pdf',
+#    ),
+#    dict(
+#        number=25, paper_filename='figures/per-source-plots/HESS_J1828m099.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1828-099'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1828m099.pdf',
+#    ),
+#    dict(
+#        number=26, paper_filename='figures/per-source-plots/HESS_J1832m085.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1832-085'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1832m085.pdf',
+#    ),
+#    dict(
+#        number=27, paper_filename='figures/per-source-plots/HESS_J1833m105.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1833-105'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1833m105.pdf',
+#    ),
+#    dict(
+#        number=28, paper_filename='figures/per-source-plots/HESS_J1843m033.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1843-033'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1843m033.pdf',
+#    ),
+#    dict(
+#        number=29, paper_filename='figures/per-source-plots/HESS_J1844m030.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1844-030'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1844m030.pdf',
+#    ),
+#    dict(
+#        number=30, paper_filename='figures/per-source-plots/HESS_J1846m029.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1846-029'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1846m029.pdf',
+#    ),
+#    dict(
+#        number=31, paper_filename='figures/per-source-plots/HESS_J1848m018.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1848-018'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1848m018.pdf',
+#    ),
+#    dict(
+#        number=32, paper_filename='figures/per-source-plots/HESS_J1849m000.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1849-000'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1849m000.pdf',
+#    ),
+#    dict(
+#        number=33, paper_filename='figures/per-source-plots/HESS_J1852m000.pdf',
+#        script="code/hgps/figures/new_sources/new_sources.py plot 'HESS J1852-000'",
+#        filename='code/hgps/figures/new_sources/per-source-plots/HESS_J1852m000.pdf',
+#    ),
+#    dict(
+#        number=34, paper_filename='figures/hgps_survey_flux.pdf',
+#        script="code/hgps/figures/survey_flux/survey_flux.py",
+#        filename='code/hgps/figures/survey_flux/survey_flux.pdf',
+#    ),
+#    dict(
+#        number=35, paper_filename='figures/hgps_survey_mwl_1.pdf',
+#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
+#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_1.pdf',
+#    ),
+#    dict(
+#        number=36, paper_filename='figures/hgps_survey_mwl_2.pdf',
+#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
+#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_2.pdf',
+#    ),
+#    dict(
+#        number=37, paper_filename='figures/hgps_survey_mwl_3.pdf',
+#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
+#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_3.pdf',
+#    ),
+#    dict(
+#        number=38, paper_filename='figures/hgps_survey_mwl_4.pdf',
+#        script="code/hgps/figures/survey_large_associations/survey_large_associations.py",
+#        filename='code/hgps/figures/survey_large_associations/hgps_survey_mwl_4.pdf',
+#    ),
+#    dict(
+#        number=39, paper_filename='figures/hgps_survey_rois.pdf',
+#        script="code/hgps/figures/survey_rois/survey_rois.py",
+#        filename='code/hgps/figures/survey_rois/hgps_survey_rois.pdf',
+#    ),

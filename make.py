@@ -103,8 +103,8 @@ def build_figures():
     out_path.mkdir(exist_ok=True)
 
     for figure in CONFIG['figures']:
-        filename = Path(figure['hgps_analysis']).name
-        copyfile(HGPS_ANALYSIS_DIR / figure['hgps_analysis'], out_path / filename)
+        filename = Path(figure['analysis_repo']).name
+        copyfile(HGPS_ANALYSIS_DIR / figure['analysis_repo'], out_path / filename)
 
 @cli.command()
 def archive():
