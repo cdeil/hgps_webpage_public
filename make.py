@@ -49,9 +49,9 @@ class Config:
         path = Path('build') / info['path']
         mb = path.stat().st_size / 1024 ** 2
         info['filesize'] = f'{mb:.1f} MB'
-        md5 = hashlib.md5(path.read_bytes()).hexdigest()
-        info['md5'] = md5
-        info['html'] = '<a href="{path}" download>{filename}</a> ({filesize}, MD5: {md5})'.format_map(info)
+        # md5 = hashlib.md5(path.read_bytes()).hexdigest()
+        # info['md5'] = md5
+        info['html'] = '<a href="{path}" download>{filename}</a> ({filesize})'.format_map(info)
         return info
 
     @staticmethod
@@ -59,7 +59,9 @@ class Config:
         info = dict()
         info['number'] = figure['number']
         info['filename_pdf'] = figure['paper_repo']
-        info['html'] = 'Figure {number}: <a href="{filename_pdf}">{filename_pdf}</a>'.format_map(info)
+        info['text_pdf'] = info['filename_pdf'].split('/')[-1]
+        info['filename_png'] = info['filename_pdf'].replace('.pdf', '.png')
+        info['html'] = 'Figure {number}: <a href="{filename_pdf}">{text_pdf}</a>, <a href="{filename_png}">PNG</a>'.format_map(info)
         return info
 
 
@@ -145,7 +147,7 @@ def build_figures():
     out_path.mkdir(exist_ok=True)
 
     for figure in config.config['figures']:
-        filename = Path(figure['analysis_repo']).name
+        filename = Path(figure['paper_repo']).name
         copyfile(config.hgps_analysis_dir / figure['analysis_repo'], out_path / filename)
 
 

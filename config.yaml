@@ -1,8 +1,16 @@
 version: 1
 
-page_update_date: Jan 16, 2018
+page_update_date: Feb 20, 2018
 
 maps:
+- in: HGPS_Significance_0.1deg.fits.gz
+  quantity: significance
+  radius: 0.1
+  md5: 2078bad371c14c36302ed0724d185dd9
+- in: HGPS_Significance_0.2deg.fits.gz
+  quantity: significance
+  radius: 0.2
+  md5: 92ee6385cb0ccd3d554d0d7f0649afb1
 - in: HGPS_Flux_0.1deg.fits.gz
   quantity: flux
   radius: 0.1
@@ -35,14 +43,6 @@ maps:
   quantity: sensitivity
   radius: 0.2
   md5: d46fe4745b10aa5029b086eebc228188
-- in: HGPS_Significance_0.1deg.fits.gz
-  quantity: significance
-  radius: 0.1
-  md5: 2078bad371c14c36302ed0724d185dd9
-- in: HGPS_Significance_0.2deg.fits.gz
-  quantity: significance
-  radius: 0.2
-  md5: 92ee6385cb0ccd3d554d0d7f0649afb1
 
 figures:
 - number: 1

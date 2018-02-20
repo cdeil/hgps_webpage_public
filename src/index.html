@@ -14,64 +14,81 @@
     <h1>
         H.E.S.S. Galactic Plane Survey
         <br>
-        <small class="text-muted">HGPS paper (Jan 2018) online material</small>
+        <small class="text-muted">HGPS paper (AA/2017/32098) online material</small>
     </h1>
 
-    <h2>What is this?</h2>
+    <!--<h2>What is this?</h2>-->
     <p>
-        The <a href="https://www.mpi-hd.mpg.de/hfm/HESS/">H.E.S.S.</a> Galactic Plane Survey (HGPS) is the first deep and wide survey of the
-        Milky Way in TeV gamma-rays.
-        This webpage contains the online material for a paper describing HGPS observations taken from 2004 to 2013,
-        that was accepted for publication in the A&A journal in January 2018.
+        <a href="https://www.mpi-hd.mpg.de/hfm/HESS/">H.E.S.S.</a> is an array of ground-based gamma-ray
+        telescopes located in Namibia. The H.E.S.S. Galactic Plane Survey (HGPS)
+        is the first deep and wide survey of the Milky Way in TeV gamma-rays.
+    </p>
+    <p>
+        This webpage contains the online material (survey maps, source catalog, figures) for the HGPS paper
+        AA/2017/32098
+        that was accepted for publication in A&A in 2017. We will link to the paper on arXiv and A&A as soon is
+        available.
+
+        This paper and the data products below cover HGPS observations taken from 2004 to 2013.
     </p>
     <!--<p>-->
-        <!--If you use the HGPS figures given below in presentations or posters,-->
-        <!--or create new figures from the HGPS FITS data,-->
-        <!--please add <strong>HGPS (H.E.S.S. collaboration, 2018)</strong>-->
+    <!--If you use the HGPS figures given below in presentations or posters,-->
+    <!--or create new figures from the HGPS FITS data,-->
+    <!--please add <strong>HGPS (H.E.S.S. collaboration, 2018)</strong>-->
     <!--</p>-->
     <!--<blockquote class="blockquote text-center">-->
-        <!--<p class="mb-0">HGPS (H.E.S.S. collaboration, 2018)</p>-->
+    <!--<p class="mb-0">HGPS (H.E.S.S. collaboration, 2018)</p>-->
     <!--</blockquote>-->
-    <h2>Contact</h2>
+    <!--<h2>Contact</h2>-->
     <p>
-        Questions or comments?
-    </p>
-    <ul>
-        <li>
-            <a href="mailto:contact.hess@hess-experiment.eu?subject=HGPS&&cc=Deil.Christoph@gmail.com,axel.donath@mpi-hd.mpg.de,ryan@gchaves.org,brun@cenbg.in2p3.fr,vincent.marandon@mpi-hd.mpg.de">
-                Email us</a>!
-        </li>
-    </ul>
+        If you have any questions or commments, contact the corresponding authors:
+        <a href="mailto:Deil.Christoph@gmail.com">Christoph Deil</a>,
+        <a href="mailto:axel.donath@mpi-hd.mpg.de">Axel Donath</a>,
+        <a href="mailto:ryan@gchaves.org">Ryan Chaves</a>,
+        <a href="mailto:brun@cenbg.in2p3.fr">Francois Brun</a>,
+        <a href="mailto:vincent.marandon@mpi-hd.mpg.de">Vincent Marandon</a>.
+        <!--For general questions about H.E.S.S., write to <a href="contact.hess@hess-experiment.eu">contact.hess@hess-experiment.eu</a>.-->
 
-    <h2>Paper</h2>
-    <p>
-        The HGPS paper contains a full description of the HGPS, including the data files and images on this page.
     </p>
-    <ul>
-        <li><a href="data/hgps_paper.pdf">hgps_paper.pdf</a></li>
-    </ul>
+    <!--<ul>-->
+    <!--<li>-->
+    <!--<a href="mailto:contact.hess@hess-experiment.eu?subject=HGPS&&cc=Deil.Christoph@gmail.com,axel.donath@mpi-hd.mpg.de,ryan@gchaves.org,brun@cenbg.in2p3.fr,vincent.marandon@mpi-hd.mpg.de">-->
+    <!--Email us</a>!-->
+    <!--</li>-->
+    <!--</ul>-->
+
+    <!--<h2>Paper</h2>-->
+    <!--<p>-->
+    <!--The HGPS paper contains a full description of the HGPS, including the data files and images on this page.-->
+    <!--</p>-->
+    <!--<ul>-->
+    <!--<li><a href="data/hgps_paper.pdf">hgps_paper.pdf</a></li>-->
+    <!--</ul>-->
 
     <h2>Survey sky maps</h2>
     <p>
-        Survey sky maps in <a href="https://en.wikipedia.org/wiki/FITS">FITS</a> format.
-        <br>
-        Described in the paper in Section 7.1.
+        Survey sky maps are released in FITS format; they are described in the paper in Section 7.1.
     </p>
     <ul>
         {% for map in config.maps %}
-        <li> {{ map.info.html }} </li>
+        <li> {{ map.info.html }}</li>
         {% endfor %}
     </ul>
+    <p>
+        The "Extras" section below contains some information how to view and work with the maps.
+    </p>
 
     <h2>Source catalog</h2>
     <p>
-        Source catalog and other tables in <a href="https://en.wikipedia.org/wiki/FITS">FITS</a> format.
-        <br>
-        Described in the paper in Section 7.2 and Table 4.
+        The source catalog and other tables are released in FITS format.
+        They are described in the paper in Section 7.2 and Table 4.
     </p>
     <ul>
         <li>{{ catalog.html }}
     </ul>
+    <p>
+        The "Extras" section below contains some information how to view and work with the catalog.
+    </p>
 
     <h2>Figures</h2>
     <p>
@@ -79,27 +96,73 @@
     </p>
     <ul>
         {% for figure in config.figures %}
-        <li> {{ figure.info.html }} </li>
+        <li> {{ figure.info.html }}</li>
         {% endfor %}
     </ul>
     <p>
-        Extra figures:
+        We have produced the following extra Figures, giving the significance and flux survey map
+        at 0.1 deg resolution in a few different variants.
     </p>
     <ul>
-        <li>tbd: PNG Survey map without annotations (single panel & 3-panel; significance & flux)</li>
+        <li>Significance, single-panel, no annotations</li>
+        <li>Significance, single-panel, with annotations</li>
+        <li>Significance, four-panel, no annotations</li>
+        <li>Significance, four-panel, with annotations</li>
+        <li>Flux, single-panel, no annotations</li>
+        <li>Flux, single-panel, with annotations</li>
+        <li>Flux, four-panel, no annotations</li>
+        <li>Flux, four-panel, with annotations</li>
     </ul>
 
-    <h2>Extra</h2>
+    <h2>Extras</h2>
     <p>
-        An interactive version of the HGPS map and catalog will be made available at <a
-            href="http://gamma-sky.net">gamma-sky.net</a>. <br>
-        A Python package to work with the HGPS catalog is available in Gammapy (see <a href="">examples</a>).
+        This section contains some information that you might find helpful if you want to browse
+        or work with the HGPS data.
     </p>
+    <ul>
+        <li>
+            The FITS files available for download can be viewed with any FITS viewer.
+            For the survey maps you can use e.g. <a href="http://ds9.si.edu/">DS9</a> or <a
+                href="http://aladin.u-strasbg.fr/">Aladin</a>, for the catalog and other tables <a
+                href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a>.
+        </li>
+        <li>
+            To work with the images (e.g. look up the value at a given position or cut out a small image for a given
+            source),
+            or with the catalog table (e.g. look up the spectrum for a given source, or convert to some other format
+            like a
+            <a href="http://ds9.si.edu/doc/ref/region.html">DS9 region file</a>), one option is to use <a
+                href="https://www.python.org/">Python</a>.
+            We have prepared a <a href="http://jupyter.org/">Jupyter</a> notebook that shows some examples how to work
+            with the HGPS data using
+            Python, <a href="http://www.astropy.org/">Astropy</a> and <a href="http://gammapy.org/">Gammapy</a>.
+            See <a href="data/hgps_notebook_v1.html">hgps_notebook_v1.html</a> or download
+            <a href="data/hgps_notebook_v1.ipynb" download>hgps_notebook_v1.ipynb</a>
+        </li>
+        <li>
+            The HGPS survey maps and catalogs are being added to
+            <a href="http://vizier.u-strasbg.fr/">Vizier at CDS</a>. Production of a
+            <a href="http://aladin.u-strasbg.fr/hips/">HIPS</a> version of the HGPS maps is planned,
+            which can be viewed using e.g. <a href="http://aladin.u-strasbg.fr/AladinLite/">Aladin Desktop</a>
+            or <a href="http://aladin.u-strasbg.fr/AladinLite/">Aladin Lite</a> without having to download
+            the FITS images first. We will add links here as soon as those are available.
+        </li>
+        <li>
+            We plan to add the HGPS map to <a href="http://gamma-sky.net/">gamma-sky.net</a> as soon as
+            the HIPS version is available. The HGPS catalog data will be added to <a
+                href="http://gamma-cat.readthedocs.io/">gamma-cat</a>.
+            This will allow you to easily compare the HGPS data to other gamma-ray and multi-wavelength data.
+        </li>
+        <li>
+            If there are other webpages or tools to browse or work with HGPS data, please let us know and we'll add them
+            here.
+        </li>
+    </ul>
 
     <h2>Changelog</h2>
 
     <ul>
-        <li>Initial release (v1) on TODO</li>
+        <li>v1 (TODO: release date) - Initial release</li>
     </ul>
 
 </main>
