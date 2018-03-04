@@ -30,12 +30,17 @@ def check_dump_tables_to_text():
     path.mkdir(exist_ok=True, parents=True)
 
     for hdu in hdu_list[1:]:
-        # import IPython; IPython.embed()
         table = Table.read(hdu)
         data = utils.table_to_list_of_dict(table)
         path = Path(f'checks/tables/{hdu.name}.json')
         print(f'Writing {path}')
         utils.write_json(data, path)
+
+    for hdu in hdu_list:
+        txt = hdu.header.tostring(sep='\n', padding=False)
+        path = Path(f'checks/tables/{hdu.name}_header.txt')
+        print(f'Writing {path}')
+        path.write_text(txt)
 
     # import IPython; IPython.embed()
 

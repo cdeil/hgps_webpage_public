@@ -1,0 +1,29 @@
+XTENSION= 'BINTABLE'           / binary table extension                         
+BITPIX  =                    8 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                   46 / length of dimension 1                          
+NAXIS2  =                  223 / length of dimension 2                          
+PCOUNT  =                    0 / number of group parameters                     
+GCOUNT  =                    1 / number of groups                               
+TFIELDS =                    4 / number of table fields                         
+TELESCOP= 'H.E.S.S.'                                                            
+EXTNAME = 'HGPS_ASSOCIATIONS'  / extension name                                 
+TTYPE1  = 'Source_Name'                                                         
+TFORM1  = '16A     '                                                            
+TCOMM1  = 'Source name (HESS JHHmm+DDd identifier)'                             
+TUCD1   = 'meta.id;meta.main'                                                   
+TTYPE2  = 'Association_Catalog'                                                 
+TFORM2  = '5A      '                                                            
+TCOMM2  = 'Asssociation catalog name'                                           
+TTYPE3  = 'Association_Name'                                                    
+TFORM3  = '21A     '                                                            
+TCOMM3  = 'Association source name'                                             
+TTYPE4  = 'Separation'                                                          
+TFORM4  = 'E       '                                                            
+TUNIT4  = 'deg     '                                                            
+TCOMM4  = 'Angular separation to HGPS source position'                          
+COMMENT This table is part of the 2017 HESS Galactic plane survey (HGPS) data   
+COMMENT release. For details see Sections 4 & 5 in the HGPS 2017 paper.         
+COMMENT For more info please visit https://www.mpi-hd.mpg.de/hfm/HESS/hgps or   
+COMMENT contact us via contact@hess-experiment.eu.                              
+END                                                                             
