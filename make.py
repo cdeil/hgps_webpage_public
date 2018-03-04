@@ -6,14 +6,7 @@ from shutil import copyfile
 import yaml
 import jinja2
 import click
-
-
-def run(cmd):
-    """Helper function to echo and run a shell command."""
-    from subprocess import call
-    print('Executing: {}'.format(cmd))
-    call(cmd, shell=True)
-
+import utils
 
 # TODO: pre-compute everything in `config` and only pass that to the template render
 # Get rid of the other bullshit and review for duplicated code
@@ -26,6 +19,8 @@ class Config:
         self.hgps_analysis_dir = Path(os.environ['HGPS_ANALYSIS'])
         self.hgps_data_dir = Path(os.environ['HGPS_DATA'])
         self.filename_cat = f'hgps_catalog_v{self.version}.fits.gz'
+        self.filename_cat_unzipped = f'hgps_catalog_v{self.version}.fits'
+        self.out_path = Path('build/data')
 
         for m in self.config['maps']:
             filename = f'hgps_map_{m["quantity"]}_{m["radius"]}deg_v{self.version}.fits.gz'
@@ -91,7 +86,7 @@ def cli():
 def clean():
     """Remove build folder."""
     print('===> Executing task: clean')
-    run('rm -rf build')
+    utils.run('rm -rf build')
 
 
 @cli.group()
@@ -132,14 +127,19 @@ def build_html():
 def build_data():
     """Make build/data"""
     print('---> build_data')
-
-    out_path = Path('build/data')
-    out_path.mkdir(exist_ok=True)
-    copyfile(config.hgps_analysis_dir / 'data/catalogs/HGPS3/release/HGPS_v0.4.fits', out_path / config.filename_cat)
+    config.out_path.mkdir(exist_ok=True)
+    src = config.hgps_analysis_dir / 'data/catalogs/HGPS3/release/HGPS_v0.4.fits'
+    target = config.out_path / config.filename_cat_unzipped
+    print(f'cp {src} {target}')
+    copyfile(src, target)
+    utils.run(f'gzip -f {target}')
 
     for m in config.config['maps']:
         m['filename'] = f'hgps_map_{m["quantity"]}_{m["radius"]}deg_v{config.version}.fits.gz'
-        copyfile(config.hgps_data_dir / 'release' / m['in'], out_path / m['filename'])
+        src = config.hgps_data_dir / 'release' / m['in']
+        target = config.out_path / m['filename']
+        print(f'cp {src} {target}')
+        copyfile(src, target)
 
 
 @build.command('figures')
@@ -187,13 +187,6 @@ def archive():
     print('===> Executing task: archive')
     # TODO: Copy `build` folder to appropriately name archive/vX/
     # TODO: Print that user should run check now and then git commit
-
-
-@cli.command()
-def check():
-    """Check webpage"""
-    print('===> Executing task: check')
-    # TODO: Check archive against file manifest and config (checksums & version)
 
 
 @cli.command()
