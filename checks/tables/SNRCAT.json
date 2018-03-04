@@ -1,0 +1,2540 @@
+[
+    {
+        "Source_Name": "G0.0+0.0",
+        "GLON": -0.041560374200344086,
+        "GLAT": -0.054415013641119,
+        "Type": "thermal composite",
+        "Distance": 8.0,
+        "Distance_Min": 8.0,
+        "Distance_Max": 8.0
+    },
+    {
+        "Source_Name": "G0.1-0.1",
+        "GLON": 0.16668784618377686,
+        "GLAT": -0.12400184571743011,
+        "Type": "thermal & plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G0.3+0.0",
+        "GLON": 0.33044323325157166,
+        "GLAT": 0.039741795510053635,
+        "Type": "shell",
+        "Distance": 8.5,
+        "Distance_Min": 8.5,
+        "Distance_Max": 8.5
+    },
+    {
+        "Source_Name": "G0.9+0.1",
+        "GLON": 0.8691458106040955,
+        "GLAT": 0.08375036716461182,
+        "Type": "plerionic composite",
+        "Distance": 9.25,
+        "Distance_Min": 8.5,
+        "Distance_Max": 10.0
+    },
+    {
+        "Source_Name": "G1.0-0.1",
+        "GLON": 1.0001827478408813,
+        "GLAT": -0.13324756920337677,
+        "Type": "shell",
+        "Distance": 8.0,
+        "Distance_Min": 8.0,
+        "Distance_Max": 8.0
+    },
+    {
+        "Source_Name": "G1.4-0.1",
+        "GLON": 1.4595531225204468,
+        "GLAT": -0.15355810523033142,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G1.9+0.3",
+        "GLON": 1.8712283372879028,
+        "GLAT": 0.3264205753803253,
+        "Type": "shell",
+        "Distance": 8.5,
+        "Distance_Min": 8.5,
+        "Distance_Max": 8.5
+    },
+    {
+        "Source_Name": "G10.5-0.0",
+        "GLON": 10.59936809539795,
+        "GLAT": -0.03580939397215843,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.0-0.0",
+        "GLON": 11.026612281799316,
+        "GLAT": -0.0508100688457489,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.1+0.1",
+        "GLON": 11.183976173400879,
+        "GLAT": 0.11243696510791779,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.1-0.7",
+        "GLON": 11.143004417419434,
+        "GLAT": -0.71272212266922,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.1-1.0",
+        "GLON": 11.170615196228027,
+        "GLAT": -1.0417401790618896,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.2-0.3",
+        "GLON": 11.18161678314209,
+        "GLAT": -0.3467648923397064,
+        "Type": "plerionic composite",
+        "Distance": 7.5,
+        "Distance_Min": 5.0,
+        "Distance_Max": 10.0
+    },
+    {
+        "Source_Name": "G11.4-0.1",
+        "GLON": 11.400188446044922,
+        "GLAT": -0.038040466606616974,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G11.8-0.2",
+        "GLON": 11.892902374267578,
+        "GLAT": -0.20821908116340637,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G12.0-0.1",
+        "GLON": 11.968676567077637,
+        "GLAT": -0.10370422154664993,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G12.2+0.3",
+        "GLON": 12.26046085357666,
+        "GLAT": 0.2999633848667145,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G12.5+0.2",
+        "GLON": 12.588269233703613,
+        "GLAT": 0.22225047647953033,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G12.7-0.0",
+        "GLON": 12.726552963256836,
+        "GLAT": 0.0041433898732066154,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G12.8-0.0",
+        "GLON": 12.833898544311523,
+        "GLAT": -0.01860075816512108,
+        "Type": "plerionic composite",
+        "Distance": 2.0,
+        "Distance_Min": 4.0,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G13.3-1.3",
+        "GLON": 13.319323539733887,
+        "GLAT": -1.3021095991134644,
+        "Type": "shell",
+        "Distance": 3.0,
+        "Distance_Min": 2.0,
+        "Distance_Max": 4.0
+    },
+    {
+        "Source_Name": "G13.5+0.2",
+        "GLON": 13.44573974609375,
+        "GLAT": 0.14736707508563995,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G14.1-0.1",
+        "GLON": 14.177347183227539,
+        "GLAT": -0.11784637719392776,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G14.3+0.1",
+        "GLON": 14.302770614624023,
+        "GLAT": 0.14070449769496918,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G15.1-1.6",
+        "GLON": 15.108551025390625,
+        "GLAT": -1.6120604276657104,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G15.4+0.1",
+        "GLON": 15.418724060058594,
+        "GLAT": 0.17861446738243103,
+        "Type": "plerionic composite",
+        "Distance": 4.800000190734863,
+        "Distance_Min": 3.799999952316284,
+        "Distance_Max": 5.800000190734863
+    },
+    {
+        "Source_Name": "G15.9+0.2",
+        "GLON": 15.880899429321289,
+        "GLAT": 0.19886696338653564,
+        "Type": "shell",
+        "Distance": 8.5,
+        "Distance_Min": 8.5,
+        "Distance_Max": 8.5
+    },
+    {
+        "Source_Name": "G16.0-0.5",
+        "GLON": 16.053512573242188,
+        "GLAT": -0.5480747222900391,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G16.2-2.7",
+        "GLON": 16.12468147277832,
+        "GLAT": -2.6143453121185303,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G16.4-0.5",
+        "GLON": 16.412458419799805,
+        "GLAT": -0.5485221743583679,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G16.7+0.1",
+        "GLON": 16.73392677307129,
+        "GLAT": 0.08869552612304688,
+        "Type": "plerionic composite",
+        "Distance": 10.0,
+        "Distance_Min": 10.0,
+        "Distance_Max": 10.0
+    },
+    {
+        "Source_Name": "G17.0-0.0",
+        "GLON": 17.02632713317871,
+        "GLAT": -0.034581128507852554,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G17.4-0.1",
+        "GLON": 17.4848690032959,
+        "GLAT": -0.11591881513595581,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G17.4-2.3",
+        "GLON": 17.388439178466797,
+        "GLAT": -2.296583890914917,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G17.8-2.6",
+        "GLON": 17.79458236694336,
+        "GLAT": -2.608024835586548,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G18.0-0.7",
+        "GLON": 17.99961280822754,
+        "GLAT": -0.690958559513092,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G18.1-0.1",
+        "GLON": 18.163475036621094,
+        "GLAT": -0.15060919523239136,
+        "Type": "shell",
+        "Distance": 5.150000095367432,
+        "Distance_Min": 4.0,
+        "Distance_Max": 6.300000190734863
+    },
+    {
+        "Source_Name": "G18.5-0.4",
+        "GLON": 18.50508689880371,
+        "GLAT": -0.41078874468803406,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G18.6-0.2",
+        "GLON": 18.626554489135742,
+        "GLAT": -0.27786585688591003,
+        "Type": "shell",
+        "Distance": 4.599999904632568,
+        "Distance_Min": 4.0,
+        "Distance_Max": 5.199999809265137
+    },
+    {
+        "Source_Name": "G18.8+0.3",
+        "GLON": 18.802019119262695,
+        "GLAT": 0.35304129123687744,
+        "Type": "shell",
+        "Distance": 10.949999809265137,
+        "Distance_Min": 6.900000095367432,
+        "Distance_Max": 15.0
+    },
+    {
+        "Source_Name": "G18.9-1.1",
+        "GLON": 18.952268600463867,
+        "GLAT": -1.1848872900009155,
+        "Type": "plerionic composite",
+        "Distance": 2.0,
+        "Distance_Min": 2.0,
+        "Distance_Max": 2.0
+    },
+    {
+        "Source_Name": "G19.1+0.2",
+        "GLON": 19.148189544677734,
+        "GLAT": 0.2690560817718506,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G20.0-0.2",
+        "GLON": 19.983081817626953,
+        "GLAT": -0.171446293592453,
+        "Type": "filled-centre",
+        "Distance": 4.5,
+        "Distance_Min": 4.5,
+        "Distance_Max": 4.5
+    },
+    {
+        "Source_Name": "G20.4+0.1",
+        "GLON": 20.46912956237793,
+        "GLAT": 0.15765871107578278,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G21.0-0.4",
+        "GLON": 21.042545318603516,
+        "GLAT": -0.47043895721435547,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G21.5-0.1",
+        "GLON": 21.562267303466797,
+        "GLAT": -0.09743353724479675,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G21.5-0.9",
+        "GLON": 21.501544952392578,
+        "GLAT": -0.8869850039482117,
+        "Type": "plerionic composite",
+        "Distance": 4.699999809265137,
+        "Distance_Min": 4.300000190734863,
+        "Distance_Max": 5.099999904632568
+    },
+    {
+        "Source_Name": "G21.6-0.8",
+        "GLON": 21.647727966308594,
+        "GLAT": -0.8387523889541626,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G21.8-0.6",
+        "GLON": 21.79509925842285,
+        "GLAT": -0.5079823136329651,
+        "Type": "thermal composite",
+        "Distance": 5.349999904632568,
+        "Distance_Min": 5.199999809265137,
+        "Distance_Max": 5.5
+    },
+    {
+        "Source_Name": "G22.7-0.2",
+        "GLON": 22.665185928344727,
+        "GLAT": -0.19423003494739532,
+        "Type": "shell",
+        "Distance": 4.400000095367432,
+        "Distance_Min": 4.0,
+        "Distance_Max": 4.800000190734863
+    },
+    {
+        "Source_Name": "G23.3-0.3",
+        "GLON": 23.205678939819336,
+        "GLAT": -0.3308410048484802,
+        "Type": "shell",
+        "Distance": 4.199999809265137,
+        "Distance_Min": 3.9000000953674316,
+        "Distance_Max": 4.5
+    },
+    {
+        "Source_Name": "G23.5+0.1",
+        "GLON": 23.491485595703125,
+        "GLAT": 0.11933714151382446,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G23.6+0.3",
+        "GLON": 23.529542922973633,
+        "GLAT": 0.31107810139656067,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G24.7+0.6",
+        "GLON": 24.66280174255371,
+        "GLAT": 0.5882092714309692,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G24.7-0.6",
+        "GLON": 24.78179931640625,
+        "GLAT": -0.6206333637237549,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G25.1-2.3",
+        "GLON": 25.099411010742188,
+        "GLAT": -2.249079704284668,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G25.2+0.3",
+        "GLON": 25.25824546813965,
+        "GLAT": 0.2725236415863037,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G26.6-0.1",
+        "GLON": 26.591129302978516,
+        "GLAT": -0.09277525544166565,
+        "Type": "filled-centre",
+        "Distance": 1.2999999523162842,
+        "Distance_Min": 1.2999999523162842,
+        "Distance_Max": 1.2999999523162842
+    },
+    {
+        "Source_Name": "G260.4-3.4",
+        "GLON": 260.3995666503906,
+        "GLAT": -3.438789129257202,
+        "Type": "shell",
+        "Distance": 2.200000047683716,
+        "Distance_Min": 2.200000047683716,
+        "Distance_Max": 2.200000047683716
+    },
+    {
+        "Source_Name": "G263.9-3.3",
+        "GLON": -96.06095886230469,
+        "GLAT": -3.368288278579712,
+        "Type": "plerionic composite",
+        "Distance": 0.2750000059604645,
+        "Distance_Min": 0.25,
+        "Distance_Max": 0.30000001192092896
+    },
+    {
+        "Source_Name": "G266.2-1.2",
+        "GLON": 266.2591552734375,
+        "GLAT": -1.219858169555664,
+        "Type": "shell",
+        "Distance": 0.75,
+        "Distance_Min": 0.5,
+        "Distance_Max": 1.0
+    },
+    {
+        "Source_Name": "G267.0-1.0",
+        "GLON": -93.03060150146484,
+        "GLAT": -0.9998831748962402,
+        "Type": "filled-centre",
+        "Distance": 0.44999998807907104,
+        "Distance_Min": NaN,
+        "Distance_Max": 0.8999999761581421
+    },
+    {
+        "Source_Name": "G269.7+0.0",
+        "GLON": 269.6604919433594,
+        "GLAT": 0.04040079563856125,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G27.4+0.0",
+        "GLON": 27.388965606689453,
+        "GLAT": -0.003866526996716857,
+        "Type": "shell",
+        "Distance": 8.399999618530273,
+        "Distance_Min": 7.0,
+        "Distance_Max": 9.800000190734863
+    },
+    {
+        "Source_Name": "G27.8+0.6",
+        "GLON": 27.69386100769043,
+        "GLAT": 0.5689263939857483,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G272.2-3.2",
+        "GLON": 272.217041015625,
+        "GLAT": -3.180812358856201,
+        "Type": "thermal composite",
+        "Distance": 3.4000000953674316,
+        "Distance_Min": 1.7999999523162842,
+        "Distance_Max": 5.0
+    },
+    {
+        "Source_Name": "G279.0+1.1",
+        "GLON": 278.6316223144531,
+        "GLAT": 1.2187747955322266,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G28.6-0.1",
+        "GLON": 28.619102478027344,
+        "GLAT": -0.10006912797689438,
+        "Type": "shell",
+        "Distance": 7.25,
+        "Distance_Min": 6.0,
+        "Distance_Max": 8.5
+    },
+    {
+        "Source_Name": "G28.8+1.5",
+        "GLON": 28.917367935180664,
+        "GLAT": 1.433227777481079,
+        "Type": "thermal composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G284.0-1.8",
+        "GLON": -75.92127990722656,
+        "GLAT": -1.879583716392517,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G284.3-1.8",
+        "GLON": 284.3087158203125,
+        "GLAT": -1.7830694913864136,
+        "Type": "shell",
+        "Distance": 2.9000000953674316,
+        "Distance_Min": 2.9000000953674316,
+        "Distance_Max": 2.9000000953674316
+    },
+    {
+        "Source_Name": "G285.1-0.5",
+        "GLON": -74.93992614746094,
+        "GLAT": -0.5000696182250977,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G286.5-1.2",
+        "GLON": 286.5658264160156,
+        "GLAT": -1.2139909267425537,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G287.4+0.6",
+        "GLON": -72.57942199707031,
+        "GLAT": 0.5792659521102905,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G289.7-0.3",
+        "GLON": 289.6854553222656,
+        "GLAT": -0.2933278977870941,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G29.4+0.1",
+        "GLON": 29.365304946899414,
+        "GLAT": 0.10081763565540314,
+        "Type": "plerionic composite",
+        "Distance": 10.5,
+        "Distance_Min": 5.199999809265137,
+        "Distance_Max": 15.800000190734863
+    },
+    {
+        "Source_Name": "G29.6+0.1",
+        "GLON": 29.557662963867188,
+        "GLAT": 0.11538688838481903,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G29.7-0.3",
+        "GLON": 29.70467758178711,
+        "GLAT": -0.2441292256116867,
+        "Type": "plerionic composite",
+        "Distance": 8.449999809265137,
+        "Distance_Min": 6.300000190734863,
+        "Distance_Max": 10.600000381469727
+    },
+    {
+        "Source_Name": "G290.1-0.8",
+        "GLON": -69.85057830810547,
+        "GLAT": -0.7795630693435669,
+        "Type": "thermal composite",
+        "Distance": 7.25,
+        "Distance_Min": 3.5,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G291.0+0.1",
+        "GLON": 291.03936767578125,
+        "GLAT": 0.08979973196983337,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G291.0-0.1",
+        "GLON": -68.97686767578125,
+        "GLAT": -0.0838157907128334,
+        "Type": "plerionic composite",
+        "Distance": 6.0,
+        "Distance_Min": 1.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G292.0+1.8",
+        "GLON": -67.9697265625,
+        "GLAT": 1.7546204328536987,
+        "Type": "plerionic composite",
+        "Distance": 6.0,
+        "Distance_Min": 6.0,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G292.2-0.5",
+        "GLON": -67.83704376220703,
+        "GLAT": -0.535724937915802,
+        "Type": "thermal & plerionic composite",
+        "Distance": 8.399999618530273,
+        "Distance_Min": 8.0,
+        "Distance_Max": 8.800000190734863
+    },
+    {
+        "Source_Name": "G293.8+0.6",
+        "GLON": -66.22984313964844,
+        "GLAT": 0.6047883033752441,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G294.1-0.0",
+        "GLON": 294.1164855957031,
+        "GLAT": -0.05664923042058945,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G296.1-0.5",
+        "GLON": 296.05291748046875,
+        "GLAT": -0.5026472210884094,
+        "Type": "shell",
+        "Distance": 2.0,
+        "Distance_Min": 2.0,
+        "Distance_Max": 2.0
+    },
+    {
+        "Source_Name": "G296.6-0.4",
+        "GLON": 296.5804138183594,
+        "GLAT": -0.3899129629135132,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G296.7-0.9",
+        "GLON": 296.6600646972656,
+        "GLAT": -0.9301221370697021,
+        "Type": "shell",
+        "Distance": 10.0,
+        "Distance_Min": 9.100000381469727,
+        "Distance_Max": 10.899999618530273
+    },
+    {
+        "Source_Name": "G296.8-0.3",
+        "GLON": 296.8807067871094,
+        "GLAT": -0.3351850211620331,
+        "Type": "shell",
+        "Distance": 9.600000381469727,
+        "Distance_Min": 9.0,
+        "Distance_Max": 10.199999809265137
+    },
+    {
+        "Source_Name": "G298.5-0.3",
+        "GLON": 298.5280456542969,
+        "GLAT": -0.3269067704677582,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G298.6-0.0",
+        "GLON": 298.606201171875,
+        "GLAT": -0.06243991479277611,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G299.2-2.9",
+        "GLON": 299.1849365234375,
+        "GLAT": -2.8921074867248535,
+        "Type": "shell",
+        "Distance": 5.0,
+        "Distance_Min": 5.0,
+        "Distance_Max": 5.0
+    },
+    {
+        "Source_Name": "G299.3-1.5",
+        "GLON": 299.2891540527344,
+        "GLAT": -1.5303207635879517,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G299.6-0.5",
+        "GLON": 299.58709716796875,
+        "GLAT": -0.4712185263633728,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G3.7-0.2",
+        "GLON": 3.78054141998291,
+        "GLAT": -0.2802169620990753,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G3.8+0.3",
+        "GLON": 3.8095786571502686,
+        "GLAT": 0.39452412724494934,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G30.7+1.0",
+        "GLON": 30.71914291381836,
+        "GLAT": 0.9549826383590698,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G30.7-2.0",
+        "GLON": 30.689266204833984,
+        "GLAT": -1.984081745147705,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G301.4-1.0",
+        "GLON": 301.44085693359375,
+        "GLAT": -0.9840716123580933,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G302.3+0.7",
+        "GLON": 302.2867431640625,
+        "GLAT": 0.7314974665641785,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G304.1-0.2",
+        "GLON": -55.899662017822266,
+        "GLAT": -0.24057599902153015,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G304.6+0.1",
+        "GLON": 304.5988464355469,
+        "GLAT": 0.12466060370206833,
+        "Type": "thermal composite",
+        "Distance": 4.849999904632568,
+        "Distance_Min": 9.699999809265137,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G306.3-0.9",
+        "GLON": 306.30706787109375,
+        "GLAT": -0.8942825794219971,
+        "Type": "shell",
+        "Distance": 8.0,
+        "Distance_Min": 8.0,
+        "Distance_Max": 8.0
+    },
+    {
+        "Source_Name": "G308.1-0.7",
+        "GLON": 308.13330078125,
+        "GLAT": -0.6622161865234375,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G308.4-1.4",
+        "GLON": 308.4400634765625,
+        "GLAT": -1.4101799726486206,
+        "Type": "shell",
+        "Distance": 9.899999618530273,
+        "Distance_Min": 9.100000381469727,
+        "Distance_Max": 10.699999809265137
+    },
+    {
+        "Source_Name": "G308.8-0.1",
+        "GLON": -51.1890869140625,
+        "GLAT": -0.09585902094841003,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G309.2-0.6",
+        "GLON": 309.1571350097656,
+        "GLAT": -0.6958746910095215,
+        "Type": "shell",
+        "Distance": 4.0,
+        "Distance_Min": 2.0,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G309.8+0.0",
+        "GLON": 309.7850036621094,
+        "GLAT": -4.990670277038589e-06,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G309.8-2.6",
+        "GLON": -50.0807991027832,
+        "GLAT": -2.510241985321045,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G31.5-0.6",
+        "GLON": 31.55113983154297,
+        "GLAT": -0.6311774253845215,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G31.9+0.0",
+        "GLON": 31.885698318481445,
+        "GLAT": 0.03169025108218193,
+        "Type": "thermal composite",
+        "Distance": 7.900000095367432,
+        "Distance_Min": 7.199999809265137,
+        "Distance_Max": 8.600000381469727
+    },
+    {
+        "Source_Name": "G310.6-0.3",
+        "GLON": 310.6199951171875,
+        "GLAT": -0.2759145498275757,
+        "Type": "shell",
+        "Distance": 6.900000095367432,
+        "Distance_Min": 6.900000095367432,
+        "Distance_Max": 6.900000095367432
+    },
+    {
+        "Source_Name": "G310.6-1.6",
+        "GLON": -49.41016387939453,
+        "GLAT": -1.5968214273452759,
+        "Type": "plerionic composite",
+        "Distance": 7.5,
+        "Distance_Min": 5.0,
+        "Distance_Max": 10.0
+    },
+    {
+        "Source_Name": "G310.8-0.4",
+        "GLON": 310.8106689453125,
+        "GLAT": -0.4649791121482849,
+        "Type": "shell",
+        "Distance": 5.099999904632568,
+        "Distance_Min": 5.099999904632568,
+        "Distance_Max": 5.099999904632568
+    },
+    {
+        "Source_Name": "G310.9-0.3",
+        "GLON": 310.8590087890625,
+        "GLAT": -0.2498553991317749,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G311.5-0.3",
+        "GLON": 311.530517578125,
+        "GLAT": -0.33991336822509766,
+        "Type": "thermal composite",
+        "Distance": 3.299999952316284,
+        "Distance_Min": 6.599999904632568,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G312.4-0.4",
+        "GLON": -47.570526123046875,
+        "GLAT": -0.37483882904052734,
+        "Type": "shell",
+        "Distance": 3.0,
+        "Distance_Min": 6.0,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G312.5-3.0",
+        "GLON": 312.4881286621094,
+        "GLAT": -3.0027003288269043,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G313.3+0.1",
+        "GLON": -46.680511474609375,
+        "GLAT": 0.1304805874824524,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G313.6+0.3",
+        "GLON": -46.46058654785156,
+        "GLAT": 0.22951656579971313,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G315.4-2.3",
+        "GLON": 315.4168395996094,
+        "GLAT": -2.3639280796051025,
+        "Type": "shell",
+        "Distance": 2.75,
+        "Distance_Min": 2.299999952316284,
+        "Distance_Max": 3.200000047683716
+    },
+    {
+        "Source_Name": "G315.9-0.0",
+        "GLON": -44.13812255859375,
+        "GLAT": -0.025016658008098602,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G316.3-0.0",
+        "GLON": 316.28753662109375,
+        "GLAT": -0.013448327779769897,
+        "Type": "shell",
+        "Distance": 3.5999999046325684,
+        "Distance_Min": 7.199999809265137,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G317.3-0.2",
+        "GLON": 317.3139343261719,
+        "GLAT": -0.23780593276023865,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G318.2+0.1",
+        "GLON": 318.2149658203125,
+        "GLAT": 0.09385554492473602,
+        "Type": "shell",
+        "Distance": 6.349999904632568,
+        "Distance_Min": 3.5,
+        "Distance_Max": 9.199999809265137
+    },
+    {
+        "Source_Name": "G318.9+0.4",
+        "GLON": -41.09394073486328,
+        "GLAT": 0.3912881314754486,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G319.9-0.7",
+        "GLON": -40.08510971069336,
+        "GLAT": -0.662781298160553,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G32.1-0.9",
+        "GLON": 32.1202392578125,
+        "GLAT": -0.9013490676879883,
+        "Type": "thermal composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G32.4+0.1",
+        "GLON": 32.406681060791016,
+        "GLAT": 0.11138838529586792,
+        "Type": "shell",
+        "Distance": 17.0,
+        "Distance_Min": 17.0,
+        "Distance_Max": 17.0
+    },
+    {
+        "Source_Name": "G32.6+0.5",
+        "GLON": 32.63859939575195,
+        "GLAT": 0.5298509001731873,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G32.8-0.1",
+        "GLON": 32.81083679199219,
+        "GLAT": -0.056070879101753235,
+        "Type": "shell",
+        "Distance": 4.800000190734863,
+        "Distance_Min": 4.800000190734863,
+        "Distance_Max": 4.800000190734863
+    },
+    {
+        "Source_Name": "G320.4-1.2",
+        "GLON": -39.6151008605957,
+        "GLAT": -1.1979405879974365,
+        "Type": "plerionic composite",
+        "Distance": 5.199999809265137,
+        "Distance_Min": 3.799999952316284,
+        "Distance_Max": 6.599999904632568
+    },
+    {
+        "Source_Name": "G320.6-1.6",
+        "GLON": 320.67791748046875,
+        "GLAT": -1.535628080368042,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G321.9-0.3",
+        "GLON": 321.9011535644531,
+        "GLAT": -0.298013836145401,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G321.9-1.1",
+        "GLON": 321.8911437988281,
+        "GLAT": -1.0662903785705566,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G322.1+0.0",
+        "GLON": 322.134033203125,
+        "GLAT": 0.027830369770526886,
+        "Type": "shell",
+        "Distance": 7.5,
+        "Distance_Min": 4.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G322.5-0.1",
+        "GLON": -37.5374755859375,
+        "GLAT": -0.10559649765491486,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G322.7+0.1",
+        "GLON": 322.69024658203125,
+        "GLAT": 0.07985857129096985,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G322.9-0.0",
+        "GLON": 322.8992004394531,
+        "GLAT": -0.009575501084327698,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G323.5+0.1",
+        "GLON": 323.485595703125,
+        "GLAT": 0.11247484385967255,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G323.7-1.0",
+        "GLON": 323.6498107910156,
+        "GLAT": -1.03993558883667,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G323.9+0.0",
+        "GLON": -36.110595703125,
+        "GLAT": 0.02955556847155094,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G324.1+0.0",
+        "GLON": 324.1095275878906,
+        "GLAT": 0.04013330489397049,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G325.0-0.3",
+        "GLON": 325.00054931640625,
+        "GLAT": -0.3204827308654785,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G326.3-1.8",
+        "GLON": -33.704505920410156,
+        "GLAT": -1.7634944915771484,
+        "Type": "plerionic composite",
+        "Distance": 4.599999904632568,
+        "Distance_Min": 3.4000000953674316,
+        "Distance_Max": 5.800000190734863
+    },
+    {
+        "Source_Name": "G327.1-1.1",
+        "GLON": -32.90371322631836,
+        "GLAT": -1.1057257652282715,
+        "Type": "plerionic composite",
+        "Distance": 9.0,
+        "Distance_Min": 9.0,
+        "Distance_Max": 9.0
+    },
+    {
+        "Source_Name": "G327.2-0.1",
+        "GLON": 327.2427978515625,
+        "GLAT": -0.1277986764907837,
+        "Type": "shell",
+        "Distance": 4.5,
+        "Distance_Min": 4.0,
+        "Distance_Max": 5.0
+    },
+    {
+        "Source_Name": "G327.4+0.4",
+        "GLON": 327.2484436035156,
+        "GLAT": 0.4864273965358734,
+        "Type": "thermal composite",
+        "Distance": 5.400000095367432,
+        "Distance_Min": 4.300000190734863,
+        "Distance_Max": 6.5
+    },
+    {
+        "Source_Name": "G327.4+1.0",
+        "GLON": 327.3686218261719,
+        "GLAT": 1.0069762468338013,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G328.4+0.2",
+        "GLON": -31.589139938354492,
+        "GLAT": 0.2290353626012802,
+        "Type": "filled-centre",
+        "Distance": 8.699999809265137,
+        "Distance_Min": 17.399999618530273,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G329.7+0.4",
+        "GLON": 329.7197570800781,
+        "GLAT": 0.40617913007736206,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G33.2-0.6",
+        "GLON": 33.17533493041992,
+        "GLAT": -0.5481722354888916,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G33.6+0.1",
+        "GLON": 33.668365478515625,
+        "GLAT": 0.03684918209910393,
+        "Type": "thermal composite",
+        "Distance": 7.099999904632568,
+        "Distance_Min": 7.099999904632568,
+        "Distance_Max": 7.099999904632568
+    },
+    {
+        "Source_Name": "G330.2+1.0",
+        "GLON": 330.1734313964844,
+        "GLAT": 0.9834820628166199,
+        "Type": "shell",
+        "Distance": 2.5,
+        "Distance_Min": 5.0,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G330.7+0.1",
+        "GLON": 330.6993713378906,
+        "GLAT": 0.09069506078958511,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G332.0+0.2",
+        "GLON": 332.0461120605469,
+        "GLAT": 0.21003778278827667,
+        "Type": "shell",
+        "Distance": 3.299999952316284,
+        "Distance_Min": 6.599999904632568,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G332.4+0.1",
+        "GLON": 332.4072265625,
+        "GLAT": 0.11975111067295074,
+        "Type": "shell",
+        "Distance": 9.0,
+        "Distance_Min": 7.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G332.4-0.4",
+        "GLON": 332.4276428222656,
+        "GLAT": -0.36296704411506653,
+        "Type": "shell",
+        "Distance": 3.0999999046325684,
+        "Distance_Min": 3.0999999046325684,
+        "Distance_Max": 3.0999999046325684
+    },
+    {
+        "Source_Name": "G332.5-0.3",
+        "GLON": -27.498693466186523,
+        "GLAT": -0.2796100974082947,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G333.9+0.0",
+        "GLON": 333.8492431640625,
+        "GLAT": -0.0760340616106987,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G334.0-0.8",
+        "GLON": 333.9800109863281,
+        "GLAT": -0.8400067687034607,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G335.2+0.1",
+        "GLON": 335.18060302734375,
+        "GLAT": 0.059664249420166016,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G336.4+0.2",
+        "GLON": -23.616878509521484,
+        "GLAT": 0.1914205700159073,
+        "Type": "filled-centre",
+        "Distance": 3.0,
+        "Distance_Min": 3.0,
+        "Distance_Max": 3.0
+    },
+    {
+        "Source_Name": "G336.7+0.5",
+        "GLON": 336.7547302246094,
+        "GLAT": 0.5309531688690186,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G336.7-0.3",
+        "GLON": 336.6593017578125,
+        "GLAT": -0.2991357147693634,
+        "Type": "composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G336.9-0.5",
+        "GLON": 336.8495178222656,
+        "GLAT": -0.5297157168388367,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G337.0-0.1",
+        "GLON": 336.9783630371094,
+        "GLAT": -0.12907256186008453,
+        "Type": "shell",
+        "Distance": 7.800000190734863,
+        "Distance_Min": 4.599999904632568,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G337.2+0.1",
+        "GLON": -22.828397750854492,
+        "GLAT": 0.05477172136306763,
+        "Type": "plerionic composite",
+        "Distance": 14.0,
+        "Distance_Min": 14.0,
+        "Distance_Max": 14.0
+    },
+    {
+        "Source_Name": "G337.2-0.7",
+        "GLON": 337.18865966796875,
+        "GLAT": -0.7357261180877686,
+        "Type": "shell",
+        "Distance": 5.650000095367432,
+        "Distance_Min": 2.0,
+        "Distance_Max": 9.300000190734863
+    },
+    {
+        "Source_Name": "G337.3+1.0",
+        "GLON": 337.33319091796875,
+        "GLAT": 0.9615510106086731,
+        "Type": "shell",
+        "Distance": 5.0,
+        "Distance_Min": 5.0,
+        "Distance_Max": 5.0
+    },
+    {
+        "Source_Name": "G337.8-0.1",
+        "GLON": 337.7845458984375,
+        "GLAT": -0.101798415184021,
+        "Type": "thermal composite",
+        "Distance": 10.800000190734863,
+        "Distance_Min": 9.300000190734863,
+        "Distance_Max": 12.300000190734863
+    },
+    {
+        "Source_Name": "G338.1+0.4",
+        "GLON": 338.1004638671875,
+        "GLAT": 0.419607013463974,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G338.3-0.0",
+        "GLON": -21.67843246459961,
+        "GLAT": -0.07894786447286606,
+        "Type": "plerionic composite",
+        "Distance": 10.5,
+        "Distance_Min": 8.0,
+        "Distance_Max": 13.0
+    },
+    {
+        "Source_Name": "G338.5+0.1",
+        "GLON": 338.526123046875,
+        "GLAT": 0.06707713752985,
+        "Type": "unknown",
+        "Distance": 11.0,
+        "Distance_Min": 11.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G34.7-0.4",
+        "GLON": 34.668312072753906,
+        "GLAT": -0.3915795683860779,
+        "Type": "thermal & plerionic composite",
+        "Distance": 2.6500000953674316,
+        "Distance_Min": 2.5,
+        "Distance_Max": 2.799999952316284
+    },
+    {
+        "Source_Name": "G340.4+0.4",
+        "GLON": 340.40155029296875,
+        "GLAT": 0.4481244385242462,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G340.6+0.3",
+        "GLON": 340.5994873046875,
+        "GLAT": 0.3437999486923218,
+        "Type": "shell",
+        "Distance": 15.0,
+        "Distance_Min": 15.0,
+        "Distance_Max": 15.0
+    },
+    {
+        "Source_Name": "G341.2+0.9",
+        "GLON": -18.81413459777832,
+        "GLAT": 0.8635501861572266,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G341.9-0.3",
+        "GLON": 341.8596496582031,
+        "GLAT": -0.31686052680015564,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G342.0-0.2",
+        "GLON": 341.94256591796875,
+        "GLAT": -0.20734623074531555,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G342.1+0.9",
+        "GLON": 342.1006774902344,
+        "GLAT": 0.8879526853561401,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G343.1-0.7",
+        "GLON": 343.0810241699219,
+        "GLAT": -0.5941284894943237,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G343.1-2.3",
+        "GLON": -16.908597946166992,
+        "GLAT": -2.309610366821289,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G344.7+0.1",
+        "GLON": -15.261405944824219,
+        "GLAT": 0.12009435147047043,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G344.7-0.1",
+        "GLON": 344.6810607910156,
+        "GLAT": -0.15602155029773712,
+        "Type": "thermal composite",
+        "Distance": 10.149999618530273,
+        "Distance_Min": 6.300000190734863,
+        "Distance_Max": 14.0
+    },
+    {
+        "Source_Name": "G345.1-0.2",
+        "GLON": 345.0500183105469,
+        "GLAT": -0.19991734623908997,
+        "Type": "composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G345.2+0.2",
+        "GLON": 345.1494140625,
+        "GLAT": 0.23062367737293243,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G345.7-0.2",
+        "GLON": 345.7271423339844,
+        "GLAT": -0.1838165819644928,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G346.2-1.0",
+        "GLON": 346.1902770996094,
+        "GLAT": -0.9806206226348877,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G346.6-0.2",
+        "GLON": 346.6271057128906,
+        "GLAT": -0.22070465981960297,
+        "Type": "thermal composite",
+        "Distance": 8.25,
+        "Distance_Min": 5.5,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G347.3-0.5",
+        "GLON": 347.268310546875,
+        "GLAT": -0.4992162585258484,
+        "Type": "shell",
+        "Distance": 3.5,
+        "Distance_Min": 1.0,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G348.5+0.1",
+        "GLON": -11.544157981872559,
+        "GLAT": 0.07106216251850128,
+        "Type": "thermal composite",
+        "Distance": 7.900000095367432,
+        "Distance_Min": 6.300000190734863,
+        "Distance_Max": 9.5
+    },
+    {
+        "Source_Name": "G348.5-0.0",
+        "GLON": 348.59747314453125,
+        "GLAT": -0.011931817047297955,
+        "Type": "shell",
+        "Distance": 3.1500000953674316,
+        "Distance_Min": NaN,
+        "Distance_Max": 6.300000190734863
+    },
+    {
+        "Source_Name": "G348.7+0.3",
+        "GLON": 348.65380859375,
+        "GLAT": 0.3949887156486511,
+        "Type": "shell",
+        "Distance": 13.199999809265137,
+        "Distance_Min": 13.199999809265137,
+        "Distance_Max": 13.199999809265137
+    },
+    {
+        "Source_Name": "G348.9+1.1",
+        "GLON": 348.8606872558594,
+        "GLAT": 1.1391432285308838,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G348.9-0.4",
+        "GLON": -11.050678253173828,
+        "GLAT": -0.43047645688056946,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G349.2-0.1",
+        "GLON": 349.130126953125,
+        "GLAT": -0.07027056068181992,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G349.7+0.2",
+        "GLON": 349.7309265136719,
+        "GLAT": 0.17707453668117523,
+        "Type": "shell",
+        "Distance": 11.75,
+        "Distance_Min": 11.5,
+        "Distance_Max": 12.0
+    },
+    {
+        "Source_Name": "G35.6-0.4",
+        "GLON": 35.64323043823242,
+        "GLAT": -0.42972519993782043,
+        "Type": "shell",
+        "Distance": 3.5999999046325684,
+        "Distance_Min": 3.200000047683716,
+        "Distance_Max": 4.0
+    },
+    {
+        "Source_Name": "G350.0-2.0",
+        "GLON": 349.9222106933594,
+        "GLAT": -2.045545816421509,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G350.1-0.3",
+        "GLON": 350.1016540527344,
+        "GLAT": -0.2945750057697296,
+        "Type": "shell",
+        "Distance": 6.75,
+        "Distance_Min": 4.5,
+        "Distance_Max": 9.0
+    },
+    {
+        "Source_Name": "G351.2+0.1",
+        "GLON": 351.2676086425781,
+        "GLAT": 0.1583092212677002,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G351.7+0.8",
+        "GLON": 351.703857421875,
+        "GLAT": 0.8170199394226074,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G351.9-0.9",
+        "GLON": 351.9234924316406,
+        "GLAT": -0.9603632092475891,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G352.7-0.1",
+        "GLON": 352.7452697753906,
+        "GLAT": -0.11975790560245514,
+        "Type": "thermal composite",
+        "Distance": 7.599999904632568,
+        "Distance_Min": 6.800000190734863,
+        "Distance_Max": 8.399999618530273
+    },
+    {
+        "Source_Name": "G353.6-0.7",
+        "GLON": 353.5549011230469,
+        "GLAT": -0.6492875218391418,
+        "Type": "shell",
+        "Distance": 3.200000047683716,
+        "Distance_Min": 2.4000000953674316,
+        "Distance_Max": 4.0
+    },
+    {
+        "Source_Name": "G353.9-2.0",
+        "GLON": 353.9412841796875,
+        "GLAT": -2.0851171016693115,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G354.1+0.1",
+        "GLON": 354.18927001953125,
+        "GLAT": 0.14597533643245697,
+        "Type": "plerionic composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G354.1+0.3",
+        "GLON": 354.0794677734375,
+        "GLAT": 0.28099003434181213,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G354.4+0.0",
+        "GLON": 354.4098205566406,
+        "GLAT": -0.007693460211157799,
+        "Type": "shell",
+        "Distance": 6.5,
+        "Distance_Min": 5.0,
+        "Distance_Max": 8.0
+    },
+    {
+        "Source_Name": "G354.8-0.8",
+        "GLON": 354.8717346191406,
+        "GLAT": -0.7825495004653931,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G355.4+0.7",
+        "GLON": 355.4031677246094,
+        "GLAT": 0.7267058491706848,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G355.6-0.0",
+        "GLON": 355.6867980957031,
+        "GLAT": -0.07755262404680252,
+        "Type": "thermal composite",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G355.9-2.5",
+        "GLON": 355.9455871582031,
+        "GLAT": -2.5354702472686768,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G356.2+4.5",
+        "GLON": 356.2176208496094,
+        "GLAT": 4.463977813720703,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G356.3-0.3",
+        "GLON": 356.2985534667969,
+        "GLAT": -0.3545231819152832,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G356.3-1.5",
+        "GLON": 356.3100280761719,
+        "GLAT": -1.5032968521118164,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G357.7+0.3",
+        "GLON": 357.6683044433594,
+        "GLAT": 0.348358154296875,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G357.7-0.1",
+        "GLON": 357.6878662109375,
+        "GLAT": -0.12106401473283768,
+        "Type": "thermal composite",
+        "Distance": 11.800000190734863,
+        "Distance_Min": 11.800000190734863,
+        "Distance_Max": 11.800000190734863
+    },
+    {
+        "Source_Name": "G358.0+3.8",
+        "GLON": 357.9648742675781,
+        "GLAT": 3.8027803897857666,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G358.1+0.1",
+        "GLON": 358.1005859375,
+        "GLAT": 0.09911761432886124,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G358.5-0.9",
+        "GLON": 358.5840148925781,
+        "GLAT": -1.0019303560256958,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G359.0-0.9",
+        "GLON": 359.0005187988281,
+        "GLAT": -0.9169982075691223,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G359.1+0.9",
+        "GLON": 359.09722900390625,
+        "GLAT": 0.988303005695343,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G359.1-0.5",
+        "GLON": 359.12109375,
+        "GLAT": -0.5060340166091919,
+        "Type": "thermal composite",
+        "Distance": 9.25,
+        "Distance_Min": 8.0,
+        "Distance_Max": 10.5
+    },
+    {
+        "Source_Name": "G359.2-0.8",
+        "GLON": -0.7693817615509033,
+        "GLAT": -0.8196113705635071,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G359.9-0.0",
+        "GLON": -0.05105182155966759,
+        "GLAT": -0.03886103630065918,
+        "Type": "filled-centre",
+        "Distance": 8.0,
+        "Distance_Min": 8.0,
+        "Distance_Max": 8.0
+    },
+    {
+        "Source_Name": "G36.6+2.6",
+        "GLON": 36.5819206237793,
+        "GLAT": 2.601867198944092,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G36.6-0.7",
+        "GLON": 36.585060119628906,
+        "GLAT": -0.6946724057197571,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G38.7-1.3",
+        "GLON": 38.64366912841797,
+        "GLAT": -1.3410333395004272,
+        "Type": "thermal composite",
+        "Distance": 4.0,
+        "Distance_Min": 4.0,
+        "Distance_Max": 4.0
+    },
+    {
+        "Source_Name": "G39.2-0.3",
+        "GLON": 39.24257278442383,
+        "GLAT": -0.32147881388664246,
+        "Type": "plerionic composite",
+        "Distance": 6.199999809265137,
+        "Distance_Min": 6.199999809265137,
+        "Distance_Max": 6.199999809265137
+    },
+    {
+        "Source_Name": "G39.7-2.0",
+        "GLON": 39.69381332397461,
+        "GLAT": -2.3871679306030273,
+        "Type": "unknown",
+        "Distance": 5.5,
+        "Distance_Min": 4.5,
+        "Distance_Max": 6.5
+    },
+    {
+        "Source_Name": "G4.2-3.5",
+        "GLON": 4.210480690002441,
+        "GLAT": -3.505758762359619,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G40.5-0.5",
+        "GLON": 40.521690368652344,
+        "GLAT": -0.5091755986213684,
+        "Type": "shell",
+        "Distance": 0.5,
+        "Distance_Min": 1.0,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G41.1-0.3",
+        "GLON": 41.114906311035156,
+        "GLAT": -0.3135985732078552,
+        "Type": "thermal composite",
+        "Distance": 10.300000190734863,
+        "Distance_Min": 10.300000190734863,
+        "Distance_Max": 10.300000190734863
+    },
+    {
+        "Source_Name": "G41.5+0.4",
+        "GLON": 41.47975540161133,
+        "GLAT": 0.3591706454753876,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G42.0-0.1",
+        "GLON": 41.95271682739258,
+        "GLAT": -0.04657353460788727,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G42.8+0.6",
+        "GLON": 42.81962966918945,
+        "GLAT": 0.6350043416023254,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G43.3-0.2",
+        "GLON": 43.267032623291016,
+        "GLAT": -0.1896645575761795,
+        "Type": "thermal composite",
+        "Distance": 9.5,
+        "Distance_Min": 8.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G43.9+1.6",
+        "GLON": 43.908409118652344,
+        "GLAT": 1.6140549182891846,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G45.7-0.4",
+        "GLON": 45.68634796142578,
+        "GLAT": -0.38981717824935913,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G46.8-0.3",
+        "GLON": 46.7707405090332,
+        "GLAT": -0.3019099831581116,
+        "Type": "shell",
+        "Distance": 6.449999809265137,
+        "Distance_Min": 4.300000190734863,
+        "Distance_Max": 8.600000381469727
+    },
+    {
+        "Source_Name": "G47.4-3.9",
+        "GLON": 47.38161849975586,
+        "GLAT": -3.8800835609436035,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G49.2-0.7",
+        "GLON": 49.14046096801758,
+        "GLAT": -0.6028074026107788,
+        "Type": "thermal composite",
+        "Distance": 5.150000095367432,
+        "Distance_Min": 4.300000190734863,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G5.2-2.6",
+        "GLON": 5.196664333343506,
+        "GLAT": -2.5997517108917236,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G5.4-1.2",
+        "GLON": 5.348362445831299,
+        "GLAT": -1.132798671722412,
+        "Type": "plerionic composite",
+        "Distance": 4.400000095367432,
+        "Distance_Min": 4.300000190734863,
+        "Distance_Max": 4.5
+    },
+    {
+        "Source_Name": "G5.5+0.3",
+        "GLON": 5.5513691902160645,
+        "GLAT": 0.32180559635162354,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G5.7-0.1",
+        "GLON": 5.7079949378967285,
+        "GLAT": -0.04920312762260437,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G5.9+3.1",
+        "GLON": 5.905003547668457,
+        "GLAT": 3.1300103664398193,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G53.6-2.2",
+        "GLON": 53.625526428222656,
+        "GLAT": -2.2606968879699707,
+        "Type": "thermal composite",
+        "Distance": 4.5,
+        "Distance_Min": 2.299999952316284,
+        "Distance_Max": 6.699999809265137
+    },
+    {
+        "Source_Name": "G54.1+0.3",
+        "GLON": 54.09443283081055,
+        "GLAT": 0.26032042503356934,
+        "Type": "plerionic composite",
+        "Distance": 6.400000095367432,
+        "Distance_Min": 5.599999904632568,
+        "Distance_Max": 7.199999809265137
+    },
+    {
+        "Source_Name": "G54.4-0.3",
+        "GLON": 54.4739990234375,
+        "GLAT": -0.2912243604660034,
+        "Type": "shell",
+        "Distance": 6.150000095367432,
+        "Distance_Min": 3.299999952316284,
+        "Distance_Max": 9.0
+    },
+    {
+        "Source_Name": "G55.0+0.3",
+        "GLON": 55.11020278930664,
+        "GLAT": 0.418788343667984,
+        "Type": "shell",
+        "Distance": 14.0,
+        "Distance_Min": 14.0,
+        "Distance_Max": 14.0
+    },
+    {
+        "Source_Name": "G57.2+0.8",
+        "GLON": 57.2998161315918,
+        "GLAT": 0.8334165811538696,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G59.5+0.1",
+        "GLON": 59.57929992675781,
+        "GLAT": 0.1162523627281189,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G59.8+1.2",
+        "GLON": 59.8070182800293,
+        "GLAT": 1.200236439704895,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G6.1+0.5",
+        "GLON": 6.103939533233643,
+        "GLAT": 0.5317044258117676,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G6.4+4.9",
+        "GLON": 6.43656587600708,
+        "GLAT": 4.857349872589111,
+        "Type": "filled-centre",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G6.4-0.1",
+        "GLON": 6.4345808029174805,
+        "GLAT": -0.07643397152423859,
+        "Type": "thermal composite",
+        "Distance": 1.899999976158142,
+        "Distance_Min": 1.600000023841858,
+        "Distance_Max": 2.200000047683716
+    },
+    {
+        "Source_Name": "G6.5-0.4",
+        "GLON": 6.509822845458984,
+        "GLAT": -0.4777541756629944,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G63.7+1.1",
+        "GLON": 63.786109924316406,
+        "GLAT": 1.1654037237167358,
+        "Type": "filled-centre",
+        "Distance": 3.799999952316284,
+        "Distance_Min": 2.299999952316284,
+        "Distance_Max": 5.300000190734863
+    },
+    {
+        "Source_Name": "G64.5+0.9",
+        "GLON": 64.51687622070312,
+        "GLAT": 0.9420427680015564,
+        "Type": "shell",
+        "Distance": 11.0,
+        "Distance_Min": 11.0,
+        "Distance_Max": 11.0
+    },
+    {
+        "Source_Name": "G65.1+0.6",
+        "GLON": 65.26783752441406,
+        "GLAT": 0.3021185100078583,
+        "Type": "shell",
+        "Distance": 9.300000190734863,
+        "Distance_Min": 9.0,
+        "Distance_Max": 9.600000381469727
+    },
+    {
+        "Source_Name": "G65.7+1.2",
+        "GLON": 65.71593475341797,
+        "GLAT": 1.207933783531189,
+        "Type": "filled-centre",
+        "Distance": 3.0,
+        "Distance_Min": 1.0,
+        "Distance_Max": 5.0
+    },
+    {
+        "Source_Name": "G65.8-0.5",
+        "GLON": 65.84371948242188,
+        "GLAT": -0.5463575720787048,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G66.0-0.0",
+        "GLON": 66.02682495117188,
+        "GLAT": -0.04837515205144882,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G67.6+0.9",
+        "GLON": 67.58126831054688,
+        "GLAT": 0.9239093661308289,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G67.7+1.8",
+        "GLON": 67.73751831054688,
+        "GLAT": 1.8232989311218262,
+        "Type": "shell",
+        "Distance": 12.0,
+        "Distance_Min": 7.0,
+        "Distance_Max": 17.0
+    },
+    {
+        "Source_Name": "G67.8+0.5",
+        "GLON": 67.80583190917969,
+        "GLAT": 0.49517297744750977,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G68.6-1.2",
+        "GLON": 68.60350036621094,
+        "GLAT": -1.2038109302520752,
+        "Type": "unknown",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G69.0+2.7",
+        "GLON": 68.83746337890625,
+        "GLAT": 2.7777512073516846,
+        "Type": "plerionic composite",
+        "Distance": 1.600000023841858,
+        "Distance_Min": 1.100000023841858,
+        "Distance_Max": 2.0999999046325684
+    },
+    {
+        "Source_Name": "G69.7+1.0",
+        "GLON": 69.6902084350586,
+        "GLAT": 1.000434398651123,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G7.0-0.1",
+        "GLON": 7.049686431884766,
+        "GLAT": -0.07842382788658142,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G7.2+0.2",
+        "GLON": 7.1996307373046875,
+        "GLAT": 0.1971142739057541,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G7.5-1.7",
+        "GLON": 7.506965637207031,
+        "GLAT": -1.7114757299423218,
+        "Type": "thermal & plerionic composite",
+        "Distance": 1.850000023841858,
+        "Distance_Min": 1.7000000476837158,
+        "Distance_Max": 2.0
+    },
+    {
+        "Source_Name": "G7.7-3.7",
+        "GLON": 7.753695011138916,
+        "GLAT": -3.770611524581909,
+        "Type": "shell",
+        "Distance": 4.599999904632568,
+        "Distance_Min": 3.200000047683716,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G8.3-0.0",
+        "GLON": 8.303759574890137,
+        "GLAT": -0.09495911747217178,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G8.7-0.1",
+        "GLON": 8.744205474853516,
+        "GLAT": -0.09628746658563614,
+        "Type": "thermal & plerionic composite",
+        "Distance": 4.599999904632568,
+        "Distance_Min": 3.200000047683716,
+        "Distance_Max": 6.0
+    },
+    {
+        "Source_Name": "G8.9+0.4",
+        "GLON": 8.903145790100098,
+        "GLAT": 0.40305012464523315,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G9.7-0.0",
+        "GLON": 9.698719024658203,
+        "GLAT": -0.06181154400110245,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G9.8+0.6",
+        "GLON": 9.748736381530762,
+        "GLAT": 0.5657445788383484,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    },
+    {
+        "Source_Name": "G9.9-0.8",
+        "GLON": 9.957972526550293,
+        "GLAT": -0.805169403553009,
+        "Type": "shell",
+        "Distance": NaN,
+        "Distance_Min": NaN,
+        "Distance_Max": NaN
+    }
+]

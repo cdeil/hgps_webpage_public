@@ -1,0 +1,1340 @@
+[
+    {
+        "Source_Name": "HESS J0835-455",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J0835.3-4511",
+        "Separation": 0.47378289699554443
+    },
+    {
+        "Source_Name": "HESS J0852-463",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J0852.8-4631e",
+        "Separation": 0.20369337499141693
+    },
+    {
+        "Source_Name": "HESS J1023-575",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1022.0-5750",
+        "Separation": 0.17056211829185486
+    },
+    {
+        "Source_Name": "HESS J1303-631",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1303.4-6312e",
+        "Separation": 0.006996024865657091
+    },
+    {
+        "Source_Name": "HESS J1356-645",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1355.1-6420e",
+        "Separation": 0.18725994229316711
+    },
+    {
+        "Source_Name": "HESS J1420-607",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1419.3-6047e",
+        "Separation": 0.12634426355361938
+    },
+    {
+        "Source_Name": "HESS J1442-624",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1443.2-6221e",
+        "Separation": 0.09226594120264053
+    },
+    {
+        "Source_Name": "HESS J1503-582",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1505.1-5808",
+        "Separation": 0.27276307344436646
+    },
+    {
+        "Source_Name": "HESS J1507-622",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1507.4-6213",
+        "Separation": 0.10684285312891006
+    },
+    {
+        "Source_Name": "HESS J1514-591",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1514.0-5915e",
+        "Separation": 0.0989026427268982
+    },
+    {
+        "Source_Name": "HESS J1614-518",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1615.3-5146e",
+        "Separation": 0.19802305102348328
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1616.2-5054e",
+        "Separation": 0.11647385358810425
+    },
+    {
+        "Source_Name": "HESS J1632-478",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1633.5-4746e",
+        "Separation": 0.1842605620622635
+    },
+    {
+        "Source_Name": "HESS J1640-465",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1640.6-4632",
+        "Separation": 0.02525906451046467
+    },
+    {
+        "Source_Name": "HESS J1713-397",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1713.5-3945e",
+        "Separation": 0.029067348688840866
+    },
+    {
+        "Source_Name": "HESS J1713-397",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1714.1-4012",
+        "Separation": 0.4578154683113098
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1745.7-2900",
+        "Separation": 0.01129405852407217
+    },
+    {
+        "Source_Name": "HESS J1745-303",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1745.1-3035",
+        "Separation": 0.2400275021791458
+    },
+    {
+        "Source_Name": "HESS J1800-240",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1801.7-2358",
+        "Separation": 0.23311211168766022
+    },
+    {
+        "Source_Name": "HESS J1801-233",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1801.3-2326e",
+        "Separation": 0.13136203587055206
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1805.6-2136e",
+        "Separation": 0.25302520394325256
+    },
+    {
+        "Source_Name": "HESS J1825-137",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1824.5-1350e",
+        "Separation": 0.1709691286087036
+    },
+    {
+        "Source_Name": "HESS J1826-148",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1826.3-1450",
+        "Separation": 0.02118866704404354
+    },
+    {
+        "Source_Name": "HESS J1834-087",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1834.5-0846e",
+        "Separation": 0.07970360666513443
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1836.5-0655e",
+        "Separation": 0.23363809287548065
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1837.4-0717",
+        "Separation": 0.33625492453575134
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1840.9-0532e",
+        "Separation": 0.09262645989656448
+    },
+    {
+        "Source_Name": "HESS J1857+026",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1856.8+0256",
+        "Separation": 0.22562244534492493
+    },
+    {
+        "Source_Name": "HESS J1911+090",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1911.0+0905",
+        "Separation": 0.02493647113442421
+    },
+    {
+        "Source_Name": "HESS J1923+141",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1923.2+1408e",
+        "Separation": 0.06946079432964325
+    },
+    {
+        "Source_Name": "HESS J1943+213",
+        "Association_Catalog": "2FHL",
+        "Association_Name": "2FHL J1944.1+2117",
+        "Separation": 0.034733619540929794
+    },
+    {
+        "Source_Name": "HESS J0835-455",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J0835.3-4510",
+        "Separation": 0.48186883330345154
+    },
+    {
+        "Source_Name": "HESS J0852-463",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J0852.7-4631e",
+        "Separation": 0.20369337499141693
+    },
+    {
+        "Source_Name": "HESS J1018-589 A",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1018.9-5856",
+        "Separation": 0.016625279560685158
+    },
+    {
+        "Source_Name": "HESS J1018-589 B",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1016.3-5858",
+        "Separation": 0.1857515424489975
+    },
+    {
+        "Source_Name": "HESS J1018-589 B",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1018.9-5856",
+        "Separation": 0.151556134223938
+    },
+    {
+        "Source_Name": "HESS J1023-575",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1023.1-5745",
+        "Separation": 0.02099457196891308
+    },
+    {
+        "Source_Name": "HESS J1023-575",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1024.3-5757",
+        "Separation": 0.22710974514484406
+    },
+    {
+        "Source_Name": "HESS J1119-614",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1119.1-6127",
+        "Separation": 0.019195562228560448
+    },
+    {
+        "Source_Name": "HESS J1303-631",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1303.0-6312e",
+        "Separation": 0.006996024865657091
+    },
+    {
+        "Source_Name": "HESS J1356-645",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1356.6-6428",
+        "Separation": 0.0920330211520195
+    },
+    {
+        "Source_Name": "HESS J1418-609",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1418.6-6058",
+        "Separation": 0.08035692572593689
+    },
+    {
+        "Source_Name": "HESS J1420-607",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1420.0-6048",
+        "Separation": 0.0682436153292656
+    },
+    {
+        "Source_Name": "HESS J1458-608",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1456.7-6046",
+        "Separation": 0.3511604368686676
+    },
+    {
+        "Source_Name": "HESS J1458-608",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1459.4-6053",
+        "Separation": 0.12166133522987366
+    },
+    {
+        "Source_Name": "HESS J1503-582",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1503.5-5801",
+        "Separation": 0.23420143127441406
+    },
+    {
+        "Source_Name": "HESS J1507-622",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1506.6-6219",
+        "Separation": 0.037267059087753296
+    },
+    {
+        "Source_Name": "HESS J1514-591",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1513.9-5908",
+        "Separation": 0.02691405639052391
+    },
+    {
+        "Source_Name": "HESS J1514-591",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1514.0-5915e",
+        "Separation": 0.09483414888381958
+    },
+    {
+        "Source_Name": "HESS J1614-518",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1615.3-5146e",
+        "Separation": 0.19802305102348328
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1616.2-5054e",
+        "Separation": 0.11647385358810425
+    },
+    {
+        "Source_Name": "HESS J1626-490",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1626.2-4911",
+        "Separation": 0.12281139194965363
+    },
+    {
+        "Source_Name": "HESS J1632-478",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1633.0-4746e",
+        "Separation": 0.1842605620622635
+    },
+    {
+        "Source_Name": "HESS J1634-472",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1636.2-4709c",
+        "Separation": 0.24593651294708252
+    },
+    {
+        "Source_Name": "HESS J1640-465",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1640.4-4634c",
+        "Separation": 0.029354115948081017
+    },
+    {
+        "Source_Name": "HESS J1641-463",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1641.1-4619c",
+        "Separation": 0.024530531838536263
+    },
+    {
+        "Source_Name": "HESS J1646-458",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1648.3-4611",
+        "Separation": 0.10220161825418472
+    },
+    {
+        "Source_Name": "HESS J1646-458",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1650.3-4600",
+        "Separation": 0.4942416846752167
+    },
+    {
+        "Source_Name": "HESS J1708-443",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1709.7-4429",
+        "Separation": 0.36820346117019653
+    },
+    {
+        "Source_Name": "HESS J1713-397",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1713.5-3945e",
+        "Separation": 0.029067348688840866
+    },
+    {
+        "Source_Name": "HESS J1714-385",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1714.5-3832",
+        "Separation": 0.06746059656143188
+    },
+    {
+        "Source_Name": "HESS J1718-374",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1718.0-3726",
+        "Separation": 0.012586352415382862
+    },
+    {
+        "Source_Name": "HESS J1718-385",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1718.1-3825",
+        "Separation": 0.07941073179244995
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1745.3-2903c",
+        "Separation": 0.08485957980155945
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1745.6-2859c",
+        "Separation": 0.011377244256436825
+    },
+    {
+        "Source_Name": "HESS J1745-303",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1745.1-3011",
+        "Separation": 0.22873292863368988
+    },
+    {
+        "Source_Name": "HESS J1746-285",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1746.3-2851c",
+        "Separation": 0.014114809222519398
+    },
+    {
+        "Source_Name": "HESS J1747-248",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1748.0-2447",
+        "Separation": 0.05509305000305176
+    },
+    {
+        "Source_Name": "HESS J1800-240",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1758.8-2402",
+        "Separation": 0.44777846336364746
+    },
+    {
+        "Source_Name": "HESS J1800-240",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1800.8-2402",
+        "Separation": 0.029825175181031227
+    },
+    {
+        "Source_Name": "HESS J1801-233",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1801.3-2326e",
+        "Separation": 0.13136203587055206
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1803.1-2147",
+        "Separation": 0.36991554498672485
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1805.6-2136e",
+        "Separation": 0.2507781982421875
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1810.1-1910",
+        "Separation": 0.16226689517498016
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1811.3-1927c",
+        "Separation": 0.30814096331596375
+    },
+    {
+        "Source_Name": "HESS J1813-126",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1813.4-1246",
+        "Separation": 0.0823962464928627
+    },
+    {
+        "Source_Name": "HESS J1825-137",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1824.5-1351e",
+        "Separation": 0.1697072833776474
+    },
+    {
+        "Source_Name": "HESS J1826-130",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1826.1-1256",
+        "Separation": 0.07948976010084152
+    },
+    {
+        "Source_Name": "HESS J1826-148",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1826.2-1450",
+        "Separation": 0.005312728229910135
+    },
+    {
+        "Source_Name": "HESS J1833-105",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1833.5-1033",
+        "Separation": 0.012656371109187603
+    },
+    {
+        "Source_Name": "HESS J1834-087",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1834.5-0841",
+        "Separation": 0.10745136439800262
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1836.5-0655e",
+        "Separation": 0.23363809287548065
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1837.6-0717",
+        "Separation": 0.3379114866256714
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1838.9-0646",
+        "Separation": 0.3988996744155884
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1838.9-0537",
+        "Separation": 0.4808334708213806
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1839.3-0552",
+        "Separation": 0.4373803734779358
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1840.9-0532e",
+        "Separation": 0.09262645989656448
+    },
+    {
+        "Source_Name": "HESS J1843-033",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1843.7-0322",
+        "Separation": 0.1784420609474182
+    },
+    {
+        "Source_Name": "HESS J1843-033",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1844.3-0344",
+        "Separation": 0.24283462762832642
+    },
+    {
+        "Source_Name": "HESS J1848-018",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1848.4-0141",
+        "Separation": 0.19484888017177582
+    },
+    {
+        "Source_Name": "HESS J1852-000",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1853.2+0006",
+        "Separation": 0.24198347330093384
+    },
+    {
+        "Source_Name": "HESS J1858+020",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1857.9+0210",
+        "Separation": 0.13560834527015686
+    },
+    {
+        "Source_Name": "HESS J1908+063",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1907.9+0602",
+        "Separation": 0.3651963770389557
+    },
+    {
+        "Source_Name": "HESS J1911+090",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1910.9+0906",
+        "Separation": 0.03633781895041466
+    },
+    {
+        "Source_Name": "HESS J1923+141",
+        "Association_Catalog": "3FGL",
+        "Association_Name": "3FGL J1923.2+1408e",
+        "Separation": 0.06747014075517654
+    },
+    {
+        "Source_Name": "HESS J0852-463",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G266.2-1.2",
+        "Separation": 0.036665599793195724
+    },
+    {
+        "Source_Name": "HESS J1018-589 A",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G284.3-1.8",
+        "Separation": 0.11738500744104385
+    },
+    {
+        "Source_Name": "HESS J1018-589 B",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G284.3-1.8",
+        "Separation": 0.08649004995822906
+    },
+    {
+        "Source_Name": "HESS J1442-624",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G315.4-2.3",
+        "Separation": 0.07128585129976273
+    },
+    {
+        "Source_Name": "HESS J1534-571",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G323.7-1.0",
+        "Separation": 0.0540025532245636
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G332.4+0.1",
+        "Separation": 0.2965959310531616
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G332.4-0.4",
+        "Separation": 0.19978167116641998
+    },
+    {
+        "Source_Name": "HESS J1641-463",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G338.5+0.1",
+        "Separation": 0.019983714446425438
+    },
+    {
+        "Source_Name": "HESS J1713-381",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G348.7+0.3",
+        "Separation": 0.03913215547800064
+    },
+    {
+        "Source_Name": "HESS J1713-397",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G347.3-0.5",
+        "Separation": 0.059675782918930054
+    },
+    {
+        "Source_Name": "HESS J1718-374",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G349.7+0.2",
+        "Separation": 0.011690279468894005
+    },
+    {
+        "Source_Name": "HESS J1731-347",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G353.6-0.7",
+        "Separation": 0.02398325875401497
+    },
+    {
+        "Source_Name": "HESS J1746-308",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G358.5-0.9",
+        "Separation": 0.17630869150161743
+    },
+    {
+        "Source_Name": "HESS J1800-240",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G5.7-0.1",
+        "Separation": 0.449173241853714
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G8.3-0.0",
+        "Separation": 0.08126293867826462
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G11.0-0.0",
+        "Separation": 0.08803640305995941
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G11.4-0.1",
+        "Separation": 0.2917790412902832
+    },
+    {
+        "Source_Name": "HESS J1813-178",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G12.7-0.0",
+        "Separation": 0.09545362740755081
+    },
+    {
+        "Source_Name": "HESS J1826-130",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G18.6-0.2",
+        "Separation": 0.18628668785095215
+    },
+    {
+        "Source_Name": "HESS J1843-033",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G28.6-0.1",
+        "Separation": 0.330375999212265
+    },
+    {
+        "Source_Name": "HESS J1852-000",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G32.8-0.1",
+        "Separation": 0.3100309371948242
+    },
+    {
+        "Source_Name": "HESS J1852-000",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G33.2-0.6",
+        "Separation": 0.4201735556125641
+    },
+    {
+        "Source_Name": "HESS J1908+063",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G40.5-0.5",
+        "Separation": 0.3286590874195099
+    },
+    {
+        "Source_Name": "HESS J1911+090",
+        "Association_Catalog": "SNR",
+        "Association_Name": "G43.3-0.2",
+        "Separation": 0.0070446631871163845
+    },
+    {
+        "Source_Name": "HESS J0852-463",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G267.0-1.0",
+        "Separation": 0.7240231037139893
+    },
+    {
+        "Source_Name": "HESS J1018-589 B",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G284.0-1.8",
+        "Separation": 0.18010810017585754
+    },
+    {
+        "Source_Name": "HESS J1026-582",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G285.1-0.5",
+        "Separation": 0.2127428948879242
+    },
+    {
+        "Source_Name": "HESS J1303-631",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G304.1-0.2",
+        "Separation": 0.17600244283676147
+    },
+    {
+        "Source_Name": "HESS J1356-645",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G309.8-2.6",
+        "Separation": 0.12565083801746368
+    },
+    {
+        "Source_Name": "HESS J1418-609",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G313.3+0.1",
+        "Separation": 0.08330913633108139
+    },
+    {
+        "Source_Name": "HESS J1420-607",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G313.6+0.3",
+        "Separation": 0.05297687277197838
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G332.5-0.3",
+        "Separation": 0.1136939525604248
+    },
+    {
+        "Source_Name": "HESS J1632-478",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G336.4+0.2",
+        "Separation": 0.06765875965356827
+    },
+    {
+        "Source_Name": "HESS J1718-385",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G348.9-0.4",
+        "Separation": 0.08538699150085449
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G359.9-0.0",
+        "Separation": 0.006493038032203913
+    },
+    {
+        "Source_Name": "HESS J1825-137",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G18.0-0.7",
+        "Separation": 0.4799123704433441
+    },
+    {
+        "Source_Name": "HESS J1826-130",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G18.5-0.4",
+        "Separation": 0.03526577353477478
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G25.2+0.3",
+        "Separation": 0.37496477365493774
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G26.6-0.1",
+        "Separation": 0.17789778113365173
+    },
+    {
+        "Source_Name": "HESS J1849-000",
+        "Association_Catalog": "PWN",
+        "Association_Name": "G32.6+0.5",
+        "Separation": 0.027557503432035446
+    },
+    {
+        "Source_Name": "HESS J0835-455",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G263.9-3.3",
+        "Separation": 0.3213036358356476
+    },
+    {
+        "Source_Name": "HESS J1119-614",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G292.2-0.5",
+        "Separation": 0.0349450558423996
+    },
+    {
+        "Source_Name": "HESS J1514-591",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G320.4-1.2",
+        "Separation": 0.07048255205154419
+    },
+    {
+        "Source_Name": "HESS J1554-550",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G327.1-1.1",
+        "Separation": 0.06569790840148926
+    },
+    {
+        "Source_Name": "HESS J1634-472",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G337.2+0.1",
+        "Separation": 0.20613907277584076
+    },
+    {
+        "Source_Name": "HESS J1640-465",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G338.3-0.0",
+        "Separation": 0.06281716376543045
+    },
+    {
+        "Source_Name": "HESS J1708-443",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G343.1-2.3",
+        "Separation": 0.021999454125761986
+    },
+    {
+        "Source_Name": "HESS J1714-385",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G348.5+0.1",
+        "Separation": 0.08199811726808548
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G0.0+0.0",
+        "Separation": 0.017152339220046997
+    },
+    {
+        "Source_Name": "HESS J1746-285",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G0.1-0.1",
+        "Separation": 0.028509361669421196
+    },
+    {
+        "Source_Name": "HESS J1747-281",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G0.9+0.1",
+        "Separation": 0.008271698839962482
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G8.7-0.1",
+        "Separation": 0.35953399538993835
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G11.1+0.1",
+        "Separation": 0.15197037160396576
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G11.2-0.3",
+        "Separation": 0.334992378950119
+    },
+    {
+        "Source_Name": "HESS J1813-178",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G12.8-0.0",
+        "Separation": 0.017802173271775246
+    },
+    {
+        "Source_Name": "HESS J1818-154",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G15.4+0.1",
+        "Separation": 0.02303539775311947
+    },
+    {
+        "Source_Name": "HESS J1833-105",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G21.5-0.9",
+        "Separation": 0.008092342875897884
+    },
+    {
+        "Source_Name": "HESS J1834-087",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G23.3-0.3",
+        "Separation": 0.05694897845387459
+    },
+    {
+        "Source_Name": "HESS J1844-030",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G29.4+0.1",
+        "Separation": 0.04327240213751793
+    },
+    {
+        "Source_Name": "HESS J1846-029",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G29.7-0.3",
+        "Separation": 0.00949926394969225
+    },
+    {
+        "Source_Name": "HESS J1930+188",
+        "Association_Catalog": "COMP",
+        "Association_Name": "G54.1+0.3",
+        "Separation": 0.037915121763944626
+    },
+    {
+        "Source_Name": "HESS J0835-455",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B0833-45",
+        "Separation": 0.4839050769805908
+    },
+    {
+        "Source_Name": "HESS J0852-463",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J0855-4644",
+        "Separation": 0.7200055718421936
+    },
+    {
+        "Source_Name": "HESS J1018-589 B",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1016-5857",
+        "Separation": 0.17979544401168823
+    },
+    {
+        "Source_Name": "HESS J1023-575",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1023-5746",
+        "Separation": 0.028522778302431107
+    },
+    {
+        "Source_Name": "HESS J1026-582",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1028-5819",
+        "Separation": 0.2180936187505722
+    },
+    {
+        "Source_Name": "HESS J1119-614",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1119-6127",
+        "Separation": 0.02349970117211342
+    },
+    {
+        "Source_Name": "HESS J1302-638",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1259-63",
+        "Separation": 0.014250244945287704
+    },
+    {
+        "Source_Name": "HESS J1303-631",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1301-6305",
+        "Separation": 0.1740981936454773
+    },
+    {
+        "Source_Name": "HESS J1303-631",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1301-6310",
+        "Separation": 0.17535167932510376
+    },
+    {
+        "Source_Name": "HESS J1356-645",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1357-6429",
+        "Separation": 0.12951545417308807
+    },
+    {
+        "Source_Name": "HESS J1418-609",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1418-6058",
+        "Separation": 0.0879879966378212
+    },
+    {
+        "Source_Name": "HESS J1420-607",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1420-6048",
+        "Separation": 0.053741004317998886
+    },
+    {
+        "Source_Name": "HESS J1458-608",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1459-6053",
+        "Separation": 0.11049901694059372
+    },
+    {
+        "Source_Name": "HESS J1514-591",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1509-58",
+        "Separation": 0.02689092606306076
+    },
+    {
+        "Source_Name": "HESS J1616-508",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1617-5055",
+        "Separation": 0.10891712456941605
+    },
+    {
+        "Source_Name": "HESS J1632-478",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1632-4757",
+        "Separation": 0.20304596424102783
+    },
+    {
+        "Source_Name": "HESS J1640-465",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1640-4631",
+        "Separation": 0.04903459921479225
+    },
+    {
+        "Source_Name": "HESS J1646-458",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1648-4611",
+        "Separation": 0.10525058209896088
+    },
+    {
+        "Source_Name": "HESS J1708-443",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1706-44",
+        "Separation": 0.364978551864624
+    },
+    {
+        "Source_Name": "HESS J1713-381",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1714-3810",
+        "Separation": 0.06563873589038849
+    },
+    {
+        "Source_Name": "HESS J1718-385",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1718-3825",
+        "Separation": 0.08602621406316757
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1745-2900",
+        "Separation": 0.003005686216056347
+    },
+    {
+        "Source_Name": "HESS J1746-285",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1746-2850",
+        "Separation": 0.0701572373509407
+    },
+    {
+        "Source_Name": "HESS J1746-308",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1742-30",
+        "Separation": 0.18373346328735352
+    },
+    {
+        "Source_Name": "HESS J1747-281",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1747-2809",
+        "Separation": 0.0030002633575350046
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1800-21",
+        "Separation": 0.2344990223646164
+    },
+    {
+        "Source_Name": "HESS J1804-216",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1803-2149",
+        "Separation": 0.3686651587486267
+    },
+    {
+        "Source_Name": "HESS J1808-204",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1808-2024",
+        "Separation": 0.012195531278848648
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1809-1917",
+        "Separation": 0.10108169168233871
+    },
+    {
+        "Source_Name": "HESS J1809-193",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1811-1925",
+        "Separation": 0.33598077297210693
+    },
+    {
+        "Source_Name": "HESS J1813-126",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1813-1246",
+        "Separation": 0.07901318371295929
+    },
+    {
+        "Source_Name": "HESS J1813-178",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1813-1749",
+        "Separation": 0.0054549905471503735
+    },
+    {
+        "Source_Name": "HESS J1825-137",
+        "Association_Catalog": "PSR",
+        "Association_Name": "B1823-13",
+        "Separation": 0.4810484051704407
+    },
+    {
+        "Source_Name": "HESS J1826-130",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1826-1256",
+        "Separation": 0.07930997014045715
+    },
+    {
+        "Source_Name": "HESS J1833-105",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1833-1034",
+        "Separation": 0.009695201180875301
+    },
+    {
+        "Source_Name": "HESS J1834-087",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1834-0845",
+        "Separation": 0.015997231006622314
+    },
+    {
+        "Source_Name": "HESS J1837-069",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1838-0655",
+        "Separation": 0.14428424835205078
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1838-0537",
+        "Separation": 0.48019570112228394
+    },
+    {
+        "Source_Name": "HESS J1841-055",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1841-0524",
+        "Separation": 0.3339575231075287
+    },
+    {
+        "Source_Name": "HESS J1846-029",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1846-0258",
+        "Separation": 0.0021359126549214125
+    },
+    {
+        "Source_Name": "HESS J1849-000",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1849-0001",
+        "Separation": 0.027632737532258034
+    },
+    {
+        "Source_Name": "HESS J1852-000",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1853-0004",
+        "Separation": 0.3354003429412842
+    },
+    {
+        "Source_Name": "HESS J1852-000",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1853+0011",
+        "Separation": 0.3286727964878082
+    },
+    {
+        "Source_Name": "HESS J1857+026",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1856+0245",
+        "Separation": 0.129144549369812
+    },
+    {
+        "Source_Name": "HESS J1908+063",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1907+0602",
+        "Separation": 0.36894574761390686
+    },
+    {
+        "Source_Name": "HESS J1912+101",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1913+1011",
+        "Separation": 0.04434966668486595
+    },
+    {
+        "Source_Name": "HESS J1930+188",
+        "Association_Catalog": "PSR",
+        "Association_Name": "J1930+1852",
+        "Separation": 0.03931279480457306
+    },
+    {
+        "Source_Name": "HESS J1023-575",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "Westerlund 2",
+        "Separation": 0.09621088951826096
+    },
+    {
+        "Source_Name": "HESS J1427-608",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "Suzaku J1427-6051",
+        "Separation": 0.12086313962936401
+    },
+    {
+        "Source_Name": "HESS J1507-622",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "CXOU J150706.0-621443",
+        "Separation": 0.07917026430368423
+    },
+    {
+        "Source_Name": "HESS J1614-518",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "Suzaku J1614-5141",
+        "Separation": 0.1942233294248581
+    },
+    {
+        "Source_Name": "HESS J1713-381",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "CXOU J171405.7-381031",
+        "Separation": 0.06560245156288147
+    },
+    {
+        "Source_Name": "HESS J1745-290",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "Sgr A*",
+        "Separation": 0.0023241708986461163
+    },
+    {
+        "Source_Name": "HESS J1747-248",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "Terzan 5",
+        "Separation": 0.0659000501036644
+    },
+    {
+        "Source_Name": "HESS J1801-233",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "W28",
+        "Separation": 0.29325583577156067
+    },
+    {
+        "Source_Name": "HESS J1808-204",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "SGR 1806-20",
+        "Separation": 0.012291890569031239
+    },
+    {
+        "Source_Name": "HESS J1808-204",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "1806-20 star cluster",
+        "Separation": 0.0212846789509058
+    },
+    {
+        "Source_Name": "HESS J1826-148",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "LS 5039",
+        "Separation": 0.000942057988140732
+    },
+    {
+        "Source_Name": "HESS J1832-093",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "XMMU J183245-0921539",
+        "Separation": 0.00955241173505783
+    },
+    {
+        "Source_Name": "HESS J1844-030",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "PMN J1844-0306",
+        "Separation": 0.023449480533599854
+    },
+    {
+        "Source_Name": "HESS J1848-018",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "W43",
+        "Separation": 0.2456015646457672
+    },
+    {
+        "Source_Name": "HESS J1857+026",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "MAGIC J1857.2+0263",
+        "Separation": 0.1365518420934677
+    },
+    {
+        "Source_Name": "HESS J1857+026",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "MAGIC J1857.6+0297",
+        "Separation": 0.2180962711572647
+    },
+    {
+        "Source_Name": "HESS J1908+063",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "MGRO J1908+06",
+        "Separation": 0.21911530196666718
+    },
+    {
+        "Source_Name": "HESS J1908+063",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "ARGO J1907+0627",
+        "Separation": 0.09203074127435684
+    },
+    {
+        "Source_Name": "HESS J1930+188",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "VER J1930+188",
+        "Separation": 0.03931334987282753
+    },
+    {
+        "Source_Name": "HESS J1943+213",
+        "Association_Catalog": "EXTRA",
+        "Association_Name": "IGR J19443+2117",
+        "Separation": 0.014540610834956169
+    }
+]
