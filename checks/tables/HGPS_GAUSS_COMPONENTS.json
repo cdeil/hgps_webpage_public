@@ -46,8 +46,8 @@
     },
     {
         "Component_ID": "HGPSC 004",
-        "Source_Name": "HESS J1018-589",
-        "Component_Class": "Source Multi",
+        "Source_Name": "HESS J1018-589 B",
+        "Component_Class": "Source Single",
         "GLON": 284.22296142578125,
         "GLON_Err": 0.03501855209469795,
         "GLAT": -1.7716162204742432,
@@ -61,8 +61,8 @@
     },
     {
         "Component_ID": "HGPSC 005",
-        "Source_Name": "HESS J1018-589",
-        "Component_Class": "Source Multi",
+        "Source_Name": "HESS J1018-589 A",
+        "Component_Class": "Source Single",
         "GLON": 284.35089111328125,
         "GLON_Err": 0.006098984740674496,
         "GLAT": -1.673513412475586,

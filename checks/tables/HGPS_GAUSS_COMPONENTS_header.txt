@@ -1,7 +1,7 @@
 XTENSION= 'BINTABLE'           / binary table extension                         
 BITPIX  =                    8 / array data type                                
 NAXIS   =                    2 / number of array dimensions                     
-NAXIS1  =                   78 / length of dimension 1                          
+NAXIS1  =                   80 / length of dimension 1                          
 NAXIS2  =                   98 / length of dimension 2                          
 PCOUNT  =                    0 / number of group parameters                     
 GCOUNT  =                    1 / number of groups                               
@@ -13,7 +13,7 @@ TTYPE1  = 'Component_ID'
 TFORM1  = '9A      '                                                            
 TCOMM1  = 'Gauss component identifier (HGPSC NNN)'                              
 TTYPE2  = 'Source_Name'                                                         
-TFORM2  = '14A     '                                                            
+TFORM2  = '16A     '                                                            
 TCOMM2  = 'Source name the component belongs to'                                
 TUCD2   = 'meta.id;meta.main'                                                   
 TTYPE3  = 'Component_Class'                                                     
