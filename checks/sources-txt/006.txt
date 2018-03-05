@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 6
+Source name          : HESS J1119-614
+Analysis reference   : HGPS
+Source class         : Composite
+Identified object    : PSR J1119-6127
+Gamma-Cat id         : 50
+
+
+*** Info from map analysis ***
+
+RA                   :  169.767 deg = 11h19m04s
+DEC                  :  -61.452 deg = -61d27m08s
+GLON                 :  292.128 +/- 0.019 deg
+GLAT                 :   -0.533 +/- 0.016 deg
+Position Error (68%) : 0.039 deg
+Position Error (95%) : 0.064 deg
+ROI number           : 16
+Spatial model        : Gaussian
+Spatial components   : HGPSC 008
+TS                   : 104.1
+sqrt(TS)             : 10.2
+Size                 : 0.098 +/- 0.014 (UL: nan) deg
+R70                  : 0.176 deg
+RSpec                : 0.176 deg
+Total model excess   : 305.4
+Excess in RSpec      : 235.0
+Model Excess in RSpec : 214.3
+Background in RSpec  : 460.0
+Livetime             : 51.7 hours
+Energy threshold     : 0.68 TeV
+Source flux (>1 TeV) : (0.866 +/- 0.130) x 10^-12 cm^-2 s^-1 = (3.83 +/- 0.57) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 0.664 x 10^-12 cm^-2 s^-1 =  2.94 % Crab
+Source model                   : 0.606 x 10^-12 cm^-2 s^-1 =  2.68 % Crab
+Other component model          : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Large scale component model    : 0.022 x 10^-12 cm^-2 s^-1 =  0.10 % Crab
+Total model                    : 0.628 x 10^-12 cm^-2 s^-1 =  2.78 % Crab
+Containment in RSpec                :  70.0 %
+Contamination in RSpec              :   3.5 %
+Flux correction (RSpec -> Total)    : 137.9 %
+Flux correction (Total -> RSpec)    :  72.5 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 21.7 hours
+Energy range:        : 0.42 to 68.13 TeV
+Background           : 1232.7
+Excess               : 464.3
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (0.917 +/- 0.094) x 10^-12 cm^-2 s^-1  = (4.06 +/- 0.42) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (2.904 +/- 0.346) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.27 TeV
+Flux at pivot energy : (0.796 +/- 0.075) x 10^-12 cm^-2 s^-1 TeV^-1  = (3.52 +/- 0.21) % Crab
+PL   Flux(> 1 TeV)   : (0.917 +/- 0.094) x 10^-12 cm^-2 s^-1  = (4.06 +/- 0.42) % Crab
+PL   Flux(@ 1 TeV)   : (1.504 +/- 0.149) x 10^-12 cm^-2 s^-1 TeV^-1  = (6.65 +/- 0.43) % Crab
+PL   Index           : 2.64 +/- 0.12
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.619  0.422  0.909       4.396e-12       7.861e-13       7.919e-13       6.006e-12 False
+ 1.334  0.909  1.957       8.686e-13       1.098e-13       1.134e-13       1.102e-12 False
+ 2.873  1.957  4.217       9.063e-14       2.129e-14       2.211e-14       1.358e-13 False
+ 6.494  4.217 10.000       8.633e-15       3.674e-15       3.954e-15       1.689e-14 False
+14.678 10.000 21.544       2.080e-15       9.432e-16       1.072e-15       4.371e-15 False
+31.623 21.544 46.416      -5.686e-18       1.361e-16       1.898e-16       4.274e-16  True
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 008
+
+Component HGPSC 008:
+GLON                 :  292.128 +/- 0.019 deg
+GLAT                 :   -0.533 +/- 0.016 deg
+Size                 : 0.098 +/- 0.014 deg
+Flux (>1 TeV)        : (0.87 +/- 0.13) x 10^-12 cm^-2 s^-1 = (3.8 +/- 0.6) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 3FGL J1119.1-6127, G292.2-0.5, J1119-6127

@@ -2,6 +2,7 @@
 from pathlib import Path
 from astropy.io import fits
 from astropy.table import Table
+from gammapy.catalog import SourceCatalogHGPS
 import click
 import utils
 from make import config
@@ -17,7 +18,7 @@ def cli():
 
 
 @cli.command('tables')
-def check_dump_tables_to_text():
+def cli_tables():
     """Dump all HGPS tables to text files.
 
     The purpose is to have the complete content under version control.
@@ -29,6 +30,14 @@ def check_dump_tables_to_text():
     path = Path('checks/tables')
     path.mkdir(exist_ok=True, parents=True)
 
+    # Dump all header content to text files
+    for hdu in hdu_list:
+        txt = hdu.header.tostring(sep='\n', padding=False)
+        path = Path(f'checks/tables/{hdu.name}_header.txt')
+        print(f'Writing {path}')
+        path.write_text(txt)
+
+    # Dump all data content to text (JSON) files
     for hdu in hdu_list[1:]:
         table = Table.read(hdu)
         data = utils.table_to_list_of_dict(table)
@@ -36,12 +45,25 @@ def check_dump_tables_to_text():
         print(f'Writing {path}')
         utils.write_json(data, path)
 
-    for hdu in hdu_list:
-        txt = hdu.header.tostring(sep='\n', padding=False)
-        path = Path(f'checks/tables/{hdu.name}_header.txt')
-        print(f'Writing {path}')
-        path.write_text(txt)
 
+@cli.command('sources-txt')
+def cli_sources_txt():
+    """Dump all HGPS source information via Gammapy"""
+    filename = config.out_path / config.filename_cat
+    print(f'Reading {filename}')
+    cat = SourceCatalogHGPS(filename)
+
+    for idx, source in enumerate(cat):
+        text = str(source)
+
+        filename = f'checks/sources-txt/{idx:03d}.txt'
+        print(f'Writing {filename}')
+        Path(filename).write_text(text)
+
+
+@cli.command('sources-spec')
+def cli_sources_spec():
+    pass
     # import IPython; IPython.embed()
 
 

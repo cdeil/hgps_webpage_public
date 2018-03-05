@@ -1,0 +1,87 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 19
+Source name          : HESS J1534-571
+Analysis reference   : EXTERN
+Source class         : SNR
+Identified object    : G323.7-01.0
+Gamma-Cat id         : 158
+
+
+*** Info from map analysis ***
+
+RA                   :  233.679 deg = 15h34m43s
+DEC                  :  -57.155 deg = -57d09m20s
+GLON                 :  323.700 +/- nan deg
+GLAT                 :   -1.020 +/- nan deg
+Position Error (68%) : 0.024 deg
+Position Error (95%) : nan deg
+ROI number           : -1
+Spatial model        : Shell
+Spatial components   : 
+TS                   : nan
+sqrt(TS)             : nan
+Size                 : 0.400 +/- 0.040 (UL: nan) deg
+R70                  : nan deg
+RSpec                : 0.470 deg
+Total model excess   : nan
+Excess in RSpec      : nan
+Model Excess in RSpec : nan
+Background in RSpec  : nan
+Livetime             : 61.8 hours
+Energy threshold     : nan TeV
+Source flux (>1 TeV) : (1.980 +/- 0.231) x 10^-12 cm^-2 s^-1 = (8.76 +/- 1.02) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Source model                   : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Other component model          : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Large scale component model    : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Total model                    : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Containment in RSpec                :   nan %
+Contamination in RSpec              :   nan %
+Flux correction (RSpec -> Total)    :   nan %
+Flux correction (Total -> RSpec)    :   nan %
+
+*** Info from spectral analysis ***
+
+Livetime             : 61.8 hours
+Energy range:        : 0.42 to 61.90 TeV
+Background           : nan
+Excess               : nan
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (1.980 +/- 0.231) x 10^-12 cm^-2 s^-1  = (8.76 +/- 1.02) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (6.490 +/- 0.848) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.00 TeV
+Flux at pivot energy : (2.990 +/- 0.300) x 10^-12 cm^-2 s^-1 TeV^-1  = (13.23 +/- 0.86) % Crab
+PL   Flux(> 1 TeV)   : (1.980 +/- 0.231) x 10^-12 cm^-2 s^-1  = (8.76 +/- 1.02) % Crab
+PL   Flux(@ 1 TeV)   : (2.990 +/- 0.300) x 10^-12 cm^-2 s^-1 TeV^-1  = (13.23 +/- 0.86) % Crab
+PL   Index           : 2.51 +/- 0.09
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 8
+Flux points table: 
+
+	e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV   TeV  1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ----- ----- --------------- --------------- --------------- --------------- -----
+ 0.540   nan   nan       8.290e-12       3.540e-12       3.580e-12             nan False
+ 0.750   nan   nan       7.630e-12       1.220e-12       1.240e-12             nan False
+ 1.090   nan   nan       2.060e-12       5.190e-13       5.260e-13             nan False
+ 1.610   nan   nan       9.940e-13       2.380e-13       2.420e-13             nan False
+ 2.360   nan   nan       4.360e-13       1.070e-13       1.100e-13             nan False
+ 3.450   nan   nan       1.760e-13       4.960e-14       5.110e-14             nan False
+ 5.050   nan   nan       5.690e-14       2.250e-14       2.340e-14             nan False
+14.000   nan   nan       2.510e-15       1.290e-15       1.340e-15             nan False
+
+*** Source associations info ***
+
+List of associated objects: G323.7-1.0

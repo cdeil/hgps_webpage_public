@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 72
+Source name          : HESS J1908+063
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 132
+
+
+*** Info from map analysis ***
+
+RA                   :  287.096 deg = 19h08m23s
+DEC                  :    6.388 deg = 6d23m16s
+GLON                 :   40.547 +/- 0.039 deg
+GLAT                 :   -0.837 +/- 0.037 deg
+Position Error (68%) : 0.083 deg
+Position Error (95%) : 0.134 deg
+ROI number           : 2
+Spatial model        : Gaussian
+Spatial components   : HGPSC 095
+TS                   : 360.2
+sqrt(TS)             : 19.0
+Size                 : 0.486 +/- 0.027 (UL: nan) deg
+R70                  : 0.759 deg
+RSpec                : 0.500 deg
+Total model excess   : 2155.8
+Excess in RSpec      : 956.5
+Model Excess in RSpec : 906.6
+Background in RSpec  : 3284.5
+Livetime             : 47.4 hours
+Energy threshold     : 0.59 TeV
+Source flux (>1 TeV) : (6.526 +/- 0.502) x 10^-12 cm^-2 s^-1 = (28.88 +/- 2.22) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 2.799 x 10^-12 cm^-2 s^-1 = 12.39 % Crab
+Source model                   : 2.658 x 10^-12 cm^-2 s^-1 = 11.76 % Crab
+Other component model          : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Large scale component model    : 0.050 x 10^-12 cm^-2 s^-1 =  0.22 % Crab
+Total model                    : 2.709 x 10^-12 cm^-2 s^-1 = 11.99 % Crab
+Containment in RSpec                :  40.7 %
+Contamination in RSpec              :   1.9 %
+Flux correction (RSpec -> Total)    : 240.9 %
+Flux correction (Total -> RSpec)    :  41.5 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 12.0 hours
+Energy range:        : 0.32 to 61.90 TeV
+Background           : 5629.4
+Excess               : 1127.6
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (8.348 +/- 0.567) x 10^-12 cm^-2 s^-1  = (36.94 +/- 2.51) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (29.184 +/- 2.049) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 2.06 TeV
+Flux at pivot energy : (2.064 +/- 0.140) x 10^-12 cm^-2 s^-1 TeV^-1  = (9.13 +/- 0.40) % Crab
+PL   Flux(> 1 TeV)   : (8.348 +/- 0.567) x 10^-12 cm^-2 s^-1  = (36.94 +/- 2.51) % Crab
+PL   Flux(@ 1 TeV)   : (10.543 +/- 0.846) x 10^-12 cm^-2 s^-1 TeV^-1  = (46.65 +/- 2.41) % Crab
+PL   Index           : 2.26 +/- 0.06
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.464  0.316  0.681       4.838e-11       1.044e-11       1.072e-11       6.989e-11 False
+ 1.049  0.681  1.616       9.848e-12       1.075e-12       1.112e-12       1.205e-11 False
+ 2.488  1.616  3.831       1.407e-12       1.828e-13       1.889e-13       1.782e-12 False
+ 5.900  3.831  9.085       1.913e-13       3.353e-14       3.406e-14       2.618e-13 False
+13.335  9.085 19.573       3.620e-14       7.514e-15       8.012e-15       5.233e-14 False
+30.142 19.573 46.416       4.512e-15       1.435e-15       1.562e-15       7.734e-15 False
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 095
+
+Component HGPSC 095:
+GLON                 :   40.547 +/- 0.039 deg
+GLAT                 :   -0.837 +/- 0.037 deg
+Size                 : 0.486 +/- 0.027 deg
+Flux (>1 TeV)        : (6.53 +/- 0.50) x 10^-12 cm^-2 s^-1 = (28.9 +/- 2.2) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 3FGL J1907.9+0602, G40.5-0.5, J1907+0602, MGRO J1908+06, ARGO J1907+0627

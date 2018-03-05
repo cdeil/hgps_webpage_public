@@ -1,0 +1,92 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 42
+Source name          : HESS J1746-285
+Analysis reference   : EXTERN
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 159
+
+
+*** Info from map analysis ***
+
+RA                   :  266.599 deg = 17h46m24s
+DEC                  :  -28.876 deg = -28d52m33s
+GLON                 :    0.140 +/- nan deg
+GLAT                 :   -0.114 +/- nan deg
+Position Error (68%) : 0.016 deg
+Position Error (95%) : nan deg
+ROI number           : -1
+Spatial model        : Point-Like
+Spatial components   : 
+TS                   : nan
+sqrt(TS)             : nan
+Size                 : nan +/- nan (UL: nan) deg
+R70                  : nan deg
+RSpec                : 0.090 deg
+Total model excess   : nan
+Excess in RSpec      : nan
+Model Excess in RSpec : nan
+Background in RSpec  : nan
+Livetime             : 259.0 hours
+Energy threshold     : nan TeV
+Source flux (>1 TeV) : (0.154 +/- 0.050) x 10^-12 cm^-2 s^-1 = (0.68 +/- 0.22) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Source model                   : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Other component model          : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Large scale component model    : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Total model                    : nan x 10^-12 cm^-2 s^-1 =   nan % Crab
+Containment in RSpec                :   nan %
+Contamination in RSpec              :   nan %
+Flux correction (RSpec -> Total)    :   nan %
+Flux correction (Total -> RSpec)    :   nan %
+
+*** Info from spectral analysis ***
+
+Livetime             : 259.0 hours
+Energy range:        : 0.35 to 30.00 TeV
+Background           : nan
+Excess               : nan
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (0.154 +/- 0.050) x 10^-12 cm^-2 s^-1  = (0.68 +/- 0.22) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (0.550 +/- 0.200) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.00 TeV
+Flux at pivot energy : (0.180 +/- 0.046) x 10^-12 cm^-2 s^-1 TeV^-1  = (0.80 +/- 0.13) % Crab
+PL   Flux(> 1 TeV)   : (0.154 +/- 0.050) x 10^-12 cm^-2 s^-1  = (0.68 +/- 0.22) % Crab
+PL   Flux(@ 1 TeV)   : (0.180 +/- 0.046) x 10^-12 cm^-2 s^-1 TeV^-1  = (0.80 +/- 0.13) % Crab
+PL   Index           : 2.17 +/- 0.24
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 13
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.398  0.335  0.473       3.233e-12       1.385e-12       1.512e-12             nan False
+ 0.562  0.473  0.668       4.407e-13       2.840e-13       3.000e-13             nan False
+ 0.794  0.668  0.944       2.950e-13       1.297e-13       1.370e-13             nan False
+ 1.122  0.944  1.334       4.420e-14       5.520e-14       5.890e-14             nan False
+ 1.585  1.333  1.884       6.190e-14       2.910e-14       3.120e-14             nan False
+ 2.240  1.885  2.663       6.505e-14       1.665e-14       1.790e-14             nan False
+ 3.165  2.663  3.762       2.377e-14       8.350e-15       9.090e-15             nan False
+ 4.471  3.761  5.314       4.501e-15       3.994e-15       4.470e-15             nan False
+ 6.317  5.314  7.509       3.879e-15       2.361e-15       2.679e-15             nan False
+ 8.924  7.508 10.608             nan             nan             nan       4.851e-15  True
+12.610 10.609 14.989             nan             nan             nan       2.573e-15  True
+17.810 14.983 21.170       7.352e-16       4.010e-16       5.060e-16             nan False
+25.170 21.175 29.919             nan             nan             nan       1.048e-15  True
+
+*** Source associations info ***
+
+List of associated objects: 3FGL J1746.3-2851c, G0.1-0.1, J1746-2850

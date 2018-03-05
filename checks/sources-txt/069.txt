@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 69
+Source name          : HESS J1852-000
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 157
+
+
+*** Info from map analysis ***
+
+RA                   :  283.060 deg = 18h52m14s
+DEC                  :    0.099 deg = 0d05m56s
+GLON                 :   33.111 +/- 0.055 deg
+GLAT                 :   -0.133 +/- 0.048 deg
+Position Error (68%) : 0.111 deg
+Position Error (95%) : 0.180 deg
+ROI number           : 3
+Spatial model        : Gaussian
+Spatial components   : HGPSC 090
+TS                   : 81.8
+sqrt(TS)             : 9.0
+Size                 : 0.278 +/- 0.042 (UL: nan) deg
+R70                  : 0.439 deg
+RSpec                : 0.439 deg
+Total model excess   : 676.8
+Excess in RSpec      : 588.2
+Model Excess in RSpec : 489.7
+Background in RSpec  : 3116.8
+Livetime             : 63.0 hours
+Energy threshold     : 0.50 TeV
+Source flux (>1 TeV) : (1.297 +/- 0.249) x 10^-12 cm^-2 s^-1 = (5.74 +/- 1.10) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 1.116 x 10^-12 cm^-2 s^-1 =  4.94 % Crab
+Source model                   : 0.906 x 10^-12 cm^-2 s^-1 =  4.01 % Crab
+Other component model          : 0.020 x 10^-12 cm^-2 s^-1 =  0.09 % Crab
+Large scale component model    : 0.289 x 10^-12 cm^-2 s^-1 =  1.28 % Crab
+Total model                    : 1.215 x 10^-12 cm^-2 s^-1 =  5.38 % Crab
+Containment in RSpec                :  69.9 %
+Contamination in RSpec              :  25.4 %
+Flux correction (RSpec -> Total)    : 106.8 %
+Flux correction (Total -> RSpec)    :  93.7 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 22.6 hours
+Energy range:        : 0.26 to 61.90 TeV
+Background           : 8668.3
+Excess               : 788.7
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (1.208 +/- 0.148) x 10^-12 cm^-2 s^-1  = (5.35 +/- 0.65) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (4.315 +/- 0.545) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 2.06 TeV
+Flux at pivot energy : (0.296 +/- 0.036) x 10^-12 cm^-2 s^-1 TeV^-1  = (1.31 +/- 0.10) % Crab
+PL   Flux(> 1 TeV)   : (1.208 +/- 0.148) x 10^-12 cm^-2 s^-1  = (5.35 +/- 0.65) % Crab
+PL   Flux(@ 1 TeV)   : (1.416 +/- 0.201) x 10^-12 cm^-2 s^-1 TeV^-1  = (6.26 +/- 0.57) % Crab
+PL   Index           : 2.17 +/- 0.10
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.402  0.261  0.619       9.673e-12       3.204e-12       3.199e-12       1.610e-11 False
+ 0.953  0.619  1.468       1.422e-12       3.431e-13       3.448e-13       2.115e-12 False
+ 2.260  1.468  3.481       3.029e-13       6.114e-14       6.095e-14       4.265e-13 False
+ 5.360  3.481  8.254       3.041e-14       1.121e-14       1.146e-14       5.368e-14 False
+12.711  8.254 19.573       6.569e-15       2.178e-15       2.297e-15       1.131e-14 False
+30.142 19.573 46.416       1.036e-15       3.841e-16       4.027e-16       1.891e-15 False
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 090
+
+Component HGPSC 090:
+GLON                 :   33.111 +/- 0.055 deg
+GLAT                 :   -0.133 +/- 0.048 deg
+Size                 : 0.278 +/- 0.042 deg
+Flux (>1 TeV)        : (1.30 +/- 0.25) x 10^-12 cm^-2 s^-1 = (5.7 +/- 1.1) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 3FGL J1853.2+0006, G32.8-0.1, G33.2-0.6, J1853-0004, J1853+0011

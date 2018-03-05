@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 24
+Source name          : HESS J1632-478
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 86
+
+
+*** Info from map analysis ***
+
+RA                   :  247.976 deg = 16h31m54s
+DEC                  :  -47.766 deg = -47d46m00s
+GLON                 :  336.394 +/- 0.020 deg
+GLAT                 :    0.258 +/- 0.023 deg
+Position Error (68%) : 0.048 deg
+Position Error (95%) : 0.078 deg
+ROI number           : 11
+Spatial model        : Gaussian
+Spatial components   : HGPSC 030
+TS                   : 218.1
+sqrt(TS)             : 14.8
+Size                 : 0.182 +/- 0.020 (UL: nan) deg
+R70                  : 0.296 deg
+RSpec                : 0.296 deg
+Total model excess   : 678.8
+Excess in RSpec      : 723.7
+Model Excess in RSpec : 695.8
+Background in RSpec  : 880.3
+Livetime             : 34.0 hours
+Energy threshold     : 0.50 TeV
+Source flux (>1 TeV) : (2.930 +/- 0.511) x 10^-12 cm^-2 s^-1 = (12.97 +/- 2.26) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 3.086 x 10^-12 cm^-2 s^-1 = 13.65 % Crab
+Source model                   : 2.053 x 10^-12 cm^-2 s^-1 =  9.08 % Crab
+Other component model          : 0.915 x 10^-12 cm^-2 s^-1 =  4.05 % Crab
+Large scale component model    : 0.152 x 10^-12 cm^-2 s^-1 =  0.67 % Crab
+Total model                    : 3.120 x 10^-12 cm^-2 s^-1 = 13.80 % Crab
+Containment in RSpec                :  70.1 %
+Contamination in RSpec              :  34.2 %
+Flux correction (RSpec -> Total)    :  93.9 %
+Flux correction (Total -> RSpec)    : 106.5 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 15.5 hours
+Energy range:        : 0.26 to 90.85 TeV
+Background           : 2299.2
+Excess               : 1232.8
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (2.317 +/- 0.160) x 10^-12 cm^-2 s^-1  = (10.25 +/- 0.71) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (7.584 +/- 0.606) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.05 TeV
+Flux at pivot energy : (3.102 +/- 0.177) x 10^-12 cm^-2 s^-1 TeV^-1  = (13.73 +/- 0.50) % Crab
+PL   Flux(> 1 TeV)   : (2.317 +/- 0.160) x 10^-12 cm^-2 s^-1  = (10.25 +/- 0.71) % Crab
+PL   Flux(@ 1 TeV)   : (3.510 +/- 0.200) x 10^-12 cm^-2 s^-1 TeV^-1  = (15.53 +/- 0.57) % Crab
+PL   Index           : 2.52 +/- 0.06
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.402  0.261  0.619       3.043e-11       3.401e-12       3.496e-12       3.739e-11 False
+ 0.953  0.619  1.468       4.402e-12       3.603e-13       3.583e-13       5.144e-12 False
+ 2.260  1.468  3.481       4.463e-13       6.077e-14       6.160e-14       5.708e-13 False
+ 5.360  3.481  8.254       4.908e-14       1.125e-14       1.177e-14       7.327e-14 False
+12.711  8.254 19.573       7.749e-15       2.281e-15       2.452e-15       1.289e-14 False
+30.142 19.573 46.416       6.373e-16       4.075e-16       4.694e-16       1.638e-15 False
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 030
+
+Component HGPSC 030:
+GLON                 :  336.394 +/- 0.020 deg
+GLAT                 :    0.258 +/- 0.023 deg
+Size                 : 0.182 +/- 0.020 deg
+Flux (>1 TeV)        : (2.93 +/- 0.51) x 10^-12 cm^-2 s^-1 = (13.0 +/- 2.3) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 2FHL J1633.5-4746e, 3FGL J1633.0-4746e, G336.4+0.2, J1632-4757

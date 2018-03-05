@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 17
+Source name          : HESS J1507-622
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 77
+
+
+*** Info from map analysis ***
+
+RA                   :  226.746 deg = 15h07m00s
+DEC                  :  -62.324 deg = -62d19m25s
+GLON                 :  317.969 +/- 0.016 deg
+GLAT                 :   -3.477 +/- 0.018 deg
+Position Error (68%) : 0.039 deg
+Position Error (95%) : 0.063 deg
+ROI number           : 13
+Spatial model        : Gaussian
+Spatial components   : HGPSC 022
+TS                   : 287.9
+sqrt(TS)             : 17.0
+Size                 : 0.175 +/- 0.017 (UL: nan) deg
+R70                  : 0.286 deg
+RSpec                : 0.286 deg
+Total model excess   : 619.2
+Excess in RSpec      : 424.4
+Model Excess in RSpec : 422.6
+Background in RSpec  : 630.6
+Livetime             : 24.9 hours
+Energy threshold     : 0.81 TeV
+Source flux (>1 TeV) : (2.993 +/- 0.313) x 10^-12 cm^-2 s^-1 = (13.24 +/- 1.38) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 2.094 x 10^-12 cm^-2 s^-1 =  9.26 % Crab
+Source model                   : 2.095 x 10^-12 cm^-2 s^-1 =  9.27 % Crab
+Other component model          : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Large scale component model    : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Total model                    : 2.095 x 10^-12 cm^-2 s^-1 =  9.27 % Crab
+Containment in RSpec                :  70.0 %
+Contamination in RSpec              :   0.0 %
+Flux correction (RSpec -> Total)    : 142.9 %
+Flux correction (Total -> RSpec)    :  70.0 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 12.8 hours
+Energy range:        : 0.51 to 74.99 TeV
+Background           : 1913.0
+Excess               : 611.0
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (2.598 +/- 0.206) x 10^-12 cm^-2 s^-1  = (11.50 +/- 0.91) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (9.168 +/- 0.743) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 2.26 TeV
+Flux at pivot energy : (0.517 +/- 0.041) x 10^-12 cm^-2 s^-1 TeV^-1  = (2.29 +/- 0.12) % Crab
+PL   Flux(> 1 TeV)   : (2.598 +/- 0.206) x 10^-12 cm^-2 s^-1  = (11.50 +/- 0.91) % Crab
+PL   Flux(@ 1 TeV)   : (3.180 +/- 0.312) x 10^-12 cm^-2 s^-1 TeV^-1  = (14.07 +/- 0.89) % Crab
+PL   Index           : 2.22 +/- 0.07
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.715  0.511  1.000       5.365e-12       1.055e-12       1.055e-12       7.503e-12 False
+ 1.468  1.000  2.154       1.356e-12       1.990e-13       2.039e-13       1.762e-12 False
+ 3.162  2.154  4.642       3.141e-13       4.428e-14       4.502e-14       4.057e-13 False
+ 6.813  4.642 10.000       5.642e-14       9.895e-15       1.040e-14       7.793e-14 False
+14.678 10.000 21.544       8.352e-15       2.172e-15       2.410e-15       1.344e-14 False
+31.623 21.544 46.416       3.142e-16       3.343e-16       3.640e-16       1.178e-15  True
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 022
+
+Component HGPSC 022:
+GLON                 :  317.969 +/- 0.016 deg
+GLAT                 :   -3.477 +/- 0.018 deg
+Size                 : 0.175 +/- 0.017 deg
+Flux (>1 TeV)        : (2.99 +/- 0.31) x 10^-12 cm^-2 s^-1 = (13.2 +/- 1.4) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 2FHL J1507.4-6213, 3FGL J1506.6-6219, CXOU J150706.0-621443

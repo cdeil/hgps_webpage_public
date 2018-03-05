@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 56
+Source name          : HESS J1826-148
+Analysis reference   : HGPS
+Source class         : Binary
+Identified object    : LS 5039
+Gamma-Cat id         : 119
+
+
+*** Info from map analysis ***
+
+RA                   :  276.563 deg = 18h26m15s
+DEC                  :  -14.847 deg = -14d50m51s
+GLON                 :   16.882 +/- 0.001 deg
+GLAT                 :   -1.289 +/- 0.001 deg
+Position Error (68%) : 0.012 deg
+Position Error (95%) : 0.020 deg
+ROI number           : 6
+Spatial model        : Gaussian
+Spatial components   : HGPSC 069
+TS                   : 3376.1
+sqrt(TS)             : 58.1
+Size                 : nan +/- nan (UL: 0.030) deg
+R70                  : 0.068 deg
+RSpec                : 0.150 deg
+Total model excess   : 1658.6
+Excess in RSpec      : 1753.6
+Model Excess in RSpec : 1755.3
+Background in RSpec  : 885.4
+Livetime             : 108.2 hours
+Energy threshold     : 0.39 TeV
+Source flux (>1 TeV) : (1.281 +/- 0.039) x 10^-12 cm^-2 s^-1 = (5.67 +/- 0.17) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 1.355 x 10^-12 cm^-2 s^-1 =  5.99 % Crab
+Source model                   : 1.220 x 10^-12 cm^-2 s^-1 =  5.40 % Crab
+Other component model          : 0.136 x 10^-12 cm^-2 s^-1 =  0.60 % Crab
+Large scale component model    : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Total model                    : 1.356 x 10^-12 cm^-2 s^-1 =  6.00 % Crab
+Containment in RSpec                :  95.2 %
+Contamination in RSpec              :  10.0 %
+Flux correction (RSpec -> Total)    :  94.5 %
+Flux correction (Total -> RSpec)    : 105.8 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 14.8 hours
+Energy range:        : 0.22 to 51.09 TeV
+Background           : 928.2
+Excess               : 581.8
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (0.835 +/- 0.077) x 10^-12 cm^-2 s^-1  = (3.70 +/- 0.34) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (2.881 +/- 0.300) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.05 TeV
+Flux at pivot energy : (0.982 +/- 0.074) x 10^-12 cm^-2 s^-1 TeV^-1  = (4.34 +/- 0.21) % Crab
+PL   Flux(> 1 TeV)   : (0.835 +/- 0.077) x 10^-12 cm^-2 s^-1  = (3.70 +/- 0.34) % Crab
+PL   Flux(@ 1 TeV)   : (1.100 +/- 0.083) x 10^-12 cm^-2 s^-1 TeV^-1  = (4.87 +/- 0.24) % Crab
+PL   Index           : 2.32 +/- 0.07
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.332  0.215  0.511       1.319e-11       2.179e-12       2.201e-12       1.768e-11 False
+ 0.787  0.511  1.212       1.737e-12       2.240e-13       2.318e-13       2.206e-12 False
+ 1.957  1.212  3.162       2.964e-13       3.729e-14       3.860e-14       3.732e-13 False
+ 4.870  3.162  7.499       3.047e-14       6.860e-15       7.362e-15       4.585e-14 False
+12.115  7.499 19.573       3.149e-15       1.280e-15       1.433e-15       6.178e-15 False
+30.142 19.573 46.416      -8.910e-25       2.390e-17       6.815e-17       2.670e-16  True
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 069
+
+Component HGPSC 069:
+GLON                 :   16.882 +/- 0.001 deg
+GLAT                 :   -1.289 +/- 0.001 deg
+Size                 : 0.007 +/- 0.004 deg
+Flux (>1 TeV)        : (1.28 +/- 0.04) x 10^-12 cm^-2 s^-1 = (5.7 +/- 0.2) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 2FHL J1826.3-1450, 3FGL J1826.2-1450, LS 5039

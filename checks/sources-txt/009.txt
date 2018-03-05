@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 9
+Source name          : HESS J1356-645
+Analysis reference   : HGPS
+Source class         : PWN
+Identified object    : PSR J1357-6429
+Gamma-Cat id         : 64
+
+
+*** Info from map analysis ***
+
+RA                   :  208.962 deg = 13h55m51s
+DEC                  :  -64.510 deg = -64d30m36s
+GLON                 :  309.794 +/- 0.022 deg
+GLAT                 :   -2.500 +/- 0.022 deg
+Position Error (68%) : 0.048 deg
+Position Error (95%) : 0.078 deg
+ROI number           : 14
+Spatial model        : Gaussian
+Spatial components   : HGPSC 014
+TS                   : 301.0
+sqrt(TS)             : 17.3
+Size                 : 0.231 +/- 0.020 (UL: nan) deg
+R70                  : 0.371 deg
+RSpec                : 0.371 deg
+Total model excess   : 666.4
+Excess in RSpec      : 459.1
+Model Excess in RSpec : 470.9
+Background in RSpec  : 750.9
+Livetime             : 19.9 hours
+Energy threshold     : 0.78 TeV
+Source flux (>1 TeV) : (5.532 +/- 0.530) x 10^-12 cm^-2 s^-1 = (24.48 +/- 2.35) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 3.793 x 10^-12 cm^-2 s^-1 = 16.79 % Crab
+Source model                   : 3.873 x 10^-12 cm^-2 s^-1 = 17.14 % Crab
+Other component model          : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Large scale component model    : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Total model                    : 3.873 x 10^-12 cm^-2 s^-1 = 17.14 % Crab
+Containment in RSpec                :  70.0 %
+Contamination in RSpec              :   0.0 %
+Flux correction (RSpec -> Total)    : 142.8 %
+Flux correction (Total -> RSpec)    :  70.0 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 6.3 hours
+Energy range:        : 0.51 to 82.54 TeV
+Background           : 1815.1
+Excess               : 620.9
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (4.392 +/- 0.390) x 10^-12 cm^-2 s^-1  = (19.43 +/- 1.72) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (15.582 +/- 1.367) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 2.74 TeV
+Flux at pivot energy : (0.573 +/- 0.050) x 10^-12 cm^-2 s^-1 TeV^-1  = (2.54 +/- 0.14) % Crab
+PL   Flux(> 1 TeV)   : (4.392 +/- 0.390) x 10^-12 cm^-2 s^-1  = (19.43 +/- 1.72) % Crab
+PL   Flux(@ 1 TeV)   : (5.275 +/- 0.633) x 10^-12 cm^-2 s^-1 TeV^-1  = (23.34 +/- 1.81) % Crab
+PL   Index           : 2.20 +/- 0.08
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.715  0.511  1.000       1.157e-11       2.209e-12       2.220e-12       1.611e-11 False
+ 1.468  1.000  2.154       2.320e-12       3.721e-13       3.747e-13       3.082e-12 False
+ 3.162  2.154  4.642       3.114e-13       7.355e-14       7.609e-14       4.651e-13 False
+ 6.813  4.642 10.000       8.889e-14       1.719e-14       1.842e-14       1.260e-13 False
+14.678 10.000 21.544       2.192e-14       4.512e-15       4.823e-15       3.198e-14 False
+31.623 21.544 46.416       2.050e-15       9.145e-16       1.054e-15       4.289e-15 False
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 014
+
+Component HGPSC 014:
+GLON                 :  309.794 +/- 0.022 deg
+GLAT                 :   -2.500 +/- 0.022 deg
+Size                 : 0.231 +/- 0.020 deg
+Flux (>1 TeV)        : (5.53 +/- 0.53) x 10^-12 cm^-2 s^-1 = (24.5 +/- 2.3) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 2FHL J1355.1-6420e, 3FGL J1356.6-6428, G309.8-2.6, J1357-6429

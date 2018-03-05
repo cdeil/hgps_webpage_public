@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 46
+Source name          : HESS J1800-240
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 111,156
+
+
+*** Info from map analysis ***
+
+RA                   :  270.195 deg = 18h00m47s
+DEC                  :  -24.018 deg = -24d01m05s
+GLON                 :    5.959 +/- 0.039 deg
+GLAT                 :   -0.422 +/- 0.037 deg
+Position Error (68%) : 0.083 deg
+Position Error (95%) : 0.135 deg
+ROI number           : 7
+Spatial model        : Gaussian
+Spatial components   : HGPSC 053
+TS                   : 157.6
+sqrt(TS)             : 12.6
+Size                 : 0.316 +/- 0.039 (UL: nan) deg
+R70                  : 0.497 deg
+RSpec                : 0.497 deg
+Total model excess   : 965.7
+Excess in RSpec      : 763.3
+Model Excess in RSpec : 682.3
+Background in RSpec  : 3253.7
+Livetime             : 28.7 hours
+Energy threshold     : 0.39 TeV
+Source flux (>1 TeV) : (2.445 +/- 0.347) x 10^-12 cm^-2 s^-1 = (10.82 +/- 1.54) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 1.905 x 10^-12 cm^-2 s^-1 =  8.43 % Crab
+Source model                   : 1.714 x 10^-12 cm^-2 s^-1 =  7.58 % Crab
+Other component model          : 0.000 x 10^-12 cm^-2 s^-1 =  0.00 % Crab
+Large scale component model    : 0.342 x 10^-12 cm^-2 s^-1 =  1.51 % Crab
+Total model                    : 2.056 x 10^-12 cm^-2 s^-1 =  9.10 % Crab
+Containment in RSpec                :  70.1 %
+Contamination in RSpec              :  16.6 %
+Flux correction (RSpec -> Total)    : 118.9 %
+Flux correction (Total -> RSpec)    :  84.1 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 9.9 hours
+Energy range:        : 0.20 to 56.23 TeV
+Background           : 7377.1
+Excess               : 1117.9
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (2.901 +/- 0.308) x 10^-12 cm^-2 s^-1  = (12.84 +/- 1.36) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (9.604 +/- 1.169) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 0.95 TeV
+Flux at pivot energy : (4.797 +/- 0.407) x 10^-12 cm^-2 s^-1 TeV^-1  = (21.23 +/- 1.16) % Crab
+PL   Flux(> 1 TeV)   : (2.901 +/- 0.308) x 10^-12 cm^-2 s^-1  = (12.84 +/- 1.36) % Crab
+PL   Flux(@ 1 TeV)   : (4.273 +/- 0.363) x 10^-12 cm^-2 s^-1 TeV^-1  = (18.91 +/- 1.03) % Crab
+PL   Index           : 2.47 +/- 0.09
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.301  0.196  0.464       8.619e-11       1.466e-11       1.460e-11       1.156e-10 False
+ 0.750  0.464  1.212       8.396e-12       1.096e-12       1.086e-12       1.064e-11 False
+ 1.866  1.212  2.873       9.256e-13       1.700e-13       1.724e-13       1.272e-12 False
+ 4.642  2.873  7.499       1.051e-13       2.848e-14       2.949e-14       1.645e-13 False
+12.115  7.499 19.573       1.063e-14       3.907e-15       4.347e-15       1.979e-14 False
+30.142 19.573 46.416       3.369e-22       1.817e-16       4.271e-16       1.453e-15  True
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 053
+
+Component HGPSC 053:
+GLON                 :    5.959 +/- 0.039 deg
+GLAT                 :   -0.422 +/- 0.037 deg
+Size                 : 0.316 +/- 0.039 deg
+Flux (>1 TeV)        : (2.44 +/- 0.35) x 10^-12 cm^-2 s^-1 = (10.8 +/- 1.5) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 2FHL J1801.7-2358, 3FGL J1758.8-2402, 3FGL J1800.8-2402, G5.7-0.1

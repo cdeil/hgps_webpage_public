@@ -1,0 +1,97 @@
+
+*** Basic info ***
+
+Catalog row index (zero-based) : 27
+Source name          : HESS J1641-463
+Analysis reference   : HGPS
+Source class         : Unid
+Identified object    : 
+Gamma-Cat id         : 89
+
+
+*** Info from map analysis ***
+
+RA                   :  250.259 deg = 16h41m02s
+DEC                  :  -46.312 deg = -46d18m42s
+GLON                 :  338.517 +/- 0.015 deg
+GLAT                 :    0.085 +/- 0.015 deg
+Position Error (68%) : 0.033 deg
+Position Error (95%) : 0.054 deg
+ROI number           : 11
+Spatial model        : Gaussian
+Spatial components   : HGPSC 036
+TS                   : 48.2
+sqrt(TS)             : 6.9
+Size                 : nan +/- nan (UL: 0.062) deg
+R70                  : 0.098 deg
+RSpec                : 0.150 deg
+Total model excess   : 149.6
+Excess in RSpec      : 321.6
+Model Excess in RSpec : 280.4
+Background in RSpec  : 475.4
+Livetime             : 69.3 hours
+Energy threshold     : 0.44 TeV
+Source flux (>1 TeV) : (0.268 +/- 0.065) x 10^-12 cm^-2 s^-1 = (1.19 +/- 0.29) % Crab
+
+Fluxes in RSpec (> 1 TeV):
+Map measurement                : 0.577 x 10^-12 cm^-2 s^-1 =  2.55 % Crab
+Source model                   : 0.240 x 10^-12 cm^-2 s^-1 =  1.06 % Crab
+Other component model          : 0.263 x 10^-12 cm^-2 s^-1 =  1.17 % Crab
+Large scale component model    : 0.063 x 10^-12 cm^-2 s^-1 =  0.28 % Crab
+Total model                    : 0.567 x 10^-12 cm^-2 s^-1 =  2.51 % Crab
+Containment in RSpec                :  89.6 %
+Contamination in RSpec              :  57.6 %
+Flux correction (RSpec -> Total)    :  47.4 %
+Flux correction (Total -> RSpec)    : 211.1 %
+
+*** Info from spectral analysis ***
+
+Livetime             : 26.8 hours
+Energy range:        : 0.26 to 74.99 TeV
+Background           : 1107.2
+Excess               : 422.8
+Spectral model       : PL
+TS ECPL over PL      : nan
+Best-fit model flux(> 1 TeV) : (0.219 +/- 0.026) x 10^-12 cm^-2 s^-1  = (0.97 +/- 0.11) % Crab
+Best-fit model energy flux(1 to 10 TeV) : (0.726 +/- 0.097) x 10^-12 erg cm^-2 s^-1
+Pivot energy         : 1.16 TeV
+Flux at pivot energy : (0.225 +/- 0.023) x 10^-12 cm^-2 s^-1 TeV^-1  = (1.00 +/- 0.07) % Crab
+PL   Flux(> 1 TeV)   : (0.219 +/- 0.026) x 10^-12 cm^-2 s^-1  = (0.97 +/- 0.11) % Crab
+PL   Flux(@ 1 TeV)   : (0.322 +/- 0.033) x 10^-12 cm^-2 s^-1 TeV^-1  = (1.42 +/- 0.10) % Crab
+PL   Index           : 2.47 +/- 0.11
+ECPL   Flux(@ 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1 TeV^-1  = (nan +/- nan) % Crab
+ECPL   Flux(> 1 TeV) : (nan +/- nan) x 10^-12 cm^-2 s^-1  = (nan +/- nan) % Crab
+ECPL Index           : nan +/- nan
+ECPL Lambda          : nan +/- nan TeV^-1
+ECPL E_cut           : nan +/- nan TeV
+
+*** Flux points info ***
+
+Number of flux points: 6
+Flux points table: 
+
+	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+ TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
+------ ------ ------ --------------- --------------- --------------- --------------- -----
+ 0.402  0.261  0.619       2.875e-12       5.938e-13       6.071e-13       4.105e-12 False
+ 0.953  0.619  1.468       3.585e-13       5.742e-14       6.001e-14       4.794e-13 False
+ 2.260  1.468  3.481       4.499e-14       9.348e-15       9.817e-15       6.485e-14 False
+ 5.360  3.481  8.254       6.619e-15       1.882e-15       1.979e-15       1.072e-14 False
+12.711  8.254 19.573       7.025e-16       3.771e-16       4.118e-16       1.570e-15 False
+30.142 19.573 46.416      -1.197e-17       4.525e-17       5.588e-17       1.113e-16  True
+
+*** Gaussian component info ***
+
+Number of components: 1
+Spatial components   : HGPSC 036
+
+Component HGPSC 036:
+GLON                 :  338.517 +/- 0.015 deg
+GLAT                 :    0.085 +/- 0.015 deg
+Size                 : 0.036 +/- 0.013 deg
+Flux (>1 TeV)        : (0.27 +/- 0.06) x 10^-12 cm^-2 s^-1 = (1.2 +/- 0.3) % Crab
+
+
+*** Source associations info ***
+
+List of associated objects: 3FGL J1641.1-4619c, G338.5+0.1
