@@ -1,10 +1,8 @@
 #!/usr/bin/env python
 import functools
 from pathlib import Path
-import numpy as np
 from astropy.io import fits
 from astropy.table import Table
-from astropy.units import Quantity
 from gammapy.catalog import SourceCatalogHGPS, SourceCatalogGammaCat
 import matplotlib
 import click
@@ -43,8 +41,8 @@ def get_gamma_cat_source_for_hgps_source(source):
     row_idx = list(cat.table['source_id']).index(gc_id)
     gc_source = cat[row_idx]
 
-    print(source.name)
-    print(gc_source.name)
+    print('HGPS source:', source.name)
+    print('Gamma-cat source:', gc_source.name)
     return gc_source
 
 
@@ -102,49 +100,62 @@ def cli_sources_txt():
 @cli.command('sources-spec')
 def cli_sources_spec():
     """Plot spectrum for each source."""
-
-    filename = config.out_path / config.filename_cat
-    print(f'Reading {filename}')
-    cat = SourceCatalogHGPS(filename)
+    cat = get_hgps_cat()
 
     for source in cat:
-        plot_spec(source)
+        plot_spec(source, show_gamma_cat=False)
         # break
 
 
-def plot_spec(source):
+@cli.command('gammapy')
+def cli_gammapy():
+    """Checks for Gammapy."""
+    cat = get_hgps_cat()
+
+    # [_.spectrum_type for _ in cat]
+
+    for source in cat:
+        source.spectral_model('pl')
+
+
+def plot_spec(source, show_gamma_cat):
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
 
     energy_range = source.energy_range
-    source.spectral_model.plot_error(
-        ax=ax, energy_range=energy_range, energy_power=2, alpha=0.5,
-        facecolor='gray'
-    )
-    source.spectral_model.plot(
-        ax=ax, energy_range=energy_range, energy_power=2,
-        color='gray', alpha=0.8, lw=2
-    )
+    opts = dict(ax=ax, energy_range=energy_range, energy_power=2)
+
+    # Always show PL
+    model = source.spectral_model('pl')
+    model.plot_error(alpha=0.5, facecolor='gray', **opts)
+    model.plot(color='gray', alpha=0.8, lw=2, **opts)
+
+    # Show ECPL in addition if significant
+    if source.spectral_model_type == 'ecpl':
+        model = source.spectral_model('ecpl')
+        model.plot_error(alpha=0.5, facecolor='green', **opts)
+        model.plot(color='green', alpha=0.8, lw=2, **opts)
 
     source.flux_points.plot(
         ax=ax, energy_power=2, markeredgecolor='None', marker='o',
         markersize=4, capsize=0, color='0.3', zorder=10,
     )
 
-    extern_source = get_gamma_cat_source_for_hgps_source(source)
-    if extern_source is not None:
-        # import IPython; IPython.embed()
-        if extern_source.data['spec_type'] != 'none':
-            extern_source.spectral_model.plot(
-                ax=ax, energy_range=energy_range, energy_power=2,
-                color='red', alpha=0.5, lw=2,
-            )
+    if show_gamma_cat:
+        extern_source = get_gamma_cat_source_for_hgps_source(source)
+        if extern_source is not None:
+            # import IPython; IPython.embed()
+            if extern_source.data['spec_type'] != 'none':
+                extern_source.spectral_model.plot(
+                    ax=ax, energy_range=energy_range, energy_power=2,
+                    color='red', alpha=0.1, lw=2,
+                )
 
-        if extern_source.data['sed_n_points'] != 0:
-            extern_source.flux_points.plot(
-                ax=ax, energy_power=2, markeredgecolor='None', marker='o',
-                markersize=4, capsize=0, color='red', zorder=10, alpha=0.5,
-            )
+            if extern_source.data['sed_n_points'] != 0:
+                extern_source.flux_points.plot(
+                    ax=ax, energy_power=2, markeredgecolor='None', marker='o',
+                    markersize=4, capsize=0, color='red', zorder=10, alpha=0.5,
+                )
 
     title = (
         f'HGPS: row {source.index}; {source.name}; {source.data["Identified_Object"]}\n'
