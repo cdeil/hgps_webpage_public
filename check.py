@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import functools
+from collections import Counter
 from pathlib import Path
 from astropy.io import fits
 from astropy.table import Table
@@ -112,7 +113,15 @@ def cli_gammapy():
     """Checks for Gammapy."""
     cat = get_hgps_cat()
 
-    # [_.spectrum_type for _ in cat]
+    spec_types = Counter([_.spectral_model_type for _ in cat])
+    assert spec_types == {'pl': 66, 'ecpl': 12}
+
+    morph_types = Counter([_.spatial_model_type for _ in cat])
+    assert morph_types == {'gaussian': 52, '2-gaussian': 8, 'shell': 7, 'point-like': 6, '3-gaussian': 5}
+
+    print(repr(cat[0]))
+
+    # import IPython; IPython.embed()
 
     for source in cat:
         source.spectral_model('pl')
@@ -122,23 +131,24 @@ def plot_spec(source, show_gamma_cat):
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots()
 
-    energy_range = source.energy_range
-    opts = dict(ax=ax, energy_range=energy_range, energy_power=2)
+    flux_unit = 'erg-1 cm-2 s-1'
+
+    opts_points = dict(ax=ax, energy_power=2, flux_unit=flux_unit)
+    opts_model = dict(energy_range=source.energy_range, **opts_points)
 
     # Always show PL
     model = source.spectral_model('pl')
-    model.plot_error(alpha=0.5, facecolor='gray', **opts)
-    model.plot(color='gray', alpha=0.8, lw=2, **opts)
+    model.plot_error(alpha=0.5, facecolor='gray', **opts_model)
+    model.plot(color='gray', alpha=0.8, lw=2, **opts_model)
 
     # Show ECPL in addition if significant
     if source.spectral_model_type == 'ecpl':
         model = source.spectral_model('ecpl')
-        model.plot_error(alpha=0.5, facecolor='green', **opts)
-        model.plot(color='green', alpha=0.8, lw=2, **opts)
+        model.plot_error(alpha=0.5, facecolor='green', **opts_model)
+        model.plot(color='green', alpha=0.8, lw=2, **opts_model)
 
     source.flux_points.plot(
-        ax=ax, energy_power=2, markeredgecolor='None', marker='o',
-        markersize=4, capsize=0, color='0.3', zorder=10,
+        markeredgecolor='None', marker='o', markersize=4, capsize=0, color='0.3', zorder=10, **opts_points
     )
 
     if show_gamma_cat:
@@ -147,14 +157,13 @@ def plot_spec(source, show_gamma_cat):
             # import IPython; IPython.embed()
             if extern_source.data['spec_type'] != 'none':
                 extern_source.spectral_model.plot(
-                    ax=ax, energy_range=energy_range, energy_power=2,
-                    color='red', alpha=0.1, lw=2,
+                    color='red', alpha=0.1, lw=2, **opts_model
                 )
 
             if extern_source.data['sed_n_points'] != 0:
                 extern_source.flux_points.plot(
-                    ax=ax, energy_power=2, markeredgecolor='None', marker='o',
-                    markersize=4, capsize=0, color='red', zorder=10, alpha=0.5,
+                    markeredgecolor='None', marker='o',
+                    markersize=4, capsize=0, color='red', zorder=10, alpha=0.5, **opts_points
                 )
 
     title = (
@@ -166,7 +175,7 @@ def plot_spec(source, show_gamma_cat):
     ax.set_xlabel('Energy (TeV)')
     ax.set_ylabel(r'E$^2$ x F (erg cm$^{-2}$ s$^{-1}$)')
     ax.set_xlim(0.11, 80)
-    ax.set_ylim(0.3e-13, 4e-11)
+    ax.set_ylim(0.5e-13, 6.5e-11)
     ax.grid('on')
     fig.tight_layout()
 
