@@ -70,7 +70,7 @@ ECPL E_cut           : 4.13 +/- 1.49 TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.402  0.261  0.619       3.652e-11       2.292e-12       2.294e-12       4.135e-11 False
@@ -100,4 +100,22 @@ Flux (>1 TeV)        : (2.29 +/- 0.16) x 10^-12 cm^-2 s^-1 = (10.1 +/- 0.7) % Cr
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1640.6-4632, 3FGL J1640.4-4634c, G338.3-0.0, J1640-4631
+ Source_Name   Association_Catalog  Association_Name   Separation
+                                                          deg    
+-------------- ------------------- ------------------ -----------
+HESS J1640-465                2FHL  2FHL J1640.6-4632 0.025259065
+HESS J1640-465                3FGL 3FGL J1640.4-4634c 0.029354116
+HESS J1640-465                COMP         G338.3-0.0 0.062817164
+HESS J1640-465                 PSR         J1640-4631   0.0490346
+
+*** Source identification info ***
+
+Source_Name: HESS J1640-465
+Identified_Object: G338.3-0.0
+Class: Composite
+Evidence: Position
+Reference: 2014MNRAS.439.2828A
+Distance_Reference: SNRCat
+Distance: 10.5 kpc
+Distance_Min: 8.0 kpc
+Distance_Max: 13.0 kpc

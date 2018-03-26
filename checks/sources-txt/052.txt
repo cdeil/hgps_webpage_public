@@ -70,7 +70,7 @@ ECPL E_cut           : 7.37 +/- 2.19 TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.301  0.196  0.464       1.901e-11       3.415e-12       3.418e-12       2.608e-11 False
@@ -94,4 +94,21 @@ Flux (>1 TeV)        : (1.98 +/- 0.15) x 10^-12 cm^-2 s^-1 = (8.7 +/- 0.7) % Cra
 
 *** Source associations info ***
 
-List of associated objects: G12.7-0.0, G12.8-0.0, J1813-1749
+ Source_Name   Association_Catalog Association_Name  Separation 
+                                                        deg     
+-------------- ------------------- ---------------- ------------
+HESS J1813-178                 SNR        G12.7-0.0   0.09545363
+HESS J1813-178                COMP        G12.8-0.0  0.017802173
+HESS J1813-178                 PSR       J1813-1749 0.0054549905
+
+*** Source identification info ***
+
+Source_Name: HESS J1813-178
+Identified_Object: PSR J1813-1749
+Class: Composite
+Evidence: Position
+Reference: 2007AA...470..249F
+Distance_Reference: 2012ApJ...753L..14H
+Distance: 4.800000190734863 kpc
+Distance_Min: 4.5 kpc
+Distance_Max: 5.099999904632568 kpc

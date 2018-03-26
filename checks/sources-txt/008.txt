@@ -70,7 +70,7 @@ ECPL E_cut           : 15.12 +/- 3.19 TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.619  0.422  0.909       1.690e-11       9.235e-13       9.969e-13       1.884e-11 False
@@ -100,4 +100,23 @@ Flux (>1 TeV)        : (4.71 +/- 0.33) x 10^-12 cm^-2 s^-1 = (20.9 +/- 1.5) % Cr
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1303.4-6312e, 3FGL J1303.0-6312e, G304.1-0.2, J1301-6305, J1301-6310
+ Source_Name   Association_Catalog  Association_Name   Separation
+                                                          deg    
+-------------- ------------------- ------------------ -----------
+HESS J1303-631                2FHL 2FHL J1303.4-6312e 0.006996025
+HESS J1303-631                3FGL 3FGL J1303.0-6312e 0.006996025
+HESS J1303-631                 PWN         G304.1-0.2  0.17600244
+HESS J1303-631                 PSR         J1301-6305   0.1740982
+HESS J1303-631                 PSR         J1301-6310  0.17535168
+
+*** Source identification info ***
+
+Source_Name: HESS J1303-631
+Identified_Object: PSR J1301-6305
+Class: PWN
+Evidence: ED Morph.
+Reference: 2012A%26A...548A..46H
+Distance_Reference: ATNF
+Distance: 6.650000095367432 kpc
+Distance_Min: 3.325000047683716 kpc
+Distance_Max: 13.300000190734863 kpc

@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.332  0.215  0.511       4.232e-12       1.191e-12       1.233e-12       6.698e-12 False
@@ -94,4 +94,20 @@ Flux (>1 TeV)        : (0.25 +/- 0.05) x 10^-12 cm^-2 s^-1 = (1.1 +/- 0.2) % Cra
 
 *** Source associations info ***
 
-List of associated objects: 3FGL J1714.5-3832, G348.5+0.1
+ Source_Name   Association_Catalog  Association_Name Separation
+                                                        deg    
+-------------- ------------------- ----------------- ----------
+HESS J1714-385                3FGL 3FGL J1714.5-3832  0.0674606
+HESS J1714-385                COMP        G348.5+0.1 0.08199812
+
+*** Source identification info ***
+
+Source_Name: HESS J1714-385
+Identified_Object: CTB 37A
+Class: Composite
+Evidence: Position
+Reference: 2008AA...490..685A
+Distance_Reference: SNRCat
+Distance: 7.900000095367432 kpc
+Distance_Min: 6.300000190734863 kpc
+Distance_Max: 9.5 kpc

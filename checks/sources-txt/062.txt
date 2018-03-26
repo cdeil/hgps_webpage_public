@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.365  0.237  0.562       2.086e-10       1.398e-11       1.421e-11       2.378e-10 False
@@ -106,4 +106,25 @@ Flux (>1 TeV)        : (1.15 +/- 0.17) x 10^-12 cm^-2 s^-1 = (5.1 +/- 0.7) % Cra
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1836.5-0655e, 2FHL J1837.4-0717, 3FGL J1836.5-0655e, 3FGL J1837.6-0717, 3FGL J1838.9-0646, G25.2+0.3, J1838-0655
+ Source_Name   Association_Catalog  Association_Name  Separation
+                                                         deg    
+-------------- ------------------- ------------------ ----------
+HESS J1837-069                2FHL 2FHL J1836.5-0655e  0.2336381
+HESS J1837-069                2FHL  2FHL J1837.4-0717 0.33625492
+HESS J1837-069                3FGL 3FGL J1836.5-0655e  0.2336381
+HESS J1837-069                3FGL  3FGL J1837.6-0717  0.3379115
+HESS J1837-069                3FGL  3FGL J1838.9-0646 0.39889967
+HESS J1837-069                 PWN          G25.2+0.3 0.37496477
+HESS J1837-069                 PSR         J1838-0655 0.14428425
+
+*** Source identification info ***
+
+Source_Name: HESS J1837-069
+Identified_Object: PSR J1838-0655
+Class: PWN
+Evidence: Morphology
+Reference: 2008AIPC.1085..320M
+Distance_Reference: 2008ApJ...681..515G
+Distance: 6.599999904632568 kpc
+Distance_Min: 3.299999952316284 kpc
+Distance_Max: 13.199999809265137 kpc

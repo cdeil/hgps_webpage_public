@@ -70,7 +70,7 @@ ECPL E_cut           : 12.27 +/- 1.74 TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.422  0.287  0.619       6.554e-11       1.050e-11       1.038e-11       8.637e-11 False
@@ -106,4 +106,22 @@ Flux (>1 TeV)        : (11.52 +/- 0.73) x 10^-12 cm^-2 s^-1 = (51.0 +/- 3.2) % C
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J0835.3-4511, 3FGL J0835.3-4510, G263.9-3.3, B0833-45
+ Source_Name   Association_Catalog  Association_Name Separation
+                                                        deg    
+-------------- ------------------- ----------------- ----------
+HESS J0835-455                2FHL 2FHL J0835.3-4511  0.4737829
+HESS J0835-455                3FGL 3FGL J0835.3-4510 0.48186883
+HESS J0835-455                COMP        G263.9-3.3 0.32130364
+HESS J0835-455                 PSR          B0833-45 0.48390508
+
+*** Source identification info ***
+
+Source_Name: HESS J0835-455
+Identified_Object: Vela X
+Class: PWN
+Evidence: Morphology
+Reference: 2006A%26A...448L..43A
+Distance_Reference: SNRCat
+Distance: 0.2750000059604645 kpc
+Distance_Min: 0.25 kpc
+Distance_Max: 0.30000001192092896 kpc

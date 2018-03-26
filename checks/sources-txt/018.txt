@@ -70,7 +70,7 @@ ECPL E_cut           : 19.20 +/- 5.01 TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.562  0.383  0.825       2.439e-11       1.419e-12       1.509e-12       2.732e-11 False
@@ -106,4 +106,23 @@ Flux (>1 TeV)        : (1.88 +/- 0.22) x 10^-12 cm^-2 s^-1 = (8.3 +/- 1.0) % Cra
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1514.0-5915e, 3FGL J1513.9-5908, 3FGL J1514.0-5915e, G320.4-1.2, B1509-58
+ Source_Name   Association_Catalog  Association_Name   Separation
+                                                          deg    
+-------------- ------------------- ------------------ -----------
+HESS J1514-591                2FHL 2FHL J1514.0-5915e  0.09890264
+HESS J1514-591                3FGL  3FGL J1513.9-5908 0.026914056
+HESS J1514-591                3FGL 3FGL J1514.0-5915e  0.09483415
+HESS J1514-591                COMP         G320.4-1.2  0.07048255
+HESS J1514-591                 PSR           B1509-58 0.026890926
+
+*** Source identification info ***
+
+Source_Name: HESS J1514-591
+Identified_Object: MSH 15-52
+Class: PWN
+Evidence: Morphology
+Reference: 2005A%26A...435L..17A
+Distance_Reference: SNRCat
+Distance: 5.199999809265137 kpc
+Distance_Min: 3.799999952316284 kpc
+Distance_Max: 6.599999904632568 kpc

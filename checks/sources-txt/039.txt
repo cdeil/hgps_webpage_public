@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 9
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.490  0.316  0.562       1.537e-12       6.845e-13       7.419e-13             nan False
@@ -85,4 +85,6 @@ Flux points table:
 
 *** Source associations info ***
 
-List of associated objects: 
+Source_Name Association_Catalog Association_Name Separation
+                                                    deg    
+----------- ------------------- ---------------- ----------

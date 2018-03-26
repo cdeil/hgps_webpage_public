@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 6
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.332  0.215  0.511       1.319e-11       2.179e-12       2.201e-12       1.768e-11 False
@@ -94,4 +94,21 @@ Flux (>1 TeV)        : (1.28 +/- 0.04) x 10^-12 cm^-2 s^-1 = (5.7 +/- 0.2) % Cra
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1826.3-1450, 3FGL J1826.2-1450, LS 5039
+ Source_Name   Association_Catalog  Association_Name  Separation
+                                                         deg    
+-------------- ------------------- ----------------- -----------
+HESS J1826-148                2FHL 2FHL J1826.3-1450 0.021188667
+HESS J1826-148                3FGL 3FGL J1826.2-1450 0.005312728
+HESS J1826-148               EXTRA           LS 5039 0.000942058
+
+*** Source identification info ***
+
+Source_Name: HESS J1826-148
+Identified_Object: LS 5039
+Class: Binary
+Evidence: Variability
+Reference: 2006A%26A...460..743A
+Distance_Reference: 2005MNRAS.364..899C
+Distance: 2.5 kpc
+Distance_Min: 2.4000000953674316 kpc
+Distance_Max: 2.5999999046325684 kpc

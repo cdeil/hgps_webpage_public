@@ -70,7 +70,7 @@ ECPL E_cut           : 12.90 +/- 1.10 TeV
 Number of flux points: 30
 Flux points table: 
 
-	e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min  e_max        dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV    TeV   1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ------ ------ --------------- --------------- --------------- --------------- -----
  0.230  0.210  0.250       5.239e-10       9.852e-11       9.852e-11             nan False
@@ -106,4 +106,22 @@ Flux points table:
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1713.5-3945e, 2FHL J1714.1-4012, 3FGL J1713.5-3945e, G347.3-0.5
+ Source_Name   Association_Catalog  Association_Name   Separation
+                                                          deg    
+-------------- ------------------- ------------------ -----------
+HESS J1713-397                2FHL 2FHL J1713.5-3945e 0.029067349
+HESS J1713-397                2FHL  2FHL J1714.1-4012  0.45781547
+HESS J1713-397                3FGL 3FGL J1713.5-3945e 0.029067349
+HESS J1713-397                 SNR         G347.3-0.5 0.059675783
+
+*** Source identification info ***
+
+Source_Name: HESS J1713-397
+Identified_Object: RX J1713.7-3946
+Class: SNR
+Evidence: Morphology
+Reference: 2004Natur.432...75A
+Distance_Reference: SNRCat
+Distance: 3.5 kpc
+Distance_Min: 1.0 kpc
+Distance_Max: 6.0 kpc

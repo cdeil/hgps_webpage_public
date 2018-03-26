@@ -70,7 +70,7 @@ ECPL E_cut           : 6.68 +/- 1.24 TeV
 Number of flux points: 12
 Flux points table: 
 
-	e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV   TeV  1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ----- ----- --------------- --------------- --------------- --------------- -----
  0.407   nan   nan       1.228e-10       2.769e-11       2.770e-11             nan False
@@ -88,4 +88,23 @@ Flux points table:
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J0852.8-4631e, 3FGL J0852.7-4631e, G266.2-1.2, G267.0-1.0, J0855-4644
+ Source_Name   Association_Catalog  Association_Name  Separation
+                                                         deg    
+-------------- ------------------- ------------------ ----------
+HESS J0852-463                2FHL 2FHL J0852.8-4631e 0.20369337
+HESS J0852-463                3FGL 3FGL J0852.7-4631e 0.20369337
+HESS J0852-463                 SNR         G266.2-1.2  0.0366656
+HESS J0852-463                 PWN         G267.0-1.0  0.7240231
+HESS J0852-463                 PSR         J0855-4644  0.7200056
+
+*** Source identification info ***
+
+Source_Name: HESS J0852-463
+Identified_Object: Vela Junior
+Class: SNR
+Evidence: Morphology
+Reference: 2005A%26A...437L...7A
+Distance_Reference: SNRCat
+Distance: 0.75 kpc
+Distance_Min: 0.5 kpc
+Distance_Max: 1.0 kpc

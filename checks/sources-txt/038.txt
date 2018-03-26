@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 21
 Flux points table: 
 
-	e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV   TeV  1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ----- ----- --------------- --------------- --------------- --------------- -----
  0.281   nan   nan       4.473e-11       6.899e-12       6.996e-12             nan False
@@ -97,4 +97,19 @@ Flux points table:
 
 *** Source associations info ***
 
-List of associated objects: G353.6-0.7
+ Source_Name   Association_Catalog Association_Name  Separation
+                                                        deg    
+-------------- ------------------- ---------------- -----------
+HESS J1731-347                 SNR       G353.6-0.7 0.023983259
+
+*** Source identification info ***
+
+Source_Name: HESS J1731-347
+Identified_Object: G353.6-0.7
+Class: SNR
+Evidence: Morphology
+Reference: 2011A%26A...531A..81H
+Distance_Reference: SNRCat
+Distance: 3.200000047683716 kpc
+Distance_Min: 2.4000000953674316 kpc
+Distance_Max: 4.0 kpc

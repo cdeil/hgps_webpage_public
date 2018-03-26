@@ -70,7 +70,7 @@ ECPL E_cut           : nan +/- nan TeV
 Number of flux points: 17
 Flux points table: 
 
-	e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
+e_ref  e_min e_max       dnde         dnde_errn       dnde_errp        dnde_ul     is_ul
  TeV    TeV   TeV  1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV) 1 / (cm2 s TeV)      
 ------ ----- ----- --------------- --------------- --------------- --------------- -----
  0.350   nan   nan       1.130e-10       4.180e-11       4.320e-11             nan False
@@ -93,4 +93,9 @@ Flux points table:
 
 *** Source associations info ***
 
-List of associated objects: 2FHL J1615.3-5146e, 3FGL J1615.3-5146e, Suzaku J1614-5141
+ Source_Name   Association_Catalog  Association_Name  Separation
+                                                         deg    
+-------------- ------------------- ------------------ ----------
+HESS J1614-518                2FHL 2FHL J1615.3-5146e 0.19802305
+HESS J1614-518                3FGL 3FGL J1615.3-5146e 0.19802305
+HESS J1614-518               EXTRA  Suzaku J1614-5141 0.19422333
