@@ -105,7 +105,6 @@ def build_all(ctx):
     print('===> Executing task: build')
     ctx.invoke(build_data)
     ctx.invoke(build_figures)
-    ctx.invoke(build_notebook)
     ctx.invoke(build_html)
 
 
@@ -155,33 +154,6 @@ def build_figures():
     for figure in config.config['figures']:
         filename = Path(figure['paper_repo']).name
         copyfile(config.hgps_analysis_dir / figure['analysis_repo'], out_path / filename)
-
-
-@build.command('notebook')
-def build_notebook():
-    """Make notebook ipynb and HTML in build/data.
-
-    https://nbconvert.readthedocs.io/en/latest/nbconvert_library.html
-    """
-    print('---> build_notebook')
-    import nbformat
-    import nbconvert
-
-    hgps_nb_version = 'v1'  # not coupled to the data file version; update here as needed
-
-    nb = nbformat.read('src/hgps_notebook.ipynb', nbformat.NO_CONVERT)
-
-    # Make the HTML version
-    source, meta = nbconvert.HTMLExporter().from_notebook_node(nb)
-    path = Path(f'build/data/hgps_notebook_{hgps_nb_version}.html')
-    print('Writing {}'.format(path))
-    path.write_text(source, encoding='utf-8')
-
-    # Make the ipynb version
-    source, meta = nbconvert.NotebookExporter().from_notebook_node(nb)
-    path = Path(f'build/data/hgps_notebook_{hgps_nb_version}.ipynb')
-    print('Writing {}'.format(path))
-    path.write_text(source, encoding='utf-8')
 
 
 @cli.command()
