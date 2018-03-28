@@ -42,11 +42,15 @@ class Config:
         info['filename'] = filename
         info['path'] = 'data/' + info['filename']
         path = Path('build') / info['path']
-        mb = path.stat().st_size / 1024 ** 2
-        info['filesize'] = f'{mb:.1f} MB'
+        fs = path.stat().st_size
+        if fs > 1024 ** 2:
+            info['filesize'] = f'{fs//1024**2} MB'
+        else:
+            info['filesize'] = f'{fs//1024} kB'
         # md5 = hashlib.md5(path.read_bytes()).hexdigest()
         # info['md5'] = md5
-        info['html'] = '<a href="{path}" download>{filename}</a> ({filesize})'.format_map(info)
+        # Note: I decided to remove filesize here, not used.
+        info['html'] = '<a href="{path}" download>{filename}</a>'.format_map(info)
         return info
 
     @staticmethod
@@ -56,8 +60,7 @@ class Config:
         info['filename_pdf'] = figure['paper_repo']
         info['text_pdf'] = info['filename_pdf'].split('/')[-1]
         info['filename_png'] = info['filename_pdf'].replace('.pdf', '.png')
-        info[
-            'html'] = 'Figure {number}: <a href="{filename_pdf}">{text_pdf}</a>, <a href="{filename_png}">PNG</a>'.format_map(
+        info['html'] = 'Figure {number}: <a href="{filename_pdf}">{text_pdf}</a>, <a href="{filename_png}">PNG</a>'.format_map(
             info)
         return info
 

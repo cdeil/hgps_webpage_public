@@ -51,7 +51,8 @@
 
     <h2>Survey sky maps</h2>
     <p>
-        Survey sky maps are released in FITS format; they are described in the paper in Appendix A.1.
+        Survey sky maps are released in FITS format; each file is ~ 11 MB; they are described in the paper in Appendix
+        A.1.
     </p>
     <ul>
         {% for map in config.maps %}
@@ -64,7 +65,7 @@
 
     <h2>Source catalog</h2>
     <p>
-        The source catalog and other tables are released in FITS format.
+        The source catalog and other tables are released in FITS format. This file is small (~ 50 kB).
         They are described in the paper in Appendix A.2 and Table 4.
     </p>
     <ul>
@@ -120,8 +121,7 @@
             We have prepared a <a href="http://jupyter.org/">Jupyter</a> notebook that shows some examples how to work
             with the HGPS data using
             Python, <a href="http://www.astropy.org/">Astropy</a> and <a href="http://gammapy.org/">Gammapy</a>.
-            See <a href="data/hgps_notebook_v1.html">hgps_notebook_v1.html</a> or download
-            <a href="data/hgps_notebook_v1.ipynb" download>hgps_notebook_v1.ipynb</a> to execute the notebook locally.
+            You can find it as the "hgps" tutorial notebook as part of the Gammapy documentation <a href="http://docs.gammapy.org/dev/notebooks/hgps.html">here</a>.
         </li>
         <li>
             The HGPS survey maps and catalogs are being added to
