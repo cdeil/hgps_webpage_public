@@ -317,8 +317,14 @@ TCOMM77 = 'Upper limit on Flux_Points_Flux'
 TTYPE78 = 'Flux_Points_Flux_Is_UL'                                              
 TFORM78 = '40B     '                                                            
 TCOMM78 = 'Boolean flag when to use Flux_Points_Flux_UL'                        
-COMMENT This table is part of the 2017 HESS Galactic plane survey (HGPS) data   
-COMMENT release. For details see Sections 4 & 5 in the HGPS 2017 paper.         
-COMMENT For more info please visit https://www.mpi-hd.mpg.de/hfm/HESS/hgps or   
-COMMENT contact us via contact@hess-experiment.eu.                              
+COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
+COMMENT                                                                         
+COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  
+COMMENT     Webpage: https://www.mpi-hd.mpg.de/hfm/HESS/hgps                    
+COMMENT     Contact: contact@hess-experiment.eu                                 
+COMMENT                                                                         
+COMMENT The HGPS observations were taken from 2004 to 2013.                     
+COMMENT The paper was published and this data was released in April 2018.       
+COMMENT                                                                         
+COMMENT A detailed description is available in the paper.                       
 END                                                                             

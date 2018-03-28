@@ -56,6 +56,16 @@ def cli():
     pass
 
 
+@cli.command('all')
+@click.pass_context
+def cli_all(ctx):
+    """Run all steps"""
+    ctx.invoke(cli_tables)
+    ctx.invoke(cli_sources_spec)
+    ctx.invoke(cli_sources_txt)
+    ctx.invoke(cli_gammapy)
+
+
 @cli.command('tables')
 def cli_tables():
     """Dump all HGPS tables to text files.
@@ -118,8 +128,6 @@ def cli_gammapy():
 
     morph_types = Counter([_.spatial_model_type for _ in cat])
     assert morph_types == {'gaussian': 52, '2-gaussian': 8, 'shell': 7, 'point-like': 6, '3-gaussian': 5}
-
-    print(repr(cat[0]))
 
     # import IPython; IPython.embed()
 
