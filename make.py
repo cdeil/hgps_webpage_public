@@ -19,7 +19,6 @@ class Config:
         self.hgps_analysis_dir = Path(os.environ['HGPS_ANALYSIS'])
         self.hgps_data_dir = Path(os.environ['HGPS_DATA'])
         self.filename_cat = f'hgps_catalog_v{self.version}.fits.gz'
-        self.filename_cat_unzipped = f'hgps_catalog_v{self.version}.fits'
         self.out_path = Path('build/data')
 
         for m in self.config['maps']:
@@ -130,11 +129,10 @@ def build_data():
     """Make build/data"""
     print('---> build_data')
     config.out_path.mkdir(exist_ok=True)
-    src = config.hgps_analysis_dir / 'data/catalogs/HGPS3/release/HGPS_v0.4.fits'
-    target = config.out_path / config.filename_cat_unzipped
+    src = config.hgps_analysis_dir / 'data/catalogs/HGPS3/release/HGPS_v0.4.fits.gz'
+    target = config.out_path / config.filename_cat
     print(f'cp {src} {target}')
     copyfile(src, target)
-    utils.run(f'gzip -f {target}')
 
     for m in config.config['maps']:
         m['filename'] = f'hgps_map_{m["quantity"]}_{m["radius"]}deg_v{config.version}.fits.gz'
