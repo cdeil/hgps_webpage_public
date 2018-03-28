@@ -36,6 +36,7 @@ TTYPE7  = 'Distance_Max'
 TFORM7  = 'E       '                                                            
 TUNIT7  = 'kpc     '                                                            
 TCOMM7  = 'Maximum distance'                                                    
+LONGSTRN= 'OGIP 1.0'           / The OGIP Long String Convention may be used.   
 COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
 COMMENT                                                                         
 COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  

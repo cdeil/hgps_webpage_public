@@ -22,6 +22,7 @@ TTYPE4  = 'Separation'
 TFORM4  = 'E       '                                                            
 TUNIT4  = 'deg     '                                                            
 TCOMM4  = 'Angular separation to HGPS source position'                          
+LONGSTRN= 'OGIP 1.0'           / The OGIP Long String Convention may be used.   
 COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
 COMMENT                                                                         
 COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  

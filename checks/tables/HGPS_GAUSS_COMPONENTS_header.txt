@@ -61,6 +61,7 @@ TCOMM12 = 'Statistical error (1 sigma) on Flux_Map'
 TTYPE13 = 'Excess  '                                                            
 TFORM13 = 'E       '                                                            
 TCOMM13 = 'Total model excess contained in the component'                       
+LONGSTRN= 'OGIP 1.0'           / The OGIP Long String Convention may be used.   
 COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
 COMMENT                                                                         
 COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  

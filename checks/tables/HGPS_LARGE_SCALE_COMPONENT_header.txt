@@ -35,6 +35,7 @@ TTYPE7  = 'Width_Err'
 TFORM7  = 'E       '                                                            
 TUNIT7  = 'deg     '                                                            
 TCOMM7  = 'Statistical error (1 sigma) on Gaussian width'                       
+LONGSTRN= 'OGIP 1.0'           / The OGIP Long String Convention may be used.   
 COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
 COMMENT                                                                         
 COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  

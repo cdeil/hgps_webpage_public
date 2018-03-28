@@ -2,4 +2,15 @@ SIMPLE  =                    T / conforms to FITS standard
 BITPIX  =                    8 / array data type                                
 NAXIS   =                    0 / number of array dimensions                     
 EXTEND  =                    T                                                  
+LONGSTRN= 'OGIP 1.0'           / The OGIP Long String Convention may be used.   
+COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
+COMMENT                                                                         
+COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  
+COMMENT     Webpage: https://www.mpi-hd.mpg.de/hfm/HESS/hgps                    
+COMMENT     Contact: contact@hess-experiment.eu                                 
+COMMENT                                                                         
+COMMENT The HGPS observations were taken from 2004 to 2013.                     
+COMMENT The paper was published and this data was released in April 2018.       
+COMMENT                                                                         
+COMMENT A detailed description is available in the paper.                       
 END                                                                             
