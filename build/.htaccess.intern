@@ -1,0 +1,36 @@
+Header set Cache-Control "no-store"
+
+AuthUserFile 	/home/wwwdoc/html/HESS/intern/.passwd
+AuthType        Basic
+
+AuthName        "Private H.E.S.S. documentation"
+Require user 	hess oldhess
+
+Options -Indexes +FollowSymLinks
+# Options +Indexes +SymLinksIfOwnerMatch
+DirectoryIndex index.shtml
+
+<Files *>
+Order deny,allow
+Deny from all
+Allow from env=HESS_DOMAIN
+Satisfy all
+ErrorDocument 403 /hfm/HESS/forbidden.html
+</Files>
+
+# Don't serve old versions left over from editor backup copies
+<FilesMatch ".*\.[Bb][Aac][Kk]">
+order allow,deny
+deny from all
+</FilesMatch>
+
+# Dont serve password files etc.
+<FilesMatch "\.(htaccess|passwd|group)">
+order allow,deny
+deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteBase /HESS/hgps/
+
+

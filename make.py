@@ -181,15 +181,36 @@ def build_figures():
 def archive():
     """Archive webpage"""
     print('===> Executing task: archive')
-    # TODO: Copy `build` folder to appropriately name archive/vX/
-    # TODO: Print that user should run check now and then git commit
+    utils.run('tar zcf archive/hgps_webpage_public.tar.gz build')
 
 
 @cli.command()
 def deploy():
     """Deploy webpage"""
     print('===> Executing task: deploy')
-    # TODO: implement
+    commands = """
+    At the moment I'm executing these commands manually to deploy the webpage:
+    ./make.py archive
+    scp archive/hgps_webpage_public.tar.gz lfs1:/tmp
+    ssh lfs1
+    scp /tmp/hgps_webpage_public.tar.gz hessdb:~/
+    rm /tmp/hgps_webpage_public.tar.gz
+    ssh hessdb
+    cd ~
+    tar zxf hgps_webpage_public.tar.gz
+    rm -rva ~/html/HESS/hgps/*
+    mv -v build ~/html/HESS/hgps
+
+    # This is a tip from Konrad to make it work with the web server
+    # settings on the hessdb.mpi-hg.mpg.de machine:
+    find hgps -type f -exec chmod 660 "{}" ";"
+    find hgps -type d -exec chmod 770 "{}" ";"
+
+    exit # from hessdb
+    exit # from 
+    ./make.py show-mpik
+    """
+    print(commands)
 
 
 if __name__ == '__main__':

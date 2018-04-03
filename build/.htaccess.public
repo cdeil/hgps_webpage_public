@@ -1,0 +1,27 @@
+DirectoryIndex index.shtml index.html
+Options +FollowSymLinks
+ErrorDocument 404 /hfm/HESS/error404.shtml
+
+RewriteEngine on
+RewriteBase /HESS/pages/
+RewriteRule /CVS$ https://www.mpi-hd.mpg.de/hfm/HESS/HESS.shtml [R]
+RewriteRule /CVS/$ https://www.mpi-hd.mpg.de/hfm/HESS/HESS.shtml [R]
+
+# Dont serve CVS-related files
+<FilesMatch "CVS|Entries|Repository|Root">
+order allow,deny
+deny from all
+
+</FilesMatch>
+# Don't serve old versions left over from editor backup copies
+<FilesMatch ".*\.[Bb][Aac][Kk]">
+order allow,deny
+deny from all
+</FilesMatch>
+
+# Dont serve password files etc.
+<FilesMatch "\.(htaccess|passwd|group)">
+order allow,deny
+deny from all
+</FilesMatch>
+
