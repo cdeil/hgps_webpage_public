@@ -8,6 +8,7 @@ import jinja2
 import click
 import utils
 
+
 # TODO: pre-compute everything in `config` and only pass that to the template render
 # Get rid of the other bullshit and review for duplicated code
 
@@ -56,11 +57,10 @@ class Config:
     def make_figure_info(figure):
         info = dict()
         info['number'] = figure['number']
-        info['filename_pdf'] = figure['paper_repo']
-        info['text_pdf'] = info['filename_pdf'].split('/')[-1]
-        info['filename_png'] = info['filename_pdf'].replace('.pdf', '.png')
-        info['html'] = 'Figure {number}: <a href="{filename_pdf}">{text_pdf}</a>, <a href="{filename_png}">PNG</a>'.format_map(
-            info)
+        info['fn_pdf'] = Path('figures') / figure['webpage_repo']
+        info['text_pdf'] = figure['webpage_repo']
+        info['fn_png'] = info['fn_pdf'].with_suffix('.png')
+        info['html'] = 'Figure {number}: <a href="{fn_pdf}">{text_pdf}</a>, <a href="{fn_png}">PNG</a>'.format_map(info)
         return info
 
 
@@ -150,8 +150,18 @@ def build_figures():
     out_path.mkdir(exist_ok=True)
 
     for figure in config.config['figures']:
-        filename = Path(figure['paper_repo']).name
-        copyfile(config.hgps_analysis_dir / figure['analysis_repo'], out_path / filename)
+        # Copy figures in PDF format
+        src = config.hgps_analysis_dir / figure['analysis_repo']
+        dst = out_path / figure['webpage_repo']
+        print(f'cp {src} {dst}')
+        copyfile(src, dst)
+
+        # Copy figures in PNG format
+        src = src.with_suffix('.png')
+        dst = dst.with_suffix('.png')
+
+        print(f'cp {src} {dst}')
+        copyfile(src, dst)
 
 
 @cli.command()

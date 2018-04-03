@@ -48,156 +48,156 @@ figures:
 - number: 1
   paper_repo: figures/hgps_region_exposure_illustration.pdf
   analysis_repo: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.pdf
-  script: code/hgps/figures/hgps_region_exposure_illustration/hgps_region_exposure_illustration.py
+  webpage_repo: hgps_region_exposure_illustration.pdf
 - number: 2
   paper_repo: figures/hgps_energy_threshold_profiles.pdf
   analysis_repo: code/hgps/figures/energy_threshold/hgps_energy_threshold_profiles.pdf
-  script: code/hgps/figures/energy_threshold/energy_threshold.py
+  webpage_repo: hgps_energy_threshold_profiles.pdf
 - number: 3
   paper_repo: figures/hgps_map_background_estimation.pdf
   analysis_repo: code/hgps/figures/exclusion_background_regions/hgps_map_background_estimation.pdf
-  script: code/hgps/figures/exclusion_background_regions/exclusion_background_regions_.py
+  webpage_repo: hgps_map_background_estimation.pdf
 - number: 4
   paper_repo: figures/hgps_sensitivity.pdf
   analysis_repo: code/hgps/figures/sensitivity/hgps_sensitivity.pdf
-  script: code/hgps/figures/sensitivity/plot_sensitivity.py
+  webpage_repo: hgps_sensitivity.pdf
 - number: 5
   paper_repo: figures/hgps_catalog_model.pdf
   analysis_repo: code/hgps/figures/catalog_model_illustration/hgps_catalog_model.pdf
-  script: code/hgps/figures/catalog_model_illustration/catalog_model_illustration.py
+  webpage_repo: hgps_catalog_model.pdf
 - number: 6
   paper_repo: figures/hgps_diffuse_model.pdf
   analysis_repo: code/hgps/figures/diffuse_band_parameters/hgps_diffuse_model.pdf
-  script: code/hgps/figures/diffuse_band_parameters/diffuse_band_parameters.py
+  webpage_repo: hgps_diffuse_model.pdf
 - number: 7
   paper_repo: figures/hgps_residual_distribution_ts.pdf
   analysis_repo: code/hgps/figures/map_pixel_significance_distributions/hgps_residual_significance_distribution_ts.pdf
-  script: code/hgps/figures/map_pixel_significance_distributions/plot_residual_significance_distributions.py
+  webpage_repo: hgps_residual_distribution_ts.pdf
 - number: 8
   paper_repo: figures/hgps_spectrum_background_estimation.pdf
   analysis_repo: code/hgps/figures/exclusion_background_regions/hgps_spectrum_background_estimation.pdf
-  script: code/hgps/figures/exclusion_background_regions/exclusion_background_regions_.py
+  webpage_repo: hgps_spectrum_background_estimation.pdf
 - number: 9
   paper_repo: figures/hgps_sources_spectrum_map_flux_comparison.pdf
   analysis_repo: code/hgps/figures/source_parameter_distributions_spectra/hgps_sources_spectrum_map_flux_comparison.pdf
-  script: code/hgps/figures/source_parameter_distributions_spectra/source_parameter_distributions_spectra.py
+  webpage_repo: hgps_sources_spectrum_map_flux_comparison.pdf
 - number: 10
   paper_repo: figures/hgps_source_id.pdf
   analysis_repo: code/hgps/figures/source_classes_pie_chart/hgps_source_id.pdf
-  script: code/hgps/figures/source_classes_pie_chart/source_classes_pie_chart_final.py
+  webpage_repo: hgps_source_id.pdf
 - number: 11
   paper_repo: figures/hgps_sources_glat.pdf
   analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_glat.pdf
-  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions_glon_glat.py
+  webpage_repo: hgps_sources_glat.pdf
 - number: 12
   paper_repo: figures/hgps_sources_glon.pdf
   analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_glon.pdf
-  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions_glon_glat.py
+  webpage_repo: hgps_sources_glon.pdf
 - number: 13
   paper_repo: figures/hgps_sources_flux_extension.pdf
   analysis_repo: code/hgps/figures/flux_extension_scatter_plot/hgps_sources_flux_extension.pdf
-  script: code/hgps/figures/flux_extension_scatter_plot/flux_extension_scatter_plot.py
+  webpage_repo: hgps_sources_flux_extension.pdf
 - number: 14
   paper_repo: figures/hgps_sources_spectral_index.pdf
   analysis_repo: code/hgps/figures/source_parameter_distributions/hgps_sources_spectral_index.pdf
-  script: code/hgps/figures/source_parameter_distributions/source_parameter_distributions.py
+  webpage_repo: hgps_sources_spectral_index.pdf
 - number: 15
   paper_repo: figures/hgps_sources_log_n_log_s.pdf
   analysis_repo: code/hgps/figures/hgps_sources_log_n_log_s/hgps_sources_log_n_log_s.pdf
-  script: code/hgps/figures/hgps_sources_log_n_log_s/hgps_sources_log_n_log_s.py
+  webpage_repo: hgps_sources_log_n_log_s.pdf
 - number: 16
   paper_repo: figures/hgps_face_on_milky_way.pdf
   analysis_repo: code/hgps/figures/face_on_milky_way/hgps_face_on_milky_way.pdf
-  script: code/hgps/figures/face_on_milky_way/face_on_milky_way_hgps.py
+  webpage_repo: hgps_face_on_milky_way.pdf
 - number: 17
   paper_repo: figures/hgps_spectra_new_sources.pdf
   analysis_repo: code/hgps/figures/spectra/hgps_spectra_new_sources.pdf
-  script: code/hgps/figures/spectra/plot_spectra.py
+  webpage_repo: hgps_spectra_new_sources.pdf
 - number: 18
   paper_repo: figures/per-source-plots/HESS_J1119m614.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1119m614.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1119-614'
+  webpage_repo: HESS_J1119m614.pdf
 - number: 19
   paper_repo: figures/per-source-plots/HESS_J1457m593.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1457m593.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1457-593'
+  webpage_repo: HESS_J1457m593.pdf
 - number: 20
   paper_repo: figures/per-source-plots/HESS_J1458m608.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1458m608.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1458-608'
+  webpage_repo: HESS_J1458m608.pdf
 - number: 21
   paper_repo: figures/per-source-plots/HESS_J1503m582.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1503m582.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1503-582'
+  webpage_repo: HESS_J1503m582.pdf
 - number: 22
   paper_repo: figures/per-source-plots/HESS_J1554m550.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1554m550.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1554-550'
+  webpage_repo: HESS_J1554m550.pdf
 - number: 23
   paper_repo: figures/per-source-plots/HESS_J1813m126.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1813m126.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1813-126'
+  webpage_repo: HESS_J1813m126.pdf
 - number: 24
   paper_repo: figures/per-source-plots/HESS_J1826m130.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1826m130.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1826-130'
+  webpage_repo: HESS_J1826m130.pdf
 - number: 25
   paper_repo: figures/per-source-plots/HESS_J1828m099.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1828m099.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1828-099'
+  webpage_repo: HESS_J1828m099.pdf
 - number: 26
   paper_repo: figures/per-source-plots/HESS_J1832m085.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1832m085.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1832-085'
+  webpage_repo: HESS_J1832m085.pdf
 - number: 27
   paper_repo: figures/per-source-plots/HESS_J1833m105.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1833m105.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1833-105'
+  webpage_repo: HESS_J1833m105.pdf
 - number: 28
   paper_repo: figures/per-source-plots/HESS_J1843m033.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1843m033.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1843-033'
+  webpage_repo: HESS_J1843m033.pdf
 - number: 29
   paper_repo: figures/per-source-plots/HESS_J1844m030.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1844m030.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1844-030'
+  webpage_repo: HESS_J1844m030.pdf
 - number: 30
   paper_repo: figures/per-source-plots/HESS_J1846m029.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1846m029.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1846-029'
+  webpage_repo: HESS_J1846m029.pdf
 - number: 31
   paper_repo: figures/per-source-plots/HESS_J1848m018.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1848m018.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1848-018'
+  webpage_repo: HESS_J1848m018.pdf
 - number: 32
   paper_repo: figures/per-source-plots/HESS_J1849m000.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1849m000.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1849-000'
+  webpage_repo: HESS_J1849m000.pdf
 - number: 33
   paper_repo: figures/per-source-plots/HESS_J1852m000.pdf
   analysis_repo: code/hgps/figures/new_sources/per-source-plots/HESS_J1852m000.pdf
-  script: code/hgps/figures/new_sources/new_sources.py plot 'HESS J1852-000'
+  webpage_repo: HESS_J1852m000.pdf
 - number: 34
   paper_repo: figures/hgps_survey_flux.pdf
   analysis_repo: code/hgps/figures/survey_flux/hgps_survey_flux.pdf
-  script: code/hgps/figures/survey_flux/survey_flux.py
+  webpage_repo: hgps_survey_flux.pdf
 - number: 35
   paper_repo: figures/hgps_survey_mwl_1.pdf
   analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_1.pdf
-  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+  webpage_repo: hgps_survey_mwl_1.pdf
 - number: 36
   paper_repo: figures/hgps_survey_mwl_2.pdf
   analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_2.pdf
-  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+  webpage_repo: hgps_survey_mwl_2.pdf
 - number: 37
   paper_repo: figures/hgps_survey_mwl_3.pdf
   analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_3.pdf
-  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+  webpage_repo: hgps_survey_mwl_3.pdf
 - number: 38
   paper_repo: figures/hgps_survey_mwl_4.pdf
   analysis_repo: code/hgps/figures/survey_large_associations/hgps_survey_mwl_4.pdf
-  script: code/hgps/figures/survey_large_associations/survey_large_associations.py
+  webpage_repo: hgps_survey_mwl_4.pdf
 - number: 39
   paper_repo: figures/hgps_survey_rois.pdf
   analysis_repo: code/hgps/figures/survey_rois/hgps_survey_rois.pdf
-  script: code/hgps/figures/survey_rois/survey_rois.py
+  webpage_repo: hgps_survey_rois.pdf
