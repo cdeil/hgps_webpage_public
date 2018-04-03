@@ -65,7 +65,6 @@ def get_sky_image(quantity, normed=True):
 @functools.lru_cache()
 def get_opts(quantity):
     opts = dict(
-        # TODO: try 'inferno' ?
         cmap='afmhot',
     )
     if quantity == 'significance':
@@ -97,35 +96,59 @@ def make_plot_no_axes(quantity):
     imsave(filename, data, origin='lower', cmap=opts['cmap'])
 
 
-def make_plot_with_axes_four_panel(quantity):
-    image = get_sky_image(quantity)
-    opts = get_opts(quantity)
-
+def get_limits():
     # Note: goal here is to match the paper Figure: hgps_survey_flux.pdf
     # There we have the following options (with an older version of this class):
     #     panel_pars = dict(npanels=4, center=[-19, -0.5], fov=[187, 7.5], xsize=None,
     #                   ysize=7.087, xborder=0.45, yborder=0.38, yspacing=0.22)
     center = -19, -0.5
     fov = 187, 7.5
-    XLIM = Angle([center[0] + fov[0] / 2, center[0] - fov[0] / 2], 'deg')
-    YLIM = Angle([center[1] - fov[1] / 2, center[1] + fov[1] / 2], 'deg')
+    xlim = Angle([center[0] + fov[0] / 2, center[0] - fov[0] / 2], 'deg')
+    ylim = Angle([center[1] - fov[1] / 2, center[1] + fov[1] / 2], 'deg')
+    return dict(xlim=xlim, ylim=ylim)
+
+
+def make_plot_with_axes_four_panel(quantity):
+    image = get_sky_image(quantity)
+    opts = get_opts(quantity)
 
     #             cbar_axes = self.fits_figure._figure.add_axes([0.86, 0.08, 0.02, 0.14])
     #                                                           [left, bottom, width, height]
-    GRID_SPEC = dict(top=0.98, bottom=0.08, right=0.98, left=0.05, hspace=0.20)
+    grid_spec = get_limits()
+    grid_spec['npanels'] = 4
+    grid_spec.update(top=0.98, bottom=0.08, right=0.98, left=0.05, hspace=0.20)
 
     with u.imperial.enable():
         figsize_aanda = [241, 165] * u.mm  # was height: 180
         FIGSIZE = figsize_aanda.to('inch').value
 
     fig = plt.figure(figsize=FIGSIZE)
-    plotter = SkyImagePanelPlotter(fig, xlim=XLIM, ylim=YLIM, npanels=4, **GRID_SPEC)
+    plotter = SkyImagePanelPlotter(fig, **grid_spec)
     axes = plotter.plot(image, cmap=opts['cmap'])
     [format_axes(ax) for ax in axes]
 
-    # add_colobar(fig)
+    # Adding a colorbar currently doesn't work, because `data` is pre-scaled to 0 to 1.
+    # label = dict(flux='Flux', significance='Significance')[quantity]
+    # add_colorbar(fig, label=label)
 
     filename = f'build/figures/hgps_survey_{quantity}_four_panel.png'
+    print(f'Writing {filename}')
+    plt.savefig(filename, dpi=300)
+
+
+def make_plot_with_axes_single_panel(quantity):
+    image = get_sky_image(quantity)
+    opts = get_opts(quantity)
+
+    fig = plt.figure(figsize=(25, 1.8))
+    # [left, bottom, width, height]
+    ax = fig.add_axes([0.02, 0.13, 0.97, 0.92], projection=image.wcs)
+    ax.imshow(image.data, origin='lower', cmap=opts['cmap'])
+    format_axes(ax)
+
+    # fig.tight_layout()
+
+    filename = f'build/figures/hgps_survey_{quantity}_single_panel.png'
     print(f'Writing {filename}')
     plt.savefig(filename, dpi=300)
 
@@ -150,11 +173,34 @@ def format_axes(ax):
     return ax
 
 
+def add_colorbar(fig, label):
+    cbar_axes = fig.add_axes([0.86, 0.09, 0.02, 0.14])
+    image = fig.axes[3].images[0]
+    # from IPython import embed; embed()
+
+    cbar = fig.colorbar(image, cax=cbar_axes)
+    cbar.solids.set_edgecolor('face')
+    cbar.outline.set_edgecolor('white')
+    cbar.outline.set_linewidth(0.5)
+    cbar.ax.yaxis.set_tick_params(color='w', size=5)
+
+    ticks_pos = image.norm.inverse(np.linspace(0, 1, 5))
+    tick_labels = ['{:>4.1f}'.format(_) for _ in ticks_pos]
+    cbar.set_ticks(ticks_pos)
+    cbar_axes.set_yticklabels(tick_labels, color='w', ha='left')
+    cbar_axes.set_ylabel(label, color='w')
+    cbar_axes.tick_params(direction='in')
+
+
 def main():
     make_plot_no_axes('significance')
     make_plot_no_axes('flux')
+
     make_plot_with_axes_four_panel('significance')
     make_plot_with_axes_four_panel('flux')
+
+    make_plot_with_axes_single_panel('significance')
+    make_plot_with_axes_single_panel('flux')
 
 
 if __name__ == '__main__':
