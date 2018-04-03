@@ -201,3 +201,17 @@ figures:
   paper_repo: figures/hgps_survey_rois.pdf
   analysis_repo: code/hgps/figures/survey_rois/hgps_survey_rois.pdf
   webpage_repo: hgps_survey_rois.pdf
+
+figures_extra:
+- filename: hgps_survey_significance_single_panel_no_axes.png
+  description: Significance, single-panel, no sky image axes
+- filename: hgps_survey_significance_single_panel.png
+  description: Significance, single-panel, with sky image axes
+- filename: hgps_survey_significance_four_panel.png
+  description: Significance, four-panel, with sky image axes
+- filename: hgps_survey_flux_single_panel_no_axes.png
+  description: Flux, single-panel, no sky image axes
+- filename: hgps_survey_flux_single_panel.png
+  description: Flux, single-panel, with sky image axes
+- filename: hgps_survey_flux_four_panel.png
+  description: Flux, four-panel, with sky image axes

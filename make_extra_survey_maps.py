@@ -64,21 +64,21 @@ def get_opts(quantity):
     return opts
 
 
-def make_plot_direct(quantity):
+def make_plot_no_axes(quantity):
     data = get_data(quantity)
     opts = get_opts(quantity)
 
     norm = ImageNormalize(vmin=opts['vmin'], vmax=opts['vmax'], stretch=opts['stretch'], clip=True)
     data = norm(data)
 
-    filename = f'build/figures/hgps_survey_{quantity}_single_panel.png'
+    filename = f'build/figures/hgps_survey_{quantity}_single_panel_no_axes.png'
     print(f'Writing {filename}')
     imsave(filename, data, origin='lower', cmap=opts['cmap'])
 
 
 def main():
-    make_plot_direct('significance')
-    make_plot_direct('flux')
+    make_plot_no_axes('significance')
+    make_plot_no_axes('flux')
 
 
 if __name__ == '__main__':

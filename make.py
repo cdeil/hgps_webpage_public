@@ -29,6 +29,9 @@ class Config:
         for figure in self.config['figures']:
             figure['info'] = self.make_figure_info(figure)
 
+        for figure in self.config['figures_extra']:
+            figure['info'] = self.make_figure_info_extra(figure)
+
     @property
     def html_context(self):
         ctx = {}
@@ -61,6 +64,12 @@ class Config:
         info['text_pdf'] = figure['webpage_repo']
         info['fn_png'] = info['fn_pdf'].with_suffix('.png')
         info['html'] = 'Figure {number}: <a href="{fn_pdf}">{text_pdf}</a>, <a href="{fn_png}">PNG</a>'.format_map(info)
+        return info
+
+    @staticmethod
+    def make_figure_info_extra(figure):
+        info = dict()
+        info['html'] = f'{figure["description"]}: <a href="figures/{figure["filename"]}">{figure["filename"]}</a>'
         return info
 
 
