@@ -3,6 +3,7 @@ import os
 import hashlib
 from pathlib import Path
 from shutil import copyfile
+import datetime
 import yaml
 import jinja2
 import click
@@ -31,6 +32,9 @@ class Config:
 
         for figure in self.config['figures_extra']:
             figure['info'] = self.make_figure_info_extra(figure)
+
+        if self.config['page_update_date'] == 'today':
+            self.config['page_update_date'] = datetime.date.today().strftime('%B %d, %Y')
 
     @property
     def html_context(self):

@@ -1,6 +1,6 @@
 version: 1
 
-page_update_date: Feb 20, 2018
+page_update_date: today
 
 maps:
 - in: HGPS_Significance_0.1deg.fits.gz
