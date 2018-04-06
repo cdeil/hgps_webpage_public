@@ -199,8 +199,8 @@ def deploy():
     cd ~
     rm -rf build/
     tar zxf hgps_webpage_public.tar.gz
-    rm -rva ~/html/HESS/hgps/*
-    cp -v build/* ~/html/HESS/hgps
+    rm -rvf ~/html/HESS/hgps/*
+    cp -rvf build/* ~/html/HESS/hgps
 
     # This is a tip from Konrad to make it work with the web server
     # settings on the hessdb.mpi-hg.mpg.de machine:
