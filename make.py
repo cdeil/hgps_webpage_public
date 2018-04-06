@@ -197,14 +197,16 @@ def deploy():
     rm /tmp/hgps_webpage_public.tar.gz
     ssh hessdb
     cd ~
+    rm -rf build/
     tar zxf hgps_webpage_public.tar.gz
     rm -rva ~/html/HESS/hgps/*
-    mv -v build ~/html/HESS/hgps
+    cp -v build/* ~/html/HESS/hgps
 
     # This is a tip from Konrad to make it work with the web server
     # settings on the hessdb.mpi-hg.mpg.de machine:
-    find hgps -type f -exec chmod 660 "{}" ";"
-    find hgps -type d -exec chmod 770 "{}" ";"
+    cd ~/html/HESS/hgps
+    find * -type f -exec chmod 660 "{}" ";"
+    find * -type d -exec chmod 770 "{}" ";"
 
     exit # from hessdb
     exit # from 
