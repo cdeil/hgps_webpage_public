@@ -181,7 +181,7 @@ def build_figures():
 def archive():
     """Archive webpage"""
     print('===> Executing task: archive')
-    utils.run('tar zcf archive/hgps_webpage_public.tar.gz build')
+    utils.run('tar zcf hgps_webpage_public.tar.gz build')
 
 
 @cli.command()
@@ -191,7 +191,7 @@ def deploy():
     commands = """
     At the moment I'm executing these commands manually to deploy the webpage:
     ./make.py archive
-    scp archive/hgps_webpage_public.tar.gz lfs1:/tmp
+    scp hgps_webpage_public.tar.gz lfs1:/tmp
     ssh lfs1
     scp /tmp/hgps_webpage_public.tar.gz hessdb:~/
     rm /tmp/hgps_webpage_public.tar.gz
