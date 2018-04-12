@@ -14,32 +14,49 @@ from make_extra_survey_maps import get_sky_image
 
 logging.basicConfig(level='INFO')
 log = logging.getLogger(__name__)
-ALADIN_JAR_PATH = os.environ.get('ALADIN_JAR')
 
-HIPSGEN_OPTIONS = {'creator_did': 'ivo://XXX',
-                   'blank': '0',
-                   }
+HIPSGEN_OPTIONS = {
+    'creator_did': 'ivo://XXX',
+    'blank': '0',
+}
 
-HIPS_META_INFO = {'obs_regime': 'Gamma-ray',
-                  'obs_collection': 'HGPS',
-                  'obs_title': 'HGPS Integral Flux >1TeV',
-                  'obs_description': ('H.E.S.S. is an array of ground-based gamma-ray telescopes located '
-                                      'in Namibia. The H.E.S.S. Galactic Plane Survey (HGPS) is the first '
-                                      'deep and wide survey of the Milky Way in TeV gamma-rays. The flux '
-                                      'values are given as integral photon flux above 1 TeV assuming a '
-                                      'power law spectrum for the differential flux with an index of -2.3. '
-                                      'The pixel values represent integrated values within a circular '
-                                      'region of 0.1 deg.'),
-                  'obs_copyright': '',
-                  'obs_ack': '',
-                  'hips_copyright': '',
-                  't_min': '53005',
-                  't_max': '56293',
-                  'em_max': '2.480e-20',
-                  'em_min': '1.240e-18',
-                  'bib_reference': '2018A&A...612A...1H',
-                  'bib_reference_url': 'https://ui.adsabs.harvard.edu/#abs/2018A%26A...612A...1H',
-                  'hips_creator': 'XXX (A.Donath and C.Deil)'}
+HIPS_META_INFO = {
+    'obs_regime': 'Gamma-ray',
+    'obs_collection': 'HGPS',
+    'obs_title': 'HGPS Integral Flux >1TeV',
+    'obs_description': ('H.E.S.S. is an array of ground-based gamma-ray telescopes located '
+                        'in Namibia. The H.E.S.S. Galactic Plane Survey (HGPS) is the first '
+                        'deep and wide survey of the Milky Way in TeV gamma-rays. The flux '
+                        'values are given as integral photon flux above 1 TeV assuming a '
+                        'power law spectrum for the differential flux with an index of -2.3. '
+                        'The pixel values represent integrated values within a circular '
+                        'region of 0.1 deg.'),
+    'obs_copyright': '',
+    'obs_ack': '',
+    'hips_copyright': '',
+    't_min': '53005',
+    't_max': '56293',
+    'em_max': '2.480e-20',
+    'em_min': '1.240e-18',
+    'bib_reference': '2018A&A...612A...1H',
+    'bib_reference_url': 'https://ui.adsabs.harvard.edu/#abs/2018A%26A...612A...1H',
+    'hips_creator': 'XXX (A.Donath and C.Deil)',
+}
+
+
+def get_aladin_jar():
+    if 'ALADIN_JAR' in os.environ:
+        return os.environ['ALADIN_JAR']
+    else:
+        os.environ['ALADIN_JAR'] = '/Users/deil/software/bin/Aladin.jar'
+        # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
+
+
+def run_hipsgen(hipsgen_options):
+    aladin_jar = get_aladin_jar()
+    cmd = f'java -Xmx1400m -jar {aladin_jar} -hipsgen {hipsgen_options}'
+    log.info(f'Executing command {cmd}')
+    subprocess.call(cmd, shell=True)
 
 
 def generate_hips(quantity):
@@ -62,9 +79,7 @@ def generate_hips(quantity):
     for key, value in options.items():
         hipsgen_options += f' {key}={value}'
 
-    cmd = f'java -Xmx1400m -jar {ALADIN_JAR_PATH} -hipsgen {hipsgen_options}'
-    log.info(f'Executing command {cmd}')
-    subprocess.call(cmd, shell=True)
+    run_hipsgen(hipsgen_options)
 
 
 def view_hips(quantity):
@@ -117,6 +132,6 @@ if __name__ == '__main__':
     clean_hips(quantity)
     generate_hips(quantity)
     update_hips_properties(quantity)
-    #view_hips(quantity)
-    #tar_hips(quantity)
-    #clean_hips(quantity)
+    # view_hips(quantity)
+    # tar_hips(quantity)
+    # clean_hips(quantity)
