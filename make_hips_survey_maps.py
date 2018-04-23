@@ -1,18 +1,13 @@
-"""Generate  HIPS maps from the HGPS survey FITS maps.
-
-Please specify the $ALADIN_JAR environment variable to point to the AladinBeta.jar
-file.
-"""
+#!/usr/bin/env python
+"""Generate HIPS for HGPS."""
 import subprocess
 import os
 import logging
-import tempfile
 from collections import OrderedDict
 from pathlib import Path
 import click
 from make_extra_survey_maps import get_sky_image
 
-logging.basicConfig(level='INFO')
 log = logging.getLogger(__name__)
 
 HIPSGEN_OPTIONS = {
@@ -44,12 +39,36 @@ HIPS_META_INFO = {
 }
 
 
+class Config:
+    @property
+    def out_path(self):
+        return Path('hips') / self.quantity
+
+    @property
+    def in_path(self):
+        return Path('hips') / (self.quantity + '_inputs')
+
+    @property
+    def in_fits(self):
+        return self.in_path / 'image.fits'
+
+config = Config()
+
+
+def prepare_inputs():
+    """Prepare input files for hipsgen"""
+    image = get_sky_image(config.quantity, normed=False)
+    filename = config.in_fits
+    log.info(f'Writing {filename}')
+    image.write(filename)
+
+
 def get_aladin_jar():
-    if 'ALADIN_JAR' in os.environ:
-        return os.environ['ALADIN_JAR']
-    else:
+    if 'ALADIN_JAR' not in os.environ:
         os.environ['ALADIN_JAR'] = '/Users/deil/software/bin/Aladin.jar'
         # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
+
+    return os.environ['ALADIN_JAR']
 
 
 def run_hipsgen(hipsgen_options):
@@ -59,18 +78,14 @@ def run_hipsgen(hipsgen_options):
     subprocess.call(cmd, shell=True)
 
 
-def generate_hips(quantity):
-    image = get_sky_image(quantity, normed=False)
-    filename = tempfile.NamedTemporaryFile(suffix='.fits').name
-    image.write(filename)
-
+def generate_hips():
     options = {}
-    options['in'] = filename
-    options['out'] = f'./HGPS_HiPS_{quantity}'
+    options['in'] = config.in_fits
+    options['out'] = config.out_path
 
-    if quantity == 'flux':
+    if config.quantity == 'flux':
         options['hips_pixel_cut'] = '"1e-14 1e-12 log"'
-    elif quantity == 'significance':
+    elif config.quantity == 'significance':
         options['hips_pixel_cut'] = '"0 100 log"'
 
     options.update(HIPSGEN_OPTIONS)
@@ -82,29 +97,26 @@ def generate_hips(quantity):
     run_hipsgen(hipsgen_options)
 
 
-def view_hips(quantity):
-    hips_out_folder = f'./HGPS_HiPS_{quantity}'
-    cmd = f'java -jar {ALADIN_JAR_PATH} {hips_out_folder}'
+def view_hips():
+    cmd = f'java -jar {ALADIN_JAR_PATH} {config.out_path}'
     log.info(f'Executing command {cmd}')
     subprocess.call(cmd, shell=True)
 
 
-def clean_hips(quantity):
-    hips_out_folder = f'HGPS_HiPS_{quantity}'
-    cmd = f'rm -r {hips_out_folder}'
+def clean_hips():
+    cmd = f'rm -r {config.out_path}'
     log.info(f'Executing command {cmd}')
     subprocess.call(cmd, shell=True)
 
 
-def tar_hips(quantity):
-    hips_out_folder = f'HGPS_HiPS_{quantity}'
-    cmd = f'tar cfvz {hips_out_folder}.tar.gz {hips_out_folder}'
+def tar_hips():
+    cmd = f'tar cfvz {hips_out_folder}.tar.gz {config.out_path}'
     log.info(f'Executing command {cmd}')
     subprocess.call(cmd, shell=True)
 
 
-def update_hips_properties(quantity):
-    filename = Path(f'HGPS_HiPS_{quantity}/properties')
+def update_hips_properties():
+    filename = config.out_path / 'properties'
 
     properties = OrderedDict()
     with filename.open('r+') as fh:
@@ -127,11 +139,21 @@ def update_hips_properties(quantity):
         fh.truncate()
 
 
+@click.command()
+@click.option('--quantity', default='significance', type=click.Choice(['significance', 'flux']))
+def cli(quantity):
+    """Generate HIPS for HGPS."""
+    logging.basicConfig(level='INFO')
+    config.quantity = quantity
+    config.in_path.mkdir(parents=True, exist_ok=True)
+    config.out_path.mkdir(parents=True, exist_ok=True)
+
+    prepare_inputs()
+
+    clean_hips()
+    generate_hips()
+    update_hips_properties()
+
+
 if __name__ == '__main__':
-    quantity = 'flux'  # 'flux'
-    clean_hips(quantity)
-    generate_hips(quantity)
-    update_hips_properties(quantity)
-    # view_hips(quantity)
-    # tar_hips(quantity)
-    # clean_hips(quantity)
+    cli()
