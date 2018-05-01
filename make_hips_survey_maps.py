@@ -122,7 +122,7 @@ def prepare_inputs():
 
 def get_aladin_jar():
     if 'ALADIN_JAR' not in os.environ:
-        os.environ['ALADIN_JAR'] = '/Users/deil/software/bin/Aladin.jar'
+        os.environ['ALADIN_JAR'] = '/Users/deil/software/bin/AladinBeta.jar'
         # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
 
     return os.environ['ALADIN_JAR']
