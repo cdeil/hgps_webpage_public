@@ -1,0 +1,32 @@
+SIMPLE  =                    T / conforms to FITS standard                      
+BITPIX  =                  -32 / array data type                                
+NAXIS   =                    2 / number of array dimensions                     
+NAXIS1  =                 9400                                                  
+NAXIS2  =                  500                                                  
+EXTNAME = 'Flux    '                                                            
+HDUNAME = 'Flux    '                                                            
+CTYPE1  = 'GLON-CAR'           / Type of co-ordinate on axis 1                  
+CTYPE2  = 'GLAT-CAR'           / Type of co-ordinate on axis 2                  
+EQUINOX =                2000. / [yr] Epoch of reference equinox                
+CRPIX1  =               4700.5 / Reference pixel on axis 1                      
+CRPIX2  =                250.5 / Reference pixel on axis 2                      
+CRVAL1  =                  341 / Value at ref. pixel on axis 1                  
+CRVAL2  =                    0 / Value at ref. pixel on axis 2                  
+CDELT1  =                -0.02 / Pixel size on axis 1                           
+CDELT2  =                 0.02 / Pixel size on axis 2                           
+CUNIT1  = 'deg     '           / units of  CRVAL1 and  CDELT1                   
+CUNIT2  = 'deg     '           / units of  CRVAL2 and  CDELT2                   
+BUNIT   = 'cm-2 s-1'                                                            
+TELESCOP= 'H.E.S.S.'           / name of telescope                              
+ORIGIN  = 'The H.E.S.S. Collaboration' / organization responsible for the data  
+COMMENT This is part of the HESS Galactic plane survey (HGPS) data.             
+COMMENT                                                                         
+COMMENT     Paper: https://doi.org/10.1051/0004-6361/201732098                  
+COMMENT     Webpage: https://www.mpi-hd.mpg.de/hfm/HESS/hgps                    
+COMMENT     Contact: contact@hess-experiment.eu                                 
+COMMENT                                                                         
+COMMENT The HGPS observations were taken from 2004 to 2013.                     
+COMMENT The paper was published and this data was released in April 2018.       
+COMMENT                                                                         
+COMMENT A detailed description is available in the paper.                       
+END                                                                             

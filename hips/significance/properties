@@ -1,10 +1,7 @@
 hips_initial_fov     = 188.0
 hips_initial_ra      = 252.67102
 hips_initial_dec     = -44.47937
-creator_did          = ivo://ivo.MPIK/P/HGPS
-hips_pixel_bitpix    = -32
-data_pixel_bitpix    = -32
-hips_sampling        = bilinear
+creator_did          = ivo://MPIK/P/HGPS
 hips_overlay         = mean
 hips_hierarchy       = median
 hips_creator         = Christoph Deil, Axel Donath, Pierre Fernique
@@ -25,29 +22,24 @@ em_min               = 1.240e-18
 em_max               = 2.480e-20
 hips_builder         = Aladin/HipsGen v10.076
 hips_version         = 1.4
-hips_release_date    = 2018-04-23T13:15Z
+hips_release_date    = 2018-05-01T09:35Z
 hips_frame           = galactic
 hips_order           = 3
 hips_tile_width      = 512
 #hips_service_url    = ex: http://yourHipsServer/HGPS_Significance
 hips_status          = public master clonableOnce
-hips_tile_format     = png fits
-hips_pixel_cut       = 0 100
-hips_data_range      = -25.83 62.4
+hips_tile_format     = png
 hips_pixel_scale     = 0.01431
 s_pixel_scale        = 0.02
 dataproduct_type     = image
+dataproduct_subtype  = color
 moc_sky_fraction     = 0.1146
-hips_estsize         = 128553
-hipsgen_date         = 2018-04-23T13:15Z
-hipsgen_params       = in=hips/significance_inputs/image.fits out=hips/significance "hips_pixel_cut=0 100 log" creator_did=ivo:MPIK/P/HGPS blank=0 hips_frame=galactic label=HGPS_Significance
-hips_creation_date   = 2018-04-23T13:15Z
-hipsgen_date_1       = 2018-04-23T13:15Z
-hipsgen_params_1     = in=hips/significance_inputs/image.fits out=hips/significance "hips_pixel_cut=0 100 log" creator_did=ivo:MPIK/P/HGPS blank=0 hips_frame=galactic label=HGPS_Significance
+hips_estsize         = 11179
+hipsgen_date         = 2018-05-01T09:35Z
+hipsgen_params       = in=hips/significance_inputs out=hips/significance "hips_pixel_cut=0 100 log" creator_did=MPIK/P/HGPS blank=0 hips_frame=galactic label=HGPS_Significance color=png
 #____FOR_COMPATIBILITY_WITH_OLD_HIPS_CLIENTS____
 label                = HGPS_Significance
 coordsys             = G
 maxOrder             = 3
-format               = png fits
-pixelCut             = 0 100
-pixelRange           = -25.83 62.4
+format               = png
+isColored            = true

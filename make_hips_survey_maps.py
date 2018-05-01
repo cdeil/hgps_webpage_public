@@ -5,8 +5,9 @@ import os
 import logging
 from collections import OrderedDict
 from pathlib import Path
+import shutil
 import click
-from make_extra_survey_maps import get_sky_image
+from make_extra_survey_maps import get_sky_image, get_hdu
 
 log = logging.getLogger(__name__)
 
@@ -73,6 +74,14 @@ class Config:
         return self.in_path / 'image.fits'
 
     @property
+    def in_png(self):
+        return self.in_path / 'image.png'
+
+    @property
+    def in_header(self):
+        return self.in_fits.with_suffix('.hhh')
+
+    @property
     def hips_meta_info(self):
         if self.quantity == 'significance':
             return HIPS_META_INFO_SIGNIFICANCE
@@ -101,6 +110,15 @@ def prepare_inputs():
     log.info(f'Writing {filename}')
     image.write(filename, overwrite=True)
 
+    header = get_hdu(config.quantity).header
+    filename = config.in_header
+    log.info(f'Writing {filename}')
+    header.totextfile(filename, endcard=True, overwrite=True)
+
+    src = f'build/figures/hgps_survey_{config.quantity}_single_panel_no_axes.png'
+    dst = str(config.in_png)
+    log.info(f'Copy {src} -> {dst}')
+    shutil.copy(src, dst)
 
 def get_aladin_jar():
     if 'ALADIN_JAR' not in os.environ:
@@ -119,15 +137,20 @@ def run_hipsgen(opts):
 
 def generate_hips():
     options = {}
-    options['in'] = config.in_fits
+    options['in'] = config.in_path
     options['out'] = config.out_path
 
+    # TODO: are these used for the HiPS FITS tiles?
+    # If yes, we should try and make them match the PNG tiles
     if config.quantity == 'flux':
         options['hips_pixel_cut'] = '"1e-14 1e-12 log"'
     elif config.quantity == 'significance':
         options['hips_pixel_cut'] = '"0 100 log"'
 
     options.update(config.hipsgen_options)
+
+    # options['-hhh'] = config.in_png
+    options['color'] = 'png'
 
     opts = ''
     for key, value in options.items():
@@ -194,7 +217,7 @@ def cli(quantity):
         config.in_path.mkdir(parents=True, exist_ok=True)
         config.out_path.mkdir(parents=True, exist_ok=True)
 
-        # prepare_inputs()
+        prepare_inputs()
 
         clean_hips()
         generate_hips()
