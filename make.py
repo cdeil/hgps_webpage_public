@@ -17,9 +17,9 @@ class Config:
     def __init__(self):
         self.config = yaml.load(open('config.yaml'))
         self.version = self.config['version']
-        self.hgps_paper_dir = Path(os.environ['HGPS_PAPER'])
-        self.hgps_analysis_dir = Path(os.environ['HGPS_ANALYSIS'])
-        self.hgps_data_dir = Path(os.environ['HGPS_DATA'])
+        self.hgps_paper_dir = Path(os.environ.get('HGPS_PAPER', 'MISSING'))
+        self.hgps_analysis_dir = Path(os.environ.get('HGPS_ANALYSIS', 'MISSING'))
+        self.hgps_data_dir = Path(os.environ.get('HGPS_DATA', 'MISSING'))
         self.filename_cat = f'hgps_catalog_v{self.version}.fits.gz'
         self.out_path = Path('build/data')
 
