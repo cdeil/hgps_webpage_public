@@ -1,13 +1,13 @@
 creator_did          = ivo://MPIK/P/HGPS/meta
 obs_title            = HGPS_Flux-meta
 dataproduct_type     = meta
-hips_frame           = galactic
+hips_frame           = equatorial
 hips_order           = 3
-hips_release_date    = 2018-05-01T09:45Z
+hips_release_date    = 2018-07-03T14:40Z
 hips_version         = 1.4
-hips_builder         = Aladin/HipsGen v10.086
+hips_builder         = Aladin/HipsGen v10.076
 #____FOR_COMPATIBILITY_WITH_OLD_HIPS_CLIENTS____
 label                = HGPS_Flux-meta
-coordsys             = G
+coordsys             = C
 maxOrder             = 3
 hips_tile_width      = 512

@@ -15,12 +15,14 @@ from astropy.visualization import ImageNormalize, LogStretch
 from gammapy.image import SkyImage
 from gammapy.image.plotting import SkyImagePanelPlotter
 from make import config
-from hgps.config import PERCENT_CRAB
 import matplotlib
 
 matplotlib.use('agg')
 from matplotlib.image import imsave
 import matplotlib.pyplot as plt
+
+FLUX_CRAB_INT_1TEV = 2.26e-11  # m^-2 s^-1
+PERCENT_CRAB = 100 / FLUX_CRAB_INT_1TEV
 
 
 @functools.lru_cache()

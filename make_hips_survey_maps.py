@@ -14,7 +14,11 @@ log = logging.getLogger(__name__)
 HIPSGEN_OPTIONS = {
     'creator_did': 'MPIK/P/HGPS',
     'blank': '0',
-    'hips_frame': 'galactic',
+    # We choose equatorial frame, because MOC can only be in equatorial frame.
+    # The input WCS image is in Galactic, but since a resampling to HEALPix
+    # pixels happens anyways, it doesn't matter if the HiPS is equatorial or galactic frame.
+    'hips_frame': 'equatorial',
+    'mocorder': '9',
 }
 
 HIPSGEN_OPTIONS_SIGNIFICANCE = {
@@ -120,20 +124,30 @@ def prepare_inputs():
     log.info(f'Copy {src} -> {dst}')
     shutil.copy(src, dst)
 
+
 def get_aladin_jar():
     if 'ALADIN_JAR' not in os.environ:
-        os.environ['ALADIN_JAR'] = '/Users/deil/software/bin/AladinBeta.jar'
+        os.environ['ALADIN_JAR'] = '/Applications/Aladin.app//Contents/Resources/Java/Aladin.jar'
         # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
 
     return os.environ['ALADIN_JAR']
 
 
-def run_hipsgen(opts):
+def run_hipsgen(options):
+    opts = ''
+    for key, value in options.items():
+        opts += f' {key}={value}'
+
     aladin_jar = get_aladin_jar()
     cmd = f'java -Xmx1400m -jar {aladin_jar} -hipsgen {opts}'
-    log.info(f'Executing command {cmd}')
+    log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 
+def run_hipsgen_lint(out_dir):
+    aladin_jar = get_aladin_jar()
+    cmd = f'java -Xmx1400m -jar {aladin_jar} -hipsgen out={out_dir} lint'
+    log.info(f'Executing command: {cmd}')
+    subprocess.call(cmd, shell=True)
 
 def generate_hips():
     options = {}
@@ -152,11 +166,11 @@ def generate_hips():
     # options['-hhh'] = config.in_png
     options['color'] = 'png'
 
-    opts = ''
-    for key, value in options.items():
-        opts += f' {key}={value}'
+    run_hipsgen(options)
 
-    run_hipsgen(opts)
+def lint_hips():
+    options = {}
+    run_hipsgen_lint(config.out_path)
 
 
 def view_hips():
@@ -222,6 +236,7 @@ def cli(quantity):
         clean_hips()
         generate_hips()
         update_hips_properties()
+        lint_hips()
 
 
 if __name__ == '__main__':

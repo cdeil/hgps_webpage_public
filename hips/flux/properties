@@ -20,12 +20,11 @@ t_max                = 56293
 obs_regime           = Gamma-ray
 em_min               = 1.240e-18
 em_max               = 2.480e-20
-hips_builder         = Aladin/HipsGen v10.086
+hips_builder         = Aladin/HipsGen v10.076
 hips_version         = 1.4
-hips_release_date    = 2018-05-01T09:46Z
-hips_frame           = galactic
+hips_release_date    = 2018-07-03T14:40Z
+hips_frame           = equatorial
 hips_order           = 3
-hips_order_min       = 0
 hips_tile_width      = 512
 #hips_service_url    = ex: http://yourHipsServer/HGPS_Flux
 hips_status          = public master clonableOnce
@@ -34,13 +33,13 @@ hips_pixel_scale     = 0.01431
 s_pixel_scale        = 0.02
 dataproduct_type     = image
 dataproduct_subtype  = color
-moc_sky_fraction     = 0.1146
-hips_estsize         = 11179
-hipsgen_date         = 2018-05-01T09:46Z
-hipsgen_params       = in=hips/flux_inputs out=hips/flux "hips_pixel_cut=1e-14 1e-12 log" creator_did=MPIK/P/HGPS blank=0 hips_frame=galactic label=HGPS_Flux color=png
+moc_sky_fraction     = 0.1016
+hips_estsize         = 9910
+hipsgen_date         = 2018-07-03T14:40Z
+hipsgen_params       = in=hips/flux_inputs out=hips/flux "hips_pixel_cut=1e-14 1e-12 log" creator_did=MPIK/P/HGPS blank=0 hips_frame=equatorial mocorder=9 label=HGPS_Flux color=png
 #____FOR_COMPATIBILITY_WITH_OLD_HIPS_CLIENTS____
 label                = HGPS_Flux
-coordsys             = G
+coordsys             = C
 maxOrder             = 3
 format               = png
 isColored            = true
