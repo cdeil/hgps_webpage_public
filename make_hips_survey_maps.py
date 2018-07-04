@@ -11,8 +11,8 @@ from make_extra_survey_maps import get_sky_image, get_hdu
 
 log = logging.getLogger(__name__)
 
+
 HIPSGEN_OPTIONS = {
-    'creator_did': 'MPIK/P/HGPS',
     'blank': '0',
     # We choose equatorial frame, because MOC can only be in equatorial frame.
     # The input WCS image is in Galactic, but since a resampling to HEALPix
@@ -24,11 +24,13 @@ HIPSGEN_OPTIONS = {
 HIPSGEN_OPTIONS_SIGNIFICANCE = {
     **HIPSGEN_OPTIONS,
     'label': 'HGPS_Significance',
+    'creator_did': 'CDS/P/HGPS/Significance',
 }
 
 HIPSGEN_OPTIONS_FLUX = {
     **HIPSGEN_OPTIONS,
     'label': 'HGPS_Flux',
+    'creator_did': 'CDS/P/HGPS/Flux',
 }
 
 HIPS_META_INFO = {
@@ -103,6 +105,14 @@ class Config:
         else:
             raise ValueError()
 
+    @property
+    def aladin_jar(self):
+        if 'ALADIN_JAR' not in os.environ:
+            os.environ['ALADIN_JAR'] = '/Applications/Aladin.app//Contents/Resources/Java/Aladin.jar'
+            # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
+
+        return os.environ['ALADIN_JAR']
+
 
 config = Config()
 
@@ -125,27 +135,17 @@ def prepare_inputs():
     shutil.copy(src, dst)
 
 
-def get_aladin_jar():
-    if 'ALADIN_JAR' not in os.environ:
-        os.environ['ALADIN_JAR'] = '/Applications/Aladin.app//Contents/Resources/Java/Aladin.jar'
-        # raise EnvironmentError('You have to set an environment variable ALADIN_JAR')
-
-    return os.environ['ALADIN_JAR']
-
-
 def run_hipsgen(options):
     opts = ''
     for key, value in options.items():
         opts += f' {key}={value}'
 
-    aladin_jar = get_aladin_jar()
-    cmd = f'java -Xmx1400m -jar {aladin_jar} -hipsgen {opts}'
+    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -hipsgen {opts}'
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 
 def run_hipsgen_lint(out_dir):
-    aladin_jar = get_aladin_jar()
-    cmd = f'java -Xmx1400m -jar {aladin_jar} -hipsgen out={out_dir} lint'
+    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -hipsgen out={out_dir} lint'
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 
@@ -154,12 +154,12 @@ def generate_hips():
     options['in'] = config.in_path
     options['out'] = config.out_path
 
-    # TODO: are these used for the HiPS FITS tiles?
-    # If yes, we should try and make them match the PNG tiles
-    if config.quantity == 'flux':
-        options['hips_pixel_cut'] = '"1e-14 1e-12 log"'
-    elif config.quantity == 'significance':
-        options['hips_pixel_cut'] = '"0 100 log"'
+    # These are only used for FITS tiles.
+    # We decided not to produce FITS tiles here.
+    # if config.quantity == 'flux':
+    #     options['hips_pixel_cut'] = '"1e-14 1e-12 log"'
+    # elif config.quantity == 'significance':
+    #     options['hips_pixel_cut'] = '"0 100 log"'
 
     options.update(config.hipsgen_options)
 
@@ -173,20 +173,8 @@ def lint_hips():
     run_hipsgen_lint(config.out_path)
 
 
-def view_hips():
-    cmd = f'java -jar {ALADIN_JAR_PATH} {config.out_path}'
-    log.info(f'Executing command {cmd}')
-    subprocess.call(cmd, shell=True)
-
-
 def clean_hips():
     cmd = f'rm -r {config.out_path}'
-    log.info(f'Executing command {cmd}')
-    subprocess.call(cmd, shell=True)
-
-
-def tar_hips():
-    cmd = f'tar cfvz {hips_out_folder}.tar.gz {config.out_path}'
     log.info(f'Executing command {cmd}')
     subprocess.call(cmd, shell=True)
 

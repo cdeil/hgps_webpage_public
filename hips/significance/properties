@@ -1,7 +1,7 @@
 hips_initial_fov     = 188.0
 hips_initial_ra      = 252.67102
 hips_initial_dec     = -44.47937
-creator_did          = ivo://MPIK/P/HGPS
+creator_did          = ivo://CDS/P/HGPS/Significance
 hips_overlay         = mean
 hips_hierarchy       = median
 hips_creator         = Christoph Deil, Axel Donath, Pierre Fernique
@@ -22,7 +22,7 @@ em_min               = 1.240e-18
 em_max               = 2.480e-20
 hips_builder         = Aladin/HipsGen v10.076
 hips_version         = 1.4
-hips_release_date    = 2018-07-03T14:40Z
+hips_release_date    = 2018-07-04T06:39Z
 hips_frame           = equatorial
 hips_order           = 3
 hips_tile_width      = 512
@@ -35,8 +35,8 @@ dataproduct_type     = image
 dataproduct_subtype  = color
 moc_sky_fraction     = 0.1016
 hips_estsize         = 9910
-hipsgen_date         = 2018-07-03T14:40Z
-hipsgen_params       = in=hips/significance_inputs out=hips/significance "hips_pixel_cut=0 100 log" creator_did=MPIK/P/HGPS blank=0 hips_frame=equatorial mocorder=9 label=HGPS_Significance color=png
+hipsgen_date         = 2018-07-04T06:39Z
+hipsgen_params       = in=hips/significance_inputs out=hips/significance blank=0 hips_frame=equatorial mocorder=9 label=HGPS_Significance creator_did=CDS/P/HGPS/Significance color=png
 #____FOR_COMPATIBILITY_WITH_OLD_HIPS_CLIENTS____
 label                = HGPS_Significance
 coordsys             = C
