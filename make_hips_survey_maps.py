@@ -7,6 +7,7 @@ from collections import OrderedDict
 from pathlib import Path
 import shutil
 import click
+from astropy.io import fits
 from make_extra_survey_maps import get_sky_image, get_hdu
 
 log = logging.getLogger(__name__)
@@ -18,7 +19,7 @@ HIPSGEN_OPTIONS = {
     # The input WCS image is in Galactic, but since a resampling to HEALPix
     # pixels happens anyways, it doesn't matter if the HiPS is equatorial or galactic frame.
     'hips_frame': 'equatorial',
-    'mocorder': '9',
+    'mocOrder': '9',
 }
 
 HIPSGEN_OPTIONS_SIGNIFICANCE = {
@@ -119,6 +120,11 @@ config = Config()
 
 def prepare_inputs():
     """Prepare input files for hipsgen"""
+    # Put this as a delayed import here due to this issue:
+    # https://github.com/scikit-image/scikit-image/issues/3243
+    import skimage.io
+    from skimage.morphology import binary_closing, binary_dilation, disk
+
     image = get_sky_image(config.quantity, normed=False)
     filename = config.in_fits
     log.info(f'Writing {filename}')
@@ -129,10 +135,18 @@ def prepare_inputs():
     log.info(f'Writing {filename}')
     header.totextfile(filename, endcard=True, overwrite=True)
 
-    src = f'build/figures/hgps_survey_{config.quantity}_single_panel_no_axes.png'
-    dst = str(config.in_png)
-    log.info(f'Copy {src} -> {dst}')
-    shutil.copy(src, dst)
+    # For the PNG, we put the mask into the PNG alpha channel,
+    # because hipsgen will use that to define the MOC,
+    # i.e. then our sky area matches the HGPS survey area.
+    filename = f'build/figures/hgps_survey_{config.quantity}_single_panel_no_axes.png'
+    image = skimage.io.imread(filename)
+    significance = fits.open('hips/significance_inputs/image.fits')[0].data
+    mask = binary_closing(significance != 0, selem=disk(20))
+    image[:,:,-1] = 255 * mask[::-1,:].astype('uint8')
+    # import IPython; IPython.embed()
+    filename = str(config.in_png)
+    log.info(f'Writing {filename}')
+    skimage.io.imsave(filename, image)
 
 
 def run_hipsgen(options):
@@ -220,7 +234,6 @@ def cli(quantity):
         config.out_path.mkdir(parents=True, exist_ok=True)
 
         prepare_inputs()
-
         clean_hips()
         generate_hips()
         update_hips_properties()
