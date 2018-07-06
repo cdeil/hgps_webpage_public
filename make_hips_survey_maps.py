@@ -14,12 +14,14 @@ log = logging.getLogger(__name__)
 
 
 HIPSGEN_OPTIONS = {
-    'blank': '0',
+    # The `blank` option is ignored for PNG (see email from Pierre)
+    # 'blank': '0',
     # We choose equatorial frame, because MOC can only be in equatorial frame.
     # The input WCS image is in Galactic, but since a resampling to HEALPix
     # pixels happens anyways, it doesn't matter if the HiPS is equatorial or galactic frame.
     'hips_frame': 'equatorial',
-    'mocOrder': '9',
+    # The `mocOrder` option is ignored for PNG (see email from Pierre)
+    # 'mocOrder': '9',
 }
 
 HIPSGEN_OPTIONS_SIGNIFICANCE = {
@@ -140,9 +142,12 @@ def prepare_inputs():
     # i.e. then our sky area matches the HGPS survey area.
     filename = f'build/figures/hgps_survey_{config.quantity}_single_panel_no_axes.png'
     image = skimage.io.imread(filename)
-    significance = fits.open('hips/significance_inputs/image.fits')[0].data
-    mask = binary_closing(significance != 0, selem=disk(20))
-    image[:,:,-1] = 255 * mask[::-1,:].astype('uint8')
+    # This doesn't work, because mocgen doesn't take `mocOrder` into account with PNG
+    # so it's not possible to make a good MOC (e.g. order 9) from a mask stored in PNG
+    # if the tiles are only order 3 (see email from Pierre)
+    # significance = fits.open('hips/significance_inputs/image.fits')[0].data
+    # mask = binary_closing(significance != 0, selem=disk(20))
+    # image[:,:,-1] = 255 * mask[::-1,:].astype('uint8')
     # import IPython; IPython.embed()
     filename = str(config.in_png)
     log.info(f'Writing {filename}')
@@ -181,6 +186,16 @@ def generate_hips():
     options['color'] = 'png'
 
     run_hipsgen(options)
+
+def generate_moc():
+    """Replace the MOC from hipsgen (order 3, no mask used)
+    with a better one (order 9, using a mask)."""
+    filename = config.out_path / 'Moc.fits'
+    filename_mask = 'hips/significance_inputs/image.fits'
+    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -mocgen -strict in={filename_mask} out={filename} blank=0 order=9'
+    log.info(f'Executing command: {cmd}')
+    subprocess.call(cmd, shell=True)
+
 
 def lint_hips():
     options = {}
@@ -233,11 +248,12 @@ def cli(quantity):
         config.in_path.mkdir(parents=True, exist_ok=True)
         config.out_path.mkdir(parents=True, exist_ok=True)
 
-        prepare_inputs()
-        clean_hips()
-        generate_hips()
-        update_hips_properties()
-        lint_hips()
+        # prepare_inputs()
+        # clean_hips()
+        # generate_hips()
+        generate_moc()
+        # update_hips_properties()
+        # lint_hips()
 
 
 if __name__ == '__main__':
