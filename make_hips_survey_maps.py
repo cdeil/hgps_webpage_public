@@ -248,12 +248,12 @@ def cli(quantity):
         config.in_path.mkdir(parents=True, exist_ok=True)
         config.out_path.mkdir(parents=True, exist_ok=True)
 
-        # prepare_inputs()
-        # clean_hips()
-        # generate_hips()
+        prepare_inputs()
+        clean_hips()
+        generate_hips()
         generate_moc()
-        # update_hips_properties()
-        # lint_hips()
+        update_hips_properties()
+        lint_hips()
 
 
 if __name__ == '__main__':

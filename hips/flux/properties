@@ -22,7 +22,7 @@ em_min               = 1.240e-18
 em_max               = 2.480e-20
 hips_builder         = Aladin/HipsGen v10.076
 hips_version         = 1.4
-hips_release_date    = 2018-07-04T07:38Z
+hips_release_date    = 2018-07-06T10:28Z
 hips_frame           = equatorial
 hips_order           = 3
 hips_tile_width      = 512
@@ -35,8 +35,8 @@ dataproduct_type     = image
 dataproduct_subtype  = color
 moc_sky_fraction     = 0.1016
 hips_estsize         = 9910
-hipsgen_date         = 2018-07-04T07:38Z
-hipsgen_params       = in=hips/flux_inputs out=hips/flux blank=0 hips_frame=equatorial mocOrder=9 label=HGPS_Flux creator_did=CDS/P/HGPS/Flux color=png
+hipsgen_date         = 2018-07-06T10:28Z
+hipsgen_params       = in=hips/flux_inputs out=hips/flux hips_frame=equatorial label=HGPS_Flux creator_did=CDS/P/HGPS/Flux color=png
 #____FOR_COMPATIBILITY_WITH_OLD_HIPS_CLIENTS____
 label                = HGPS_Flux
 coordsys             = C
