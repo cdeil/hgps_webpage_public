@@ -3,15 +3,14 @@
 import subprocess
 import os
 import logging
-from collections import OrderedDict
 from pathlib import Path
 import shutil
 import click
 from astropy.io import fits
+import hips
 from make_extra_survey_maps import get_sky_image, get_hdu
 
 log = logging.getLogger(__name__)
-
 
 HIPSGEN_OPTIONS = {
     # The `blank` option is ignored for PNG (see email from Pierre)
@@ -163,10 +162,12 @@ def run_hipsgen(options):
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 
+
 def run_hipsgen_lint(out_dir):
     cmd = f'java -Xmx1400m -jar {config.aladin_jar} -hipsgen out={out_dir} lint'
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
+
 
 def generate_hips():
     options = {}
@@ -187,14 +188,24 @@ def generate_hips():
 
     run_hipsgen(options)
 
+
 def generate_moc():
-    """Replace the MOC from hipsgen (order 3, no mask used)
-    with a better one (order 9, using a mask)."""
-    filename = config.out_path / 'Moc.fits'
-    filename_mask = 'hips/significance_inputs/image.fits'
-    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -mocgen -strict in={filename_mask} out={filename} blank=0 order=9'
+    """Make a good MOC.
+
+    Use order 9 and the mask.
+    """
+    filename_in = 'hips/significance_inputs/image.fits'
+    filename_out = 'hips/significance_inputs/Moc.fits'
+    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -mocgen -strict in={filename_in} out={filename_out} blank=0 order=9'
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
+
+
+def patch_moc():
+    src = 'hips/significance_inputs/Moc.fits'
+    dst = str(config.out_path / 'Moc.fits')
+    log.info(f'Copy: {src} {dst}')
+    shutil.copy(src, dst)
 
 
 def lint_hips():
@@ -208,28 +219,13 @@ def clean_hips():
     subprocess.call(cmd, shell=True)
 
 
-def update_hips_properties():
-    filename = config.out_path / 'properties'
-
-    properties = OrderedDict()
-    with filename.open('r+') as fh:
-        for line in fh:
-            try:
-                key, value = line.split(' = ')
-            except ValueError:
-                footer = line + fh.read()
-
-            key, value = key.strip(), value.strip()
-            if key.replace('#', '') in config.hips_meta_info:
-                key = key.replace('#', '')
-            properties[key] = value
-
-        properties.update(config.hips_meta_info)
-        fh.seek(0)
-        lines = ["{key:20s} = {value}".format(key=key, value=value) for key, value in properties.items()]
-        lines.append(footer)
-        fh.write('\n'.join(lines))
-        fh.truncate()
+def patch_hips_properties():
+    path = config.out_path / 'properties'
+    log.info(f'Patching {path}')
+    properties = hips.HipsSurveyProperties.read(path)
+    import pprint; pprint.pprint(properties.data)
+    properties.data.update(config.hips_meta_info)
+    properties.write(path)
 
 
 @click.command()
@@ -248,12 +244,13 @@ def cli(quantity):
         config.in_path.mkdir(parents=True, exist_ok=True)
         config.out_path.mkdir(parents=True, exist_ok=True)
 
-        prepare_inputs()
-        clean_hips()
-        generate_hips()
+        # prepare_inputs()
         generate_moc()
-        update_hips_properties()
-        lint_hips()
+        # clean_hips()
+        # generate_hips()
+        # patch_hips_properties()
+        # patch_moc()
+        # lint_hips()
 
 
 if __name__ == '__main__':
