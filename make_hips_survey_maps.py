@@ -19,8 +19,10 @@ HIPSGEN_OPTIONS = {
     # The input WCS image is in Galactic, but since a resampling to HEALPix
     # pixels happens anyways, it doesn't matter if the HiPS is equatorial or galactic frame.
     'hips_frame': 'equatorial',
+    'order': 3,
     # The `mocOrder` option is ignored for PNG (see email from Pierre)
-    # 'mocOrder': '9',
+    'mocOrder': '9',
+    'region': 'hips/significance_inputs/Moc.fits',
 }
 
 HIPSGEN_OPTIONS_SIGNIFICANCE = {
@@ -144,9 +146,9 @@ def prepare_inputs():
     # This doesn't work, because mocgen doesn't take `mocOrder` into account with PNG
     # so it's not possible to make a good MOC (e.g. order 9) from a mask stored in PNG
     # if the tiles are only order 3 (see email from Pierre)
-    # significance = fits.open('hips/significance_inputs/image.fits')[0].data
-    # mask = binary_closing(significance != 0, selem=disk(20))
-    # image[:,:,-1] = 255 * mask[::-1,:].astype('uint8')
+    significance = fits.open('hips/significance_inputs/image.fits')[0].data
+    mask = binary_closing(significance != 0, selem=disk(20))
+    image[:,:,-1] = 255 * mask[::-1,:].astype('uint8')
     # import IPython; IPython.embed()
     filename = str(config.in_png)
     log.info(f'Writing {filename}')
@@ -163,8 +165,8 @@ def run_hipsgen(options):
     subprocess.call(cmd, shell=True)
 
 
-def run_hipsgen_lint(out_dir):
-    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -hipsgen out={out_dir} lint'
+def lint_hips():
+    cmd = f'java -Xmx1400m -jar {config.aladin_jar} -hipsgen out={config.out_path} lint'
     log.info(f'Executing command: {cmd}')
     subprocess.call(cmd, shell=True)
 
@@ -182,8 +184,6 @@ def generate_hips():
     #     options['hips_pixel_cut'] = '"0 100 log"'
 
     options.update(config.hipsgen_options)
-
-    # options['-hhh'] = config.in_png
     options['color'] = 'png'
 
     run_hipsgen(options)
@@ -208,11 +208,6 @@ def patch_moc():
     shutil.copy(src, dst)
 
 
-def lint_hips():
-    options = {}
-    run_hipsgen_lint(config.out_path)
-
-
 def clean_hips():
     cmd = f'rm -r {config.out_path}'
     log.info(f'Executing command {cmd}')
@@ -223,8 +218,10 @@ def patch_hips_properties():
     path = config.out_path / 'properties'
     log.info(f'Patching {path}')
     properties = hips.HipsSurveyProperties.read(path)
-    import pprint; pprint.pprint(properties.data)
     properties.data.update(config.hips_meta_info)
+    properties.data['hips_initial_fov'] = '100'
+    properties.data['hips_initial_ra'] = '266.40498829'
+    properties.data['hips_initial_dec'] = '-28.93617776'
     properties.write(path)
 
 
@@ -244,13 +241,13 @@ def cli(quantity):
         config.in_path.mkdir(parents=True, exist_ok=True)
         config.out_path.mkdir(parents=True, exist_ok=True)
 
-        # prepare_inputs()
+        prepare_inputs()
         generate_moc()
-        # clean_hips()
-        # generate_hips()
-        # patch_hips_properties()
-        # patch_moc()
-        # lint_hips()
+        clean_hips()
+        generate_hips()
+        patch_hips_properties()
+        patch_moc()
+        lint_hips()
 
 
 if __name__ == '__main__':
